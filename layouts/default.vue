@@ -15,6 +15,10 @@
 
 <style scoped>
 nav {
+  position: sticky;
+  top: 0;
+  background: var(--black-color);
+  z-index: 10;
   display: flex;
   justify-content: space-between;
   align-items: center;

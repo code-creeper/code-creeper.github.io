@@ -1,9 +1,8 @@
 <template>
-  <LazyHomeIntro/>
-  <br>
-  <br>
-  <br>
-  <br>
+  <div class="space-y-28">
+    <LazyHomeIntro/>
+    <LazyHomeAbout/>
+  </div>
   <br>
   <br>
   <br>
@@ -45,3 +44,5 @@
   <br>
   <br>
 </template>
+<script setup lang="ts">
+</script>
