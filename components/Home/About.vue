@@ -1,7 +1,7 @@
 <template>
   <div class="page grid grid-cols-1 md:grid-cols-2 gap-x-2 gap-y-12">
     <div>
-      <h2 class="font-bold text-[var(--white-color)]">⚡ About Me</h2>
+      <h3 class="font-bold text-[var(--white-color)]">⚡ About Me</h3>
       <p class="mt-3">
         Hey! I'm Abdul Rahman, I've been close to a computer since an early age, and been passionate about it ever
         since.

@@ -5,15 +5,15 @@
   <div class="page">
     <div class="relative">
       <img src="~/assets/images/dots.svg" class="dots" alt="Dots"/>
-      <h2 class="text-[var(--primary-color)] responsive font-bold relative">Hey there!, I'm-</h2>
+      <h3 class="text-[var(--primary-color)] responsive font-bold relative">Hey there!, I'm-</h3>
       <h1 class="text-[var(--white-color)] relative">Abdul Haseeb.</h1>
     </div>
 
     <div class="mt-8 md:mt-10 transition-all duration-300 ease-in-out">
-      <h2 class="font-semibold responsive max-w-[890px]">
+      <h3 class="font-semibold responsive max-w-[890px]">
         <span style="color: var(--white-color)">Software Engineer.</span>
         A self-taught developer with an interest in Computer Science.
-      </h2>
+      </h3>
     </div>
 
     <div class="mt-8 md:mt-10 transition-all duration-300 ease-in-out">

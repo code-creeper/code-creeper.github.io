@@ -21,7 +21,7 @@ h1 {
     font-weight: bold;
 }
 
-h2 {
+h3 {
     font-size: 1.5rem;
 
     &.responsive {
@@ -29,11 +29,11 @@ h2 {
     }
 }
 
-h3 {
+h4 {
     font-size: 1.25rem;
 }
 
-h2.responsive {
+h3.responsive {
     font-size: calc(1.5rem + ((1vw - 7.68px) * 1.0416666666666667));
 }
 
