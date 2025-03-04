@@ -1,3 +1,57 @@
+:root {
+    --primary-color: rgb(80, 207, 154);
+
+    --black-color: #060606;
+
+    --white-color: rgb(227, 225, 222);
+    --white-dim-color: rgb(161, 154, 142);
+
+    --border-color: rgb(128, 119, 106);
+}
+
 body {
-  background: #060606;
+    background: var(--black-color);
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: var(--white-dim-color);
+}
+
+h1 {
+    font-size: calc(5rem + ((1vw - 7.68px) * 5.555555555555555));
+    line-height: 95%;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.5rem;
+
+    &.responsive {
+        font-size: calc(1.5rem + ((1vw - 7.68px) * 1.0416666666666667));
+    }
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h2.responsive {
+    font-size: calc(1.5rem + ((1vw - 7.68px) * 1.0416666666666667));
+}
+
+p {
+    font-size: 0.875rem;
+}
+
+@media screen and (min-width: 48rem) {
+    p {
+        font-size: 1rem;
+    }
+}
+
+p.not-responsive {
+    font-size: 1rem !important;
+}
+
+.page {
+    width: 70rem;
+    margin-inline: auto;
 }
