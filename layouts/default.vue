@@ -15,15 +15,11 @@
 
 <style scoped>
 nav {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 75rem;
-  width: 100%;
+  margin-inline: auto;
   padding: 4px 12px;
   border-bottom: 1px solid var(--border-color);
   transition: all 0.3s ease-in-out;
