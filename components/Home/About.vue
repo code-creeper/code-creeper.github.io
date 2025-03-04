@@ -3,18 +3,18 @@
     <div>
       <h3 class="font-bold text-[var(--white-color)]">⚡ About Me</h3>
       <p class="mt-3">
-        Hey! I'm Abdul Rahman, I've been close to a computer since an early age, and been passionate about it ever
+        Hey! I'm Abdul Haseeb, I've been close to a computer since an early age, and been passionate about it ever
         since.
         <br>
         <br>
-        I really liked to build stuff using no-code tools back in 2010, and from that, I explored how to code myself,
+        I really liked to build stuff using no-code tools back in 2018, and from that, I explored how to code myself,
         fast-forward to today, I do programming in various languages and technologies, and had the privilege to worked
         in a Recruitment Company and a SaaS Company I'm interested in building something awesome with code and automate
         tasks with code, currently focused on Web & Mobile Development, Open Source and Competitive Programming
         <br>
         <br>
         When I'm not coding I play games with my friends, watch some show on Netflix, or if the weather's good, play
-        basketball! 🏀
+        football! ⚽
       </p>
     </div>
 

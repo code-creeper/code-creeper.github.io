@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import SocialLinks from "~/components/SocialLinks.vue";
 </script>
 
 <template>
@@ -27,28 +28,11 @@
       </p>
     </div>
 
-    <ul>
-      <li>
-        <IconsGithub/>
-        <NuxtLink target="_blank" href="https://github.com/code-creeper/">Github</NuxtLink>
-      </li>
-      <li>
-        <IconsLinkedin/>
-        <NuxtLink target="_blank" href="https://www.linkedin.com/in/codecreeper/">Linkedin</NuxtLink>
-      </li>
-      <li>
-        <IconsEmail/>
-        <NuxtLink target="_blank" href="mailto:abdulhaseebkhan407@gmail.com">Email</NuxtLink>
-      </li>
-    </ul>
+    <SocialLinks/>
   </div>
 </template>
 
 <style scoped>
-.page {
-  margin-top: 130px;
-  transition: all 0.3s ease-in-out;
-}
 
 .dots {
   width: 70px;
@@ -78,9 +62,6 @@ ul > li {
 }
 
 @media screen and (min-width: 48rem) {
-  .page {
-    margin-top: 170px;
-  }
 
   .dots {
     width: 150px;
