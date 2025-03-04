@@ -47,11 +47,16 @@ p {
     }
 }
 
-p.not-responsive {
+p.static {
     font-size: 1rem !important;
+}
+
+p.responsive {
+    font-size: calc(1rem + ((1vw - 7.68px) * 0.6944444444444444)) !important;
 }
 
 .page {
     width: 70rem;
     margin-inline: auto;
+    padding-inline: 22px;
 }
