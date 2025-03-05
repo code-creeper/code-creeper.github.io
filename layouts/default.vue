@@ -1,6 +1,7 @@
 <template>
   <div>
-    <nav>
+    <div class="w-full sticky top-0 z-10 bg-[var(--black-color)] mb-[130px] md:mb-[170px]">
+      <nav>
       <ApplicationLogo/>
 
       <ul>
@@ -9,6 +10,7 @@
         <li>Blogs</li>
       </ul>
     </nav>
+    </div>
     <slot/>
     <footer>
       <p>
@@ -22,11 +24,6 @@
 
 <style scoped>
 nav {
-  margin-bottom: 130px;
-  position: sticky;
-  top: 0;
-  background: var(--black-color);
-  z-index: 10;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -63,7 +60,6 @@ footer {
 @media screen and (min-width: 48rem) {
   nav {
     padding: 12px 22px;
-    margin-bottom: 170px;
   }
 
   nav > ul {
@@ -76,3 +72,5 @@ footer {
   }
 }
 </style>
+<script setup lang="ts">
+</script>

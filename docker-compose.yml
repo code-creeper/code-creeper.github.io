@@ -1,0 +1,11 @@
+services:
+  app:
+    image: "node:22"
+    container_name: "node_container"
+    restart: "always"
+    working_dir: /var/www/html
+    volumes:
+      - "./:/var/www/html"
+    ports:
+      - "3000:3000"
+    command: sh -c "npm install && npm run preview"

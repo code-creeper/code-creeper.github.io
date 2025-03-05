@@ -3,61 +3,29 @@
     <div>
       <h3 class="font-bold text-[var(--white-color)]">⚡ About Me</h3>
       <p class="mt-3">
-        Hey! I'm Abdul Haseeb, I've been close to a computer since an early age, and been passionate about it ever
-        since.
+        Hey! I'm Abdul Haseeb, a full-stack engineer with over 5 years of experience in web development, having led
+        numerous robust applications.
         <br>
         <br>
-        I really liked to build stuff using <span class="text-[var(--primary-color)]">no-code tools</span> back in 2018, and from that, I explored how to code myself,
-        fast-forward to today, I do programming in various languages and technologies, and had the privilege to worked
-        in a <span class="text-[var(--primary-color)]">Recruitment Company</span> and a <span class="text-[var(--primary-color)]">SaaS Company</span> I'm interested in building something awesome with code and automate
-        tasks with code, currently focused on <span class="text-[var(--primary-color)]">Web & Mobile Development</span>, <span class="text-[var(--primary-color)]">Open Source</span> and <span class="text-[var(--primary-color)]">Competitive Programming</span>
+        My expertise spans a diverse range of technologies, including <span
+          class="text-[var(--primary-color)]">PHP</span>, <span class="text-[var(--primary-color)]">Laravel</span>,
+        <span class="text-[var(--primary-color)]">React</span>, <span class="text-[var(--primary-color)]">Vue.js</span>,
+        <span class="text-[var(--primary-color)]">JavaScript</span>, <span
+          class="text-[var(--primary-color)]">HTML</span>, <span class="text-[var(--primary-color)]">CSS</span>, <span
+          class="text-[var(--primary-color)]">Tailwind</span> and <span
+          class="text-[var(--primary-color)]">Docker</span>. I am also proficient in leveraging <span
+          class="text-[var(--primary-color)]">AWS services</span> to enhance application performance and scalability.
+        Primarily working on <span class="text-[var(--primary-color)]">Ubuntu</span> and <span
+          class="text-[var(--primary-color)]">Windows</span> environments, I am adept at adapting to various project
+        requirements and challenges.
         <br>
         <br>
-        When I'm not coding I play games with my friends, watch some show on Netflix, or if the weather's good, play
-        football! ⚽
+        When I'm not coding I learn AI 🤖
       </p>
     </div>
 
     <div class="flex justify-center">
-      <div class="relative w-fit">
-        <img src="~/assets/images/dp.jpeg" class="dp" alt="DP"/>
-        <img src="~/assets/images/dots.svg" class="dots" alt="Dots"/>
-      </div>
+      <HomeAboutProfilePicture/>
     </div>
   </div>
 </template>
-
-<style scoped>
-.dp {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  object-fit: cover;
-  filter: grayscale(100%) drop-shadow(0px 0px 153px var(--primary-color));
-  transition: filter 0.5s ease-in-out;
-}
-.dp:hover {
-  filter: grayscale(0%) drop-shadow(0px 0px 153px var(--primary-color));
-}
-
-.dots {
-  width: 100px;
-  position: absolute;
-  top: -15px;
-  right: -32px;
-  transition: all 0.3s ease-in-out;
-  filter: invert(0.1);
-}
-
-@media screen and (min-width: 80rem) {
-  .dots {
-    width: 150px;
-    right: -64px;
-  }
-
-  .dp {
-    width: 350px;
-    height: 350px;
-  }
-}
-</style>
