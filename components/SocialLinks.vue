@@ -56,9 +56,9 @@ const links: Record<LinkType, LinkItem> = {
   <ul>
     <li v-for="linkKey in props.linksInclude" :key="linkKey">
       <component :is="links[linkKey].icon" />
-      <NuxtLink target="_blank" :href="links[linkKey].href">
+      <LazyNuxtLink target="_blank" :href="links[linkKey].href">
         {{ links[linkKey].text }}
-      </NuxtLink>
+      </LazyNuxtLink>
     </li>
   </ul>
 </template>

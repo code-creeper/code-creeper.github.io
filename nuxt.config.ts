@@ -4,4 +4,5 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss', '@nuxt/fonts', '@nuxt/image'],
   css: ['~/assets/css/main.css'],
+  ssr: true
 })

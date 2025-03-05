@@ -7,10 +7,6 @@
       Feel free to get in touch and talk more about your projects.
     </p>
 
-    <SocialLinks :links-include="['linkedin', 'discord', 'resume']"/>
+    <LazySocialLinks :links-include="['linkedin', 'discord', 'resume']"/>
   </div>
 </template>
-
-<style scoped>
-
-</style>
