@@ -7,10 +7,10 @@
         since.
         <br>
         <br>
-        I really liked to build stuff using no-code tools back in 2018, and from that, I explored how to code myself,
+        I really liked to build stuff using <span class="text-[var(--primary-color)]">no-code tools</span> back in 2018, and from that, I explored how to code myself,
         fast-forward to today, I do programming in various languages and technologies, and had the privilege to worked
-        in a Recruitment Company and a SaaS Company I'm interested in building something awesome with code and automate
-        tasks with code, currently focused on Web & Mobile Development, Open Source and Competitive Programming
+        in a <span class="text-[var(--primary-color)]">Recruitment Company</span> and a <span class="text-[var(--primary-color)]">SaaS Company</span> I'm interested in building something awesome with code and automate
+        tasks with code, currently focused on <span class="text-[var(--primary-color)]">Web & Mobile Development</span>, <span class="text-[var(--primary-color)]">Open Source</span> and <span class="text-[var(--primary-color)]">Competitive Programming</span>
         <br>
         <br>
         When I'm not coding I play games with my friends, watch some show on Netflix, or if the weather's good, play
@@ -33,6 +33,11 @@
   height: 300px;
   border-radius: 50%;
   object-fit: cover;
+  filter: grayscale(100%) drop-shadow(0px 0px 153px var(--primary-color));
+  transition: filter 0.5s ease-in-out;
+}
+.dp:hover {
+  filter: grayscale(0%) drop-shadow(0px 0px 153px var(--primary-color));
 }
 
 .dots {

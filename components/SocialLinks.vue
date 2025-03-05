@@ -14,12 +14,12 @@ interface LinkItem {
 }
 
 const props = withDefaults(
-  defineProps<{
-    linksInclude?: LinkType[];
-  }>(),
-  {
-    linksInclude: () => ["github", "linkedin", "email"] as LinkType[],
-  }
+    defineProps<{
+      linksInclude?: LinkType[];
+    }>(),
+    {
+      linksInclude: () => ["github", "linkedin", "email"] as LinkType[],
+    }
 );
 
 // Define the links mapping with proper typing
@@ -54,12 +54,11 @@ const links: Record<LinkType, LinkItem> = {
 
 <template>
   <ul>
-    <li v-for="linkKey in props.linksInclude" :key="linkKey">
-      <component :is="links[linkKey].icon" />
-      <LazyNuxtLink target="_blank" :href="links[linkKey].href">
-        {{ links[linkKey].text }}
-      </LazyNuxtLink>
-    </li>
+    <LazyNuxtLink v-for="linkKey in props.linksInclude" :key="linkKey" target="_blank" :href="links[linkKey].href">
+      <li>
+        <component :is="links[linkKey].icon"/> {{ links[linkKey].text }}
+      </li>
+    </LazyNuxtLink>
   </ul>
 </template>
 
@@ -75,7 +74,7 @@ ul {
   transition: all 0.3s ease-in-out;
 }
 
-ul > li {
+ul > a > li {
   display: flex;
   align-items: center;
   gap: 0.5rem;
