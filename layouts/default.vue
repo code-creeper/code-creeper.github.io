@@ -67,7 +67,7 @@ footer {
   }
 
   nav > ul {
-    display: flex;
+    display: none;
   }
 
   footer {

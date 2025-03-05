@@ -46,7 +46,7 @@ const links: Record<LinkType, LinkItem> = {
   },
   discord: {
     icon: IconsDiscord,
-    href: "mailto:abdulhaseebkhan407@gmail.com",
+    href: "https://discordapp.com/users/916982643378245653",
     text: "Discord",
   },
 };
