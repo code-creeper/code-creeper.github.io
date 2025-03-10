@@ -18,16 +18,16 @@ import User from "~/components/Icons/User.vue";
     <hr class="w-full border border-white/30 my-5"/>
   </div>
 
-  <div class="page grid grid-cols-6 md:grid-cols-10 gap-6">
+  <div class="page grid grid-cols-6 place-content-center md:grid-cols-10 gap-6">
     <div class="col-span-7 space-y-4">
-      <h3 class="heading heading-bl">Overview</h3>
+      <h3 id="overview" class="heading heading-bl scroll-mt-[200px]">Overview</h3>
       <p class="text-white/90">
         GGL (Gak Gendut Lagi) is a fitness app packed with features like calorie counting, a measurement journal,
         workout tutorials, meal planning, and personalized mentoring to help users achieve their fitness goals.
       </p>
       <img src="@/assets/images/ssproject.webp" alt="project screenshot" class="w-full rounded-xl px-5"/>
 
-      <h3 class="heading heading-bl">Project Goals</h3>
+      <h3 class="heading heading-bl scroll-mt-[200px]" id="project-goals">Project Goals</h3>
       <p class="text-white/90">The primary goal of this project was to rebuild the web app of GGL from scratch. The
         existing web app was outdated, both in terms of design and technology, and it did not align with the current
         mobile app's features and aesthetics. The objective was to "migrate" the web app using modern technologies and
@@ -43,7 +43,7 @@ import User from "~/components/Icons/User.vue";
         <li><span class="font-bold">Rematch:</span>For efficient and maintainable state management.</li>
       </ul>
 
-      <h3 class="heading heading-bl">Features</h3>
+      <h3 class="heading heading-bl scroll-mt-[200px]" id="features">Features</h3>
       <h4 class="font-bold text-white">Meal Plan (Calories Counter)</h4>
       <img src="@/assets/images/ssproject.webp" alt="project screenshot" class="w-full rounded-xl px-5"/>
 
@@ -77,6 +77,17 @@ import User from "~/components/Icons/User.vue";
       <p class="text-white/90">Details of this optimization process were documented in my college thesis and later
         published in the Journal of Informatics and Computer Science (JINACS). You can read the publication here.</p>
 
+
+    </div>
+
+    <div class="col-span-3 ">
+      <h3 class="text-white font-bold">Table of Contents</h3>
+
+      <h4 class="font-bold text-white sticky top-[200px] flex flex-col space-y-6">
+        <a href="#overview">Overview</a>
+        <a href="#project-goals">Project Goals</a>
+        <a href="#features">Features</a>
+      </h4>
 
     </div>
   </div>
