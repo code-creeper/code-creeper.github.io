@@ -9,7 +9,7 @@
     <div>
       <HomeProjectsCard />
     </div>
-    <div class="">
+    <div class="md:-translate-y-[50%]">
       <HomeProjectsCard />
     </div>
     <div>
