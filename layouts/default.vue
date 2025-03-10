@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="w-full sticky top-0 z-10 bg-[var(--black-color)] mb-[130px] md:mb-[170px]">
+    <div class="w-full sticky top-0 z-10 bg-[var(--black-color)] mb-[130px] md:mb-[80px]">
       <nav>
       <ApplicationLogo/>
 
@@ -35,13 +35,9 @@ nav {
   transition: all 0.3s ease-in-out;
 }
 
-nav > ul {
-  display: none;
-}
-
 nav > ul > li {
   padding: 16px;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 600;
   color: var(--white-color);
   cursor: pointer;
@@ -57,13 +53,22 @@ footer {
   transition: all 0.3s ease-in-out;
 }
 
+nav > ul {
+  display: flex;
+  align-items: center;
+}
+
 @media screen and (min-width: 48rem) {
   nav {
     padding: 12px 22px;
   }
 
-  nav > ul {
-    display: none;
+  nav > ul > li {
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--white-color);
+    cursor: pointer;
   }
 
   footer {

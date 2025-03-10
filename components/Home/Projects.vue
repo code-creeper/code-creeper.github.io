@@ -6,15 +6,9 @@
 
       <p class="responsive text-[var(--primary-color)] cursor-pointer">Explore more <span class="text-2xl font-medium">→</span></p>
     </div>
-    <div>
       <HomeProjectsCard />
-    </div>
-    <div class="md:-translate-y-[50%]">
+      <HomeProjectsCard class="md:-translate-y-[50%]"/>
       <HomeProjectsCard />
-    </div>
-    <div>
-      <HomeProjectsCard />
-    </div>
   </div>
 </template>
 <script setup lang="ts">

@@ -23,7 +23,7 @@
 
 <style scoped>
 .card{
-  border: 1px solid rgba(255, 255, 255, 0.16);
+  outline: 1px solid rgba(255, 255, 255, 0.16);
   background-color: var(--card-bg-color);
 }
 </style>
