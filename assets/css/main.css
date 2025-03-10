@@ -94,3 +94,13 @@ p.responsive {
     width: min(var(--page-max-width), 100% - (var(--page-padding) * 2));
     margin-inline: auto;
 }
+
+.heading-bl::before {
+    content: "";
+    width: 4px;
+    height: 40px;
+    background-color: var(--primary-color);
+    left: 0;
+    border-radius: 3px;
+    position: absolute;
+}
