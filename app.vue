@@ -2,13 +2,13 @@
 useHead({
   title: "Abdul Haseeb - Full-Stack Developer | Laravel & Vue.js Expert",
   meta: [
-    { name: "description", content: "I'm Abdul Haseeb, a full-stack developer specializing in Laravel, Vue.js, and modern web technologies. Let's build something amazing together!" },
+    { name: "description", content: "I'm Abdul Haseeb, a full-stack developer specializing in Laravel, Vue.js, DevOps and modern web technologies. Let's build something amazing together!" },
 
     // Open Graph (Facebook, LinkedIn)
     { property: "og:title", content: "Abdul Haseeb - Full-Stack Developer" },
-    { property: "og:description", content: "Laravel, Vue.js, and Tailwind enthusiast. Crafting scalable, high-performance web applications." },
+    { property: "og:description", content: "Laravel, Vue.js, and DevOps. Crafting scalable, high-performance web applications." },
     { property: "og:image", content: "/portfolio-preview.png" },
-    { property: "og:url", content: "https://yourportfolio.com" },
+    { property: "og:url", content: "https://zrinasoft.com" },
     { property: "og:type", content: "website" },
 
     // Twitter Card
@@ -22,7 +22,7 @@ useHead({
     { name: "robots", content: "index, follow" },
   ],
   link: [
-    { rel: "canonical", href: "https://yourportfolio.com" },
+    { rel: "canonical", href: "https://zrinasoft.com" },
   ],
   script: [
     {
@@ -31,7 +31,7 @@ useHead({
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Abdul Haseeb",
-        "url": "https://yourportfolio.com",
+        "url": "https://zrinasoft.com",
         "sameAs": [
           "https://github.com/code-creeper",
           "https://www.linkedin.com/in/codecreeper/",
@@ -42,7 +42,7 @@ useHead({
           "@type": "Organization",
           "name": "Freelance / Open to Work"
         },
-        "knowsAbout": ["Laravel", "Vue.js", "Tailwind CSS", "Docker", "AWS"],
+        "knowsAbout": ["Laravel", "Vue.js", "React.js", "Typescript", "Inertia.js", "Tailwind CSS", "Docker", "AWS"],
       }),
     },
   ],
