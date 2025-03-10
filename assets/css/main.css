@@ -23,19 +23,7 @@ body {
     color: var(--text-color);
 }
 
-@media screen and (min-width: 48rem) {
-    p {
-        font-size: 1rem;
-    }
 
-    h2.fs-large {
-        font-size: 2.25rem;
-    }
-
-    h2 {
-        font-size: 3rem;
-    }
-}
 
 h1 {
     font-size: calc(5rem + ((1vw - 7.68px) * 5.555555555555555));
@@ -49,7 +37,7 @@ h2 {
 
 
 h2.fs-large {
-    font-size: 3.75rem;
+    font-size: 2.75rem;
 }
 
 
@@ -78,6 +66,19 @@ p {
 
 }
 
+@media screen and (min-width: 48rem) {
+    p {
+        font-size: 1rem;
+    }
+
+    h2.fs-large {
+        font-size: 3.25rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+}
 
 p.static {
     font-size: 1rem !important;
