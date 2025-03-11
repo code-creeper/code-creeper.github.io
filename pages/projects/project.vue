@@ -80,14 +80,14 @@ import User from "~/components/Icons/User.vue";
 
     </div>
 
-    <div class="col-span-3 ">
-      <h3 class="text-white font-bold">Table of Contents</h3>
+    <div class="col-span-3 mt-5">
 
-      <h4 class="font-bold text-white sticky top-[200px] flex flex-col space-y-6">
+      <div class="sticky top-[120px] flex flex-col gap-2">
+        <h4 class="text-white font-bold mb-2">Table of Contents</h4>
         <a href="#overview">Overview</a>
         <a href="#project-goals">Project Goals</a>
         <a href="#features">Features</a>
-      </h4>
+      </div>
 
     </div>
   </div>
@@ -95,6 +95,15 @@ import User from "~/components/Icons/User.vue";
 </template>
 
 <style scoped>
+a{
+  font-size: 15px;
+  transition: color 0.2s;
+
+  &:hover{
+    color: white;
+  }
+}
+
 .heading {
   padding-left: 16px;
   padding-bottom: 6px;
