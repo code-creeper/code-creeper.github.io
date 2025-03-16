@@ -1,6 +1,6 @@
 <template>
   <div class="page text-center flex flex-col items-center">
-    <h2 class="font-bold text-[var(--white-color)] rotate-[355deg]">Stay In Touch.</h2>
+    <h2 class="font-bold text-[var(--white-color)]">Stay In Touch.</h2>
     <p class="mt-8">
       I'm currently specializing in <span class="text-[var(--primary-color)]">DevOps</span>.
       <br>
