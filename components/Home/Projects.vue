@@ -7,9 +7,9 @@
       <p class="responsive text-[var(--primary-color)] cursor-pointer">Explore more <span
           class="text-2xl font-medium">→</span></p>
     </div>
-    <HomeProjectsCard/>
-    <HomeProjectsCard class="md:-translate-y-[50%]"/>
-    <HomeProjectsCard/>
+    <HomeProjectCard/>
+    <HomeProjectCard class="md:-translate-y-[50%]"/>
+    <HomeProjectCard/>
   </div>
 </template>
 <script setup lang="ts">

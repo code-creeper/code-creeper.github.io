@@ -5,7 +5,9 @@
     <div class="px-4 py-2 space-y-2">
       <div class="flex justify-between items-center gap-2 text-white">
         <h4 class="fs-large">creative@home</h4>
-        <ExitPage />
+        <NuxtLink href="/projects/project">
+          <ExitPage />
+        </NuxtLink>
       </div>
 
       <hr class="w-full border-white/30">

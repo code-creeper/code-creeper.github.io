@@ -12,12 +12,12 @@
     <hr class="w-full border border-white/20 my-10" />
 
     <div class="grid md:grid-cols-2 gap-6">
-      <HomeProjectsCard />
-      <HomeProjectsCard />
-      <HomeProjectsCard />
-      <HomeProjectsCard />
-      <HomeProjectsCard />
-      <HomeProjectsCard />
+      <HomeProjectCard />
+      <HomeProjectCard />
+      <HomeProjectCard />
+      <HomeProjectCard />
+      <HomeProjectCard />
+      <HomeProjectCard />
     </div>
   </div>
 
