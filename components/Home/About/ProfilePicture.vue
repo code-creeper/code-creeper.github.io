@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container glow">
     <img src="~/assets/images/dp.jpeg" class="dp" alt="DP"/>
     <img src="~/assets/images/dots.svg" class="dots" alt="Dots"/>
   </div>
@@ -17,10 +17,6 @@
   border-radius: 50%;
   object-fit: cover;
   transition: filter 1s ease-in-out;
-}
-
-.container:hover .dp {
-  filter: grayscale(0%) drop-shadow(0px 0px 153px var(--primary-color));
 }
 
 .dots {

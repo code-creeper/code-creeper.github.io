@@ -1,3 +1,6 @@
+<script setup lang="ts">
+</script>
+
 <template>
   <div class="page">
     <div class="relative">
@@ -24,7 +27,7 @@
       </p>
     </div>
 
-    <LazySocialLinks/>
+    <LazySocialLinks v-if="!$config.public.upwork"/>
   </div>
 </template>
 

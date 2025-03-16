@@ -2,7 +2,7 @@
   <div class="space-y-28">
     <LazyHomeIntro/>
     <LazyHomeAbout/>
-    <LazyHomeProjects/>
-    <LazyHomeStayInTouch/>
+    <LazyHomeProjects data-aos="fade-up"/>
+    <LazyHomeStayInTouch data-aos="fade-up"/>
   </div>
 </template>

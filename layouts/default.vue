@@ -1,22 +1,24 @@
 <template>
   <div>
-    <div class="w-full sticky top-0 z-10 bg-[var(--black-color)] mb-[30px] md:mb-[50px]">
+    <div class="w-full sticky top-0 z-10 bg-[var(--black-color)] mb-[30px] md:mb-[120px]" data-aos="fade-down">
       <nav>
-      <ApplicationLogo/>
+        <ApplicationLogo/>
 
-      <ul>
-        <li>Home</li>
-        <li>Projects</li>
-        <li>Blogs</li>
-      </ul>
-    </nav>
+        <ul>
+          <li>Home</li>
+          <li>Projects</li>
+          <li>Blogs</li>
+        </ul>
+      </nav>
     </div>
     <slot/>
     <footer>
       <p>
         Designed and Developed by <span class="text-[var(--primary-color)]">Abdul Haseeb</span>.
         <br>
-        Built with <span class="text-[var(--primary-color)]">Nuxt.js.</span> Hosted on <span class="text-[var(--primary-color)]">AWS EC2</span> with <span class="text-[var(--primary-color)]">Docker</span>.
+        Built with <span class="text-[var(--primary-color)]">Nuxt.js.</span> Hosted on <span
+          class="text-[var(--primary-color)]">AWS EC2</span> with <span
+          class="text-[var(--primary-color)]">Docker</span>.
       </p>
     </footer>
   </div>

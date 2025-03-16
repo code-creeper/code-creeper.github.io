@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full grid rounded-[10px] overflow-hidden card">
+  <div class="w-full grid rounded-[10px] overflow-hidden card glow glow-md">
     <img src="@/assets/images/project-img.webp" alt="Project Image" />
 
     <div class="px-4 py-2 space-y-2">
