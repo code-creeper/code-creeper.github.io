@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full grid rounded-[10px] overflow-hidden card glow glow-md">
+  <div class="w-full grid rounded-[10px] overflow-hidden card glow glow-md resize">
     <img src="@/assets/images/project-img.webp" alt="Project Image" />
 
     <div class="px-4 py-2 space-y-2">
@@ -27,6 +27,14 @@
 .card{
   outline: 1px solid rgba(255, 255, 255, 0.16);
   background-color: var(--card-bg-color);
+}
+
+.resize {
+  transition: all 0.5s ease-in-out;
+}
+
+.resize:hover {
+  scale: 1.03;
 }
 </style>
 <script setup lang="ts">

@@ -5,8 +5,12 @@
         <ApplicationLogo/>
 
         <ul>
-          <li>Home</li>
-          <li>Projects</li>
+          <li>
+            <NuxtLink href="/">Home</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink href="/projects">Projects</NuxtLink>
+          </li>
           <li>Blogs</li>
         </ul>
       </nav>
