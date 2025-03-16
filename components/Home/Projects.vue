@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import Capitalclub from "~/assets/images/projects/capitalclub/main.png";
+</script>
+
 <template>
   <div class="page grid md:grid-cols-2 gap-8">
     <div class="h-32">
@@ -7,10 +11,13 @@
       <p class="responsive text-[var(--primary-color)] cursor-pointer">Explore more <span
           class="text-2xl font-medium">→</span></p>
     </div>
-    <HomeProjectCard/>
+    <HomeProjectCard
+        :image="Capitalclub"
+        title="Capitalclub"
+        description="Capital Club is a private ecosystem and Academy, It offers members access to exclusive courses, networking events, and a VIP marketplace with discounted products and services."
+        href="/projects/capitalclub"
+    />
     <HomeProjectCard class="md:-translate-y-[50%]"/>
     <HomeProjectCard/>
   </div>
 </template>
-<script setup lang="ts">
-</script>
