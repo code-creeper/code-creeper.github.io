@@ -20,7 +20,7 @@ const handleIntersect = (entries: IntersectionObserverEntry[]) => {
 onMounted(() => {
   const options = {
     rootMargin: "0px",
-    threshold: 0.1,
+    threshold: 0.3,
   };
   observer.value = new IntersectionObserver(handleIntersect, options);
   const sections = document.querySelectorAll<HTMLElement>('section[id]');
