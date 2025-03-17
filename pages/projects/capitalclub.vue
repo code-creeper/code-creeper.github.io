@@ -156,23 +156,25 @@ onBeforeUnmount(() => {
             <ul>
               <li>
                 <a href="#feature-notes-with-lesson"
-                     :class="{'text-white': activeSections.includes('feature-notes-with-lesson')}">
+                   :class="{'text-white': activeSections.includes('feature-notes-with-lesson')}">
                   Notes with Lesson
                 </a>
               </li>
               <li>
-                <a href="#feature-favourite-lesson-and-notes" :class="{'text-white': activeSections.includes('feature-favourite-lesson-and-notes')}">
+                <a href="#feature-favourite-lesson-and-notes"
+                   :class="{'text-white': activeSections.includes('feature-favourite-lesson-and-notes')}">
                   Favourite Lesson & Notes
                 </a>
               </li>
               <li>
                 <a href="#feature-profile-management"
-                     :class="{'text-white': activeSections.includes('feature-profile-management')}">
+                   :class="{'text-white': activeSections.includes('feature-profile-management')}">
                   Profile Management
                 </a>
               </li>
               <li>
-                <a href="#feature-discord-integration" :class="{'text-white': activeSections.includes('feature-discord-integration')}">
+                <a href="#feature-discord-integration"
+                   :class="{'text-white': activeSections.includes('feature-discord-integration')}">
                   Discord Integration
                 </a>
               </li>
