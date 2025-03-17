@@ -4,6 +4,7 @@ import Tabootv from "~/assets/images/projects/tabootv/main.png";
 import StirlingCooper from "assets/images/projects/stirling_cooper/main.png";
 import Andalus from "assets/images/projects/andalus/main.png";
 import Warroom from "assets/images/projects/warroom/main.png";
+import Ezelogs from "assets/images/projects/ezelogs/main.png";
 </script>
 
 <template>
@@ -47,8 +48,12 @@ import Warroom from "assets/images/projects/warroom/main.png";
         description="Warroom is open communication platform for quick and easy communication between team members and individual while sharing links, emojis, stikers, voice notes and files."
         to="/projects/warroom"
       />
-      <HomeProjectCard/>
-      <HomeProjectCard/>
+      <HomeProjectCard
+        :image="Ezelogs"
+        title="Ezelogs"
+        description="Ezelogs is a comprehensive project management software designed to enhance efficiency in construction projects."
+        to="/projects/ezelogs"
+      />
     </div>
   </div>
 
