@@ -11,7 +11,6 @@
           <li>
             <NuxtLink to="/projects">Projects</NuxtLink>
           </li>
-          <li>Blogs</li>
         </ul>
       </nav>
     </div>
