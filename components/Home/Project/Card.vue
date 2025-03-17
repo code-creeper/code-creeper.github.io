@@ -7,13 +7,13 @@ withDefaults(
       image?: string;
       title?: string;
       description?: string;
-      href?: string;
+      to?: string;
     }>(),
     {
       image: Placeholder,
       title: 'Project Title',
       description: 'This is the dummy description for the project.',
-      href: '/projects/project',
+      to: '/projects/project',
     }
 );
 
@@ -25,7 +25,7 @@ withDefaults(
     <div class="px-4 py-2 space-y-2">
       <div class="flex justify-between items-center gap-2 text-white">
         <h4 class="fs-large">{{title}}</h4>
-        <NuxtLink :href>
+        <NuxtLink :to>
           <ExitPage />
         </NuxtLink>
       </div>

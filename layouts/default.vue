@@ -6,10 +6,10 @@
 
         <ul>
           <li>
-            <NuxtLink href="/">Home</NuxtLink>
+            <NuxtLink to="/">Home</NuxtLink>
           </li>
           <li>
-            <NuxtLink href="/projects">Projects</NuxtLink>
+            <NuxtLink to="/projects">Projects</NuxtLink>
           </li>
           <li>Blogs</li>
         </ul>
