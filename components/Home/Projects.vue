@@ -2,6 +2,7 @@
 import Capitalclub from "~/assets/images/projects/capitalclub/main.png";
 import Tabootv from "~/assets/images/projects/tabootv/main.png";
 import StirlingCooper from "assets/images/projects/stirling_cooper/main.png";
+import Andalus from "assets/images/projects/andalus/main.png";
 </script>
 
 <template>
@@ -26,10 +27,10 @@ import StirlingCooper from "assets/images/projects/stirling_cooper/main.png";
         to="/projects/tabootv"
         class="md:-translate-y-[50%]"/>
     <HomeProjectCard
-        :image="StirlingCooper"
-        title="Stirling Cooper"
-        description="Striling Cooper is a high-end brand that offers a wide range of products and tutorials on bedroom performance."
-        to="/projects/stirling_cooper"
+        :image="Andalus"
+        title="Andalus"
+        description="Andalus Institute is an online platform dedicated to teaching Arabic, offering structured learning with real-time support, live speaking sessions, and a supportive community."
+        to="/projects/andalus"
     />
   </div>
 </template>

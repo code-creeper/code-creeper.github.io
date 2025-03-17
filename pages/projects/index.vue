@@ -2,6 +2,7 @@
 import Capitalclub from "~/assets/images/projects/capitalclub/main.png";
 import Tabootv from "~/assets/images/projects/tabootv/main.png";
 import StirlingCooper from "assets/images/projects/stirling_cooper/main.png";
+import Andalus from "assets/images/projects/andalus/main.png";
 </script>
 
 <template>
@@ -33,7 +34,12 @@ import StirlingCooper from "assets/images/projects/stirling_cooper/main.png";
         description="Striling Cooper is a high-end brand that offers a wide range of products and tutorials on bedroom performance."
         to="/projects/stirling_cooper"
     />
-      <HomeProjectCard/>
+      <HomeProjectCard
+        :image="Andalus"
+        title="Andalus"
+        description="Andalus Institute is an online platform dedicated to teaching Arabic, offering structured learning with real-time support, live speaking sessions, and a supportive community."
+        to="/projects/andalus"
+    />
       <HomeProjectCard/>
       <HomeProjectCard/>
       <HomeProjectCard/>

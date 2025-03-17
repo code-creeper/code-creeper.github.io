@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="w-full sticky top-0 z-10 bg-[var(--black-color)] mb-[30px] md:mb-[120px]" data-aos="fade-down">
+    <div class="w-full sticky top-0 z-10 bg-[var(--black-color)] mb-[30px] md:mb-[120px]">
       <nav>
         <ApplicationLogo/>
 
