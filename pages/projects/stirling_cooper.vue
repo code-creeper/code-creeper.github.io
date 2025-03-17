@@ -116,7 +116,7 @@ onBeforeUnmount(() => {
           <img src="@/assets/images/projects/stirling_cooper/leaderboard.png" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
         </section>
-        <section class="project-section" id="feature-live-chat">
+        <section class="project-section" id="feature-livechat">
           <h4 class="font-bold text-white">Live Chat</h4>
           <img src="@/assets/images/projects/stirling_cooper/chat.png" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
@@ -207,9 +207,9 @@ onBeforeUnmount(() => {
                 </a>
               </li>
               <li>
-                <a href="#feature-live-chat"
-                   :class="{'text-white': activeSections.includes('feature-live-chat')}">
-                  Live Chat
+                <a href="#feature-livechat"
+                   :class="{'text-white': activeSections.includes('feature-livechat')}">
+                  Livechat
                 </a>
               </li>
               <li>

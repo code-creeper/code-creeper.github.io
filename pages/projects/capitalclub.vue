@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import User from "~/components/Icons/User.vue";
-
 const observer = ref<IntersectionObserver | null>(null);
 const activeSections = ref<string[]>([]);
 
