@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Capitalclub from "~/assets/images/projects/capitalclub/main.png";
+import Tabootv from "~/assets/images/projects/tabootv/main.png";
 </script>
 
 <template>
@@ -17,7 +18,12 @@ import Capitalclub from "~/assets/images/projects/capitalclub/main.png";
         description="Capital Club is a private ecosystem and Academy, It offers members access to exclusive courses, networking events, and a VIP marketplace with discounted products and services."
         href="/projects/capitalclub"
     />
-    <HomeProjectCard class="md:-translate-y-[50%]"/>
+    <HomeProjectCard
+        :image="Tabootv"
+        title="Tabootv"
+        description="Taboo.TV is a private, content-driven platform created by a YouTuber to entertain their community while offering greater control and flexibility compared to YouTube."
+        href="/projects/tabootv"
+        class="md:-translate-y-[50%]"/>
     <HomeProjectCard/>
   </div>
 </template>

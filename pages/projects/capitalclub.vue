@@ -89,7 +89,7 @@ onBeforeUnmount(() => {
 
       </section>
       <section id="challenges">
-        <h3 class="heading heading-bl">Challanges</h3>
+        <h3 class="heading heading-bl">Challenges</h3>
         <p class="text-white/90">
           The project faced several significant challenges that required strategic solutions. Meeting an urgent deadline necessitated meticulous planning and efficient execution to deliver the project on time. Frequent design revisions demanded adaptability and close collaboration with the design team to ensure alignment with evolving requirements. Managing large file uploads to AWS S3 introduced complexities in file chunking and integration, requiring robust handling to maintain system performance. Ensuring cross-platform compatibility was essential to provide a consistent user experience across various devices and browsers, involving comprehensive testing and optimization. Implementing robust security measures was crucial to protect user data and maintain trust, addressing potential vulnerabilities proactively.
         </p>
