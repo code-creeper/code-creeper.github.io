@@ -3,6 +3,7 @@ import Capitalclub from "~/assets/images/projects/capitalclub/main.png";
 import Tabootv from "~/assets/images/projects/tabootv/main.png";
 import StirlingCooper from "assets/images/projects/stirling_cooper/main.png";
 import Andalus from "assets/images/projects/andalus/main.png";
+import Warroom from "assets/images/projects/warroom/main.png";
 </script>
 
 <template>
@@ -40,7 +41,12 @@ import Andalus from "assets/images/projects/andalus/main.png";
         description="Andalus Institute is an online platform dedicated to teaching Arabic, offering structured learning with real-time support, live speaking sessions, and a supportive community."
         to="/projects/andalus"
     />
-      <HomeProjectCard/>
+      <HomeProjectCard
+        :image="Warroom"
+        title="Warroom"
+        description="Warroom is open communication platform for quick and easy communication between team members and individual while sharing links, emojis, stikers, voice notes and files."
+        to="/projects/warroom"
+      />
       <HomeProjectCard/>
       <HomeProjectCard/>
     </div>
