@@ -38,7 +38,7 @@ const parallaxAnimation = () => {
 
 onMounted(() => {
   window.addEventListener('scroll', parallaxAnimation);
-  parallaxAnimation(); // Run once on mount in case cards are already visible
+  parallaxAnimation();
 });
 
 onBeforeUnmount(() => {
