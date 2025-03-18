@@ -12,17 +12,18 @@ withDefaults(
 </script>
 
 <template>
-  <NuxtLink class="upwork-review-card" target="_blank" href="https://www.upwork.com/freelancers/abdulh143?mp_source=share">
+  <NuxtLink class="upwork-review-card" target="_blank"
+            href="https://www.upwork.com/freelancers/abdulh143?mp_source=share">
     <h4 class="review">
-      "{{review}}"
+      "{{ review }}"
     </h4>
 
-    <div class="mt-12 flex items-end justify-between">
+    <div class="mt-8 md:mt-12 flex items-end justify-between">
       <div class="flex items-center gap-3">
-        <img class="size-[84px]" src="@/assets/images/upwork.png" alt="Upwork">
+        <img class="size-[64px] md:size-[84px]" src="@/assets/images/upwork.png" alt="Upwork">
 
         <div>
-          <p class="client-name">{{clientName}}</p>
+          <p class="client-name">{{ clientName }}</p>
           <div class="flex">
             <LazyIconsStar/>
             <LazyIconsStar/>
@@ -33,7 +34,7 @@ withDefaults(
         </div>
       </div>
 
-      <img class="h-11" src="@/assets/images/upwork-logo.png" alt="Upwork">
+      <img class="h-8 md:h-11" src="@/assets/images/upwork-logo.png" alt="Upwork">
     </div>
   </NuxtLink>
 </template>
@@ -64,5 +65,24 @@ withDefaults(
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 700;
+}
+
+@media screen and (max-width: 48rem) {
+  .upwork-review-card {
+    padding: 30px 35px;
+  }
+
+  .review {
+    font-family: "BIZ UDPMincho", serif;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: 500;
+  }
+
+  .client-name {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+  }
 }
 </style>
