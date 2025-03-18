@@ -12,7 +12,7 @@ withDefaults(
 </script>
 
 <template>
-  <div class="upwork-review-card">
+  <NuxtLink class="upwork-review-card" target="_blank" href="https://www.upwork.com/freelancers/abdulh143?mp_source=share" to="#">
     <h4 class="review">
       "{{review}}"
     </h4>
@@ -35,7 +35,7 @@ withDefaults(
 
       <img class="h-11" src="@/assets/images/upwork-logo.png" alt="Upwork">
     </div>
-  </div>
+  </NuxtLink>
 </template>
 
 <style scoped>

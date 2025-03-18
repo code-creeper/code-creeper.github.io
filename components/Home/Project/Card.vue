@@ -20,21 +20,19 @@ withDefaults(
 </script>
 
 <template>
-  <div class="w-full grid rounded-[10px] overflow-hidden card glow glow-md resize">
+  <NuxtLink :to class="w-full grid rounded-[10px] overflow-hidden card glow glow-md resize">
     <img :src="image" alt="Project Image" />
     <div class="px-4 py-2 space-y-2">
       <div class="flex justify-between items-center gap-2 text-white">
         <h4 class="fs-large">{{title}}</h4>
-        <NuxtLink :to>
           <ExitPage />
-        </NuxtLink>
       </div>
 
       <hr class="w-full border-white/30">
 
       <p class="text-[1rem]">{{description}} </p>
     </div>
-  </div>
+  </NuxtLink>
 </template>
 
 <style scoped>
