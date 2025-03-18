@@ -31,28 +31,28 @@ import Ezelogs from "assets/images/projects/ezelogs/main.png";
           to="/projects/tabootv"
       />
       <HomeProjectCard
-        :image="StirlingCooper"
-        title="Stirling Cooper"
-        description="Striling Cooper is a high-end brand that offers a wide range of products and tutorials on bedroom performance."
-        to="/projects/stirling_cooper"
-    />
-      <HomeProjectCard
-        :image="Andalus"
-        title="Andalus"
-        description="Andalus Institute is an online platform dedicated to teaching Arabic, offering structured learning with real-time support, live speaking sessions, and a supportive community."
-        to="/projects/andalus"
-    />
-      <HomeProjectCard
-        :image="Warroom"
-        title="Warroom"
-        description="Warroom is open communication platform for quick and easy communication between team members and individual while sharing links, emojis, stikers, voice notes and files."
-        to="/projects/warroom"
+          :image="Ezelogs"
+          title="Ezelogs"
+          description="Ezelogs is a comprehensive project management software designed to enhance efficiency in construction projects."
+          to="/projects/ezelogs"
       />
       <HomeProjectCard
-        :image="Ezelogs"
-        title="Ezelogs"
-        description="Ezelogs is a comprehensive project management software designed to enhance efficiency in construction projects."
-        to="/projects/ezelogs"
+          :image="Andalus"
+          title="Andalus"
+          description="Andalus Institute is an online platform dedicated to teaching Arabic, offering structured learning with real-time support, live speaking sessions, and a supportive community."
+          to="/projects/andalus"
+      />
+      <HomeProjectCard
+          :image="Warroom"
+          title="Warroom"
+          description="Warroom is open communication platform for quick and easy communication between team members and individual while sharing links, emojis, stikers, voice notes and files."
+          to="/projects/warroom"
+      />
+      <HomeProjectCard
+          :image="StirlingCooper"
+          title="Stirling Cooper"
+          description="Striling Cooper is a high-end brand that offers a wide range of products and tutorials on bedroom performance."
+          to="/projects/stirling_cooper"
       />
     </div>
   </div>
