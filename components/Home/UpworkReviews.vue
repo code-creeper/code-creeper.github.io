@@ -106,4 +106,11 @@ onBeforeUnmount(() => {
   background-image: radial-gradient(circle at -30% 25%, rgb(6, 96, 41) 0px, transparent 30%),
   radial-gradient(circle at 120% 72%, rgb(6, 96, 41) 0px, transparent 30%);
 }
+
+@media screen and (max-width: 48rem) {
+  .radialBackground {
+    background-image: radial-gradient(circle at -30% 20%, rgb(6, 96, 41) 0px, transparent 22%),
+    radial-gradient(circle at 120% 83%, rgb(6, 96, 41) 0px, transparent 22%);
+  }
+}
 </style>
