@@ -12,7 +12,7 @@
     <div class="mt-8 md:mt-10 transition-all duration-300 ease-in-out">
       <h3 class="font-semibold responsive max-w-[890px]">
         <span style="color: var(--white-color)">Software Engineer.</span>
-        A self-taught developer with an interest in Computer Science.
+        A self-taught developer with an interest in AI 🤖.
       </h3>
     </div>
 
