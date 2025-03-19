@@ -34,7 +34,7 @@ withDefaults(
         </div>
       </div>
 
-      <img class="h-8 md:h-11" src="@/assets/images/upwork-logo.png" alt="Upwork">
+      <img class="h-8 md:h-11 hidden sm:block" src="@/assets/images/upwork-logo.png" alt="Upwork">
     </div>
   </NuxtLink>
 </template>

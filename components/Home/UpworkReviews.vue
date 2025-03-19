@@ -48,7 +48,7 @@ onBeforeUnmount(() => {
 
 
 <template>
-  <div class="radialBackground">
+  <div class="radialBackground overflow-x-hidden">
     <div class="page text-center">
       <h2 class="heading">My clients simply love <span class="text-[var(--primary-color)]">what I do</span></h2>
       <h4 class="line max-w-4xl mx-auto">Proud to serve as the innovation partner for industry leaders who
