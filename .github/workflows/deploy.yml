@@ -22,7 +22,6 @@ jobs:
           ssh -i ~/.ssh/id_rsa ${{ secrets.EC2_USERNAME }}@${{ secrets.EC2_HOST }} << 'EOF'
             cd ~/portfolio
             git pull origin master
-            docker exec -it portfolio_node_container npm install && npm run build && npm run generate
-            sleep 10
+            docker exec -it portfolio_node_container sh -c "npm install && npm run build && npm run generate"
             docker restart portfolio_node_container
           EOF
