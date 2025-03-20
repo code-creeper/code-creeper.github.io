@@ -6,7 +6,7 @@
     <div class="relative">
       <img src="~/assets/images/dots.svg" class="dots" alt="Dots"/>
       <h3 class="text-[var(--primary-color)] responsive font-bold relative">Hey there!, I'm-</h3>
-      <h1 class="text-[var(--white-color)] relative">Abdul Haseeb Khan.</h1>
+      <h1 class="text-[var(--white-color)] relative">Abdul Haseeb.</h1>
     </div>
 
     <div class="mt-8 md:mt-10 transition-all duration-300 ease-in-out">
