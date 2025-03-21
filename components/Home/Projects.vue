@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import Capitalclub from "~/assets/images/projects/capitalclub/main.png";
-import Tabootv from "~/assets/images/projects/tabootv/main.png";
-import StirlingCooper from "assets/images/projects/stirling_cooper/main.png";
-import Andalus from "assets/images/projects/andalus/main.png";
+import Capitalclub from "~/assets/images/projects/capitalclub/main.webp";
+import Tabootv from "~/assets/images/projects/tabootv/main.webp";
+import StirlingCooper from "assets/images/projects/stirling_cooper/main.webp";
+import Andalus from "assets/images/projects/andalus/main.webp";
 </script>
 
 <template>

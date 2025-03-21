@@ -36,7 +36,7 @@ onBeforeUnmount(() => {
 
 <template>
   <div class="page">
-    <img src="@/assets/images/projects/capitalclub/main.png" alt="Project Image" class="w-full rounded-xl"/>
+    <img src="@/assets/images/projects/capitalclub/main.webp" alt="Project Image" class="w-full rounded-xl"/>
     <h2 class="fs-large text-white font-bold mt-3">Capitalclub</h2>
     <p class="text-white/80">
       Capital Club is a private ecosystem and Academy, It offers members access to exclusive courses, networking events,
@@ -55,7 +55,7 @@ onBeforeUnmount(() => {
           including access to early-stage companies. It is mainly focused on entrepreneurs, investors, and business
           owners to get benefit from its academy and lectures .
         </p>
-        <img src="@/assets/images/projects/capitalclub/academy.png" alt="project screenshot"
+        <img src="@/assets/images/projects/capitalclub/academy.webp" alt="project screenshot"
              class="w-full rounded-xl px-5"/>
       </section>
       <section class="project-section" id="project-goals">
@@ -82,22 +82,22 @@ onBeforeUnmount(() => {
 
         <section class="project-section" id="feature-notes-with-lesson">
           <h4 class="font-bold text-white">Side notes with lesson</h4>
-          <img src="@/assets/images/projects/capitalclub/lesson-notes.png" alt="project screenshot"
+          <img src="@/assets/images/projects/capitalclub/lesson-notes.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
         </section>
         <section class="project-section" id="feature-favourite-lesson-and-notes">
           <h4 class="font-bold text-white">Favourite lessons & notes</h4>
-          <img src="@/assets/images/projects/capitalclub/favourite.png" alt="project screenshot"
+          <img src="@/assets/images/projects/capitalclub/favourite.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
         </section>
         <section class="project-section" id="feature-profile-management">
           <h4 class="font-bold text-white">Profile Management</h4>
-          <img src="@/assets/images/projects/capitalclub/profile.png" alt="project screenshot"
+          <img src="@/assets/images/projects/capitalclub/profile.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
         </section>
         <section class="project-section" id="feature-discord-integration">
           <h4 class="font-bold text-white">Discord Integration</h4>
-          <img src="@/assets/images/projects/capitalclub/discord.png" alt="project screenshot"
+          <img src="@/assets/images/projects/capitalclub/discord.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
         </section>
       </section>
@@ -117,7 +117,7 @@ onBeforeUnmount(() => {
           pivotal in delivering a robust, user-friendly web application that met both user expectations and business
           objectives.
         </p>
-        <img src="@/assets/images/projects/capitalclub/logo.png" alt="project screenshot"
+        <img src="@/assets/images/projects/capitalclub/logo.webp" alt="project screenshot"
              class="w-full rounded-xl px-5"/>
       </section>
     </div>

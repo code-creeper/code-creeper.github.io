@@ -38,7 +38,7 @@ onBeforeUnmount(() => {
 
 <template>
   <div class="page">
-    <img src="@/assets/images/projects/tabootv/main.png" alt="Project Image" class="w-full rounded-xl"/>
+    <img src="@/assets/images/projects/tabootv/main.webp" alt="Project Image" class="w-full rounded-xl"/>
     <h2 class="fs-large text-white font-bold mt-3">Tabootv</h2>
     <p class="text-white/80">
       Taboo.TV is a private, content-driven platform created by a YouTuber to entertain their community while offering
@@ -57,7 +57,7 @@ onBeforeUnmount(() => {
           cultural experiences worldwide. Users can engage with the community through live chats, comments, and
           reactions. Access requires creating an account and subscribing to monthly, yearly, or lifetime plans.
         </p>
-        <img src="@/assets/images/projects/tabootv/home.png" alt="project screenshot" class="w-full rounded-xl px-5"/>
+        <img src="@/assets/images/projects/tabootv/home.webp" alt="project screenshot" class="w-full rounded-xl px-5"/>
       </section>
       <section class="project-section" id="project-goals">
         <h3 class="project-heading heading-bl">Project Goals</h3>
@@ -84,31 +84,31 @@ onBeforeUnmount(() => {
 
         <section class="project-section" id="feature-series">
           <h4 class="font-bold text-white">Series</h4>
-          <img src="@/assets/images/projects/tabootv/series.png" alt="project screenshot"
+          <img src="@/assets/images/projects/tabootv/series.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
         </section>
 
         <section class="project-section" id="feature-shorts">
           <h4 class="font-bold text-white">Shorts</h4>
-          <img src="@/assets/images/projects/tabootv/shorts.png" alt="project screenshot"
+          <img src="@/assets/images/projects/tabootv/shorts.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
         </section>
 
         <section class="project-section" id="feature-comment-reply-reaction">
           <h4 class="font-bold text-white">Comment, Reply & Reactions</h4>
-          <img src="@/assets/images/projects/tabootv/comments.png" alt="project screenshot"
+          <img src="@/assets/images/projects/tabootv/comments.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
         </section>
 
         <section class="project-section" id="feature-community">
           <h4 class="font-bold text-white">Community</h4>
-          <img src="@/assets/images/projects/tabootv/community.png" alt="project screenshot"
+          <img src="@/assets/images/projects/tabootv/community.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
         </section>
 
         <section class="project-section" id="feature-live-chat">
           <h4 class="font-bold text-white">Live Chat</h4>
-          <img src="@/assets/images/projects/tabootv/live-chat.png" alt="project screenshot"
+          <img src="@/assets/images/projects/tabootv/live-chat.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
         </section>
       </section>
@@ -128,7 +128,7 @@ onBeforeUnmount(() => {
           Implementing a continuous delivery pipeline allowed us to automate testing and deployment, resulting in
           faster, more reliable releases without compromising quality.
         </p>
-        <img src="@/assets/images/projects/tabootv/features.png" alt="project screenshot"
+        <img src="@/assets/images/projects/tabootv/features.webp" alt="project screenshot"
              class="w-full rounded-xl px-5"/>
       </section>
     </div>

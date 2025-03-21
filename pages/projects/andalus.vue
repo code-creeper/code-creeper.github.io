@@ -38,7 +38,7 @@ onBeforeUnmount(() => {
 
 <template>
   <div class="page">
-    <img src="@/assets/images/projects/andalus/main.png" alt="Project Image" class="w-full rounded-xl"/>
+    <img src="@/assets/images/projects/andalus/main.webp" alt="Project Image" class="w-full rounded-xl"/>
     <h2 class="fs-large text-white font-bold mt-3">Andalus</h2>
     <p class="text-white/80">
       Andalus Institute is an online platform dedicated to teaching Arabic, offering structured learning with real-time
@@ -59,7 +59,7 @@ onBeforeUnmount(() => {
           as the AI Chatbot and "My Ustadh," which offer 24/7 support by correcting and guiding Arabic usage in
           real-time.
         </p>
-        <img src="@/assets/images/projects/andalus/login.png" alt="project screenshot" class="w-full rounded-xl px-5"/>
+        <img src="@/assets/images/projects/andalus/login.webp" alt="project screenshot" class="w-full rounded-xl px-5"/>
       </section>
       <section class="project-section" id="project-goals">
         <h3 class="project-heading heading-bl">Project Goals</h3>
@@ -88,48 +88,48 @@ onBeforeUnmount(() => {
 
         <section class="project-section" id="feature-classroom">
           <h4 class="font-bold text-white">Classroom</h4>
-          <img src="@/assets/images/projects/andalus/classroom.png" alt="project screenshot"
+          <img src="@/assets/images/projects/andalus/classroom.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
-          <img src="@/assets/images/projects/andalus/class_preview.png" alt="project screenshot"
+          <img src="@/assets/images/projects/andalus/class_preview.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
-          <img src="@/assets/images/projects/andalus/class_lesson.png" alt="project screenshot"
+          <img src="@/assets/images/projects/andalus/class_lesson.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
         </section>
         <section class="project-section" id="feature-community">
           <h4 class="font-bold text-white">Community</h4>
-          <img src="@/assets/images/projects/andalus/community.png" alt="project screenshot"
+          <img src="@/assets/images/projects/andalus/community.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
         </section>
         <section class="project-section" id="feature-chatbot">
           <h4 class="font-bold text-white">Chatbot</h4>
-          <img src="@/assets/images/projects/andalus/chatbot.png" alt="project screenshot"
+          <img src="@/assets/images/projects/andalus/chatbot.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
         </section>
         <section class="project-section" id="feature-livechat">
           <h4 class="font-bold text-white">Livechat</h4>
-          <img src="@/assets/images/projects/andalus/livechat.png" alt="project screenshot"
+          <img src="@/assets/images/projects/andalus/livechat.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
         </section>
         <section class="project-section" id="feature-calendar">
           <h4 class="font-bold text-white">Calendar</h4>
-          <img src="@/assets/images/projects/andalus/calender.png" alt="project screenshot"
+          <img src="@/assets/images/projects/andalus/calender.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
         </section>
         <section class="project-section" id="feature-leaderboard">
           <h4 class="font-bold text-white">Leaderboard</h4>
-          <img src="@/assets/images/projects/andalus/leaderboard.png" alt="project screenshot"
+          <img src="@/assets/images/projects/andalus/leaderboard.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
         </section>
         <section class="project-section" id="feature-profile-management">
           <h4 class="font-bold text-white">Profile Management</h4>
-          <img src="@/assets/images/projects/andalus/profile.png" alt="project screenshot"
+          <img src="@/assets/images/projects/andalus/profile.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
         </section>
         <section class="project-section" id="feature-admin-portal">
           <h4 class="font-bold text-white">Admin Portal</h4>
-          <img src="@/assets/images/projects/andalus/admin_dashboard.png" alt="project screenshot"
+          <img src="@/assets/images/projects/andalus/admin_dashboard.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
-          <img src="@/assets/images/projects/andalus/admin_students.png" alt="project screenshot"
+          <img src="@/assets/images/projects/andalus/admin_students.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
         </section>
       </section>
@@ -150,7 +150,7 @@ onBeforeUnmount(() => {
           To cater to diverse learning styles and paces, an adaptive learning framework was established, ensuring
           personalized educational experiences for each student.
         </p>
-        <img src="@/assets/images/projects/andalus/footer.png" alt="project screenshot" class="w-full rounded-xl px-5"/>
+        <img src="@/assets/images/projects/andalus/footer.webp" alt="project screenshot" class="w-full rounded-xl px-5"/>
       </section>
     </div>
 

@@ -38,7 +38,7 @@ onBeforeUnmount(() => {
 
 <template>
   <div class="page">
-    <img src="@/assets/images/projects/stirling_cooper/main.png" alt="Project Image" class="w-full rounded-xl"/>
+    <img src="@/assets/images/projects/stirling_cooper/main.webp" alt="Project Image" class="w-full rounded-xl"/>
     <h2 class="fs-large text-white font-bold mt-3">Stirling Cooper</h2>
     <p class="text-white/80">
       Striling Cooper is a high-end brand that offers a wide range of products and tutorials on bedroom performance.
@@ -58,7 +58,7 @@ onBeforeUnmount(() => {
           structured lesson unlocking mechanism. Users can also earn experience points by achieving milestones, such as
           completing lessons.
         </p>
-        <img src="@/assets/images/projects/stirling_cooper/payment.png" alt="project screenshot"
+        <img src="@/assets/images/projects/stirling_cooper/payment.webp" alt="project screenshot"
              class="w-full rounded-xl px-5"/>
       </section>
       <section class="project-section" id="project-goals">
@@ -84,48 +84,48 @@ onBeforeUnmount(() => {
 
         <section class="project-section" id="feature-academy">
           <h4 class="font-bold text-white">Academy</h4>
-          <img src="@/assets/images/projects/stirling_cooper/lesson.png" alt="project screenshot"
+          <img src="@/assets/images/projects/stirling_cooper/lesson.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
         </section>
         <section class="project-section" id="feature-streak">
           <h4 class="font-bold text-white">Streak</h4>
-          <img src="@/assets/images/projects/stirling_cooper/streak.png" alt="project screenshot"
+          <img src="@/assets/images/projects/stirling_cooper/streak.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
         </section>
         <section class="project-section" id="feature-rank-and-achievement">
           <h4 class="font-bold text-white">Rank & Achievement</h4>
-          <img src="@/assets/images/projects/stirling_cooper/rank.png" alt="project screenshot"
+          <img src="@/assets/images/projects/stirling_cooper/rank.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
         </section>
         <section class="project-section" id="feature-quiz">
           <h4 class="font-bold text-white">Quiz</h4>
-          <img src="@/assets/images/projects/stirling_cooper/quiz.png" alt="project screenshot"
+          <img src="@/assets/images/projects/stirling_cooper/quiz.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
-          <img src="@/assets/images/projects/stirling_cooper/success-quiz.png" alt="project screenshot"
+          <img src="@/assets/images/projects/stirling_cooper/success-quiz.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
-          <img src="@/assets/images/projects/stirling_cooper/success-quiz.png" alt="project screenshot"
+          <img src="@/assets/images/projects/stirling_cooper/success-quiz.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
         </section>
         <section class="project-section" id="feature-livestream-and-community">
           <h4 class="font-bold text-white">LiveStream & Community</h4>
-          <img src="@/assets/images/projects/stirling_cooper/community.png" alt="project screenshot"
+          <img src="@/assets/images/projects/stirling_cooper/community.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
         </section>
         <section class="project-section" id="feature-leaderboard">
           <h4 class="font-bold text-white">Leaderboard</h4>
-          <img src="@/assets/images/projects/stirling_cooper/leaderboard.png" alt="project screenshot"
+          <img src="@/assets/images/projects/stirling_cooper/leaderboard.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
         </section>
         <section class="project-section" id="feature-livechat">
           <h4 class="font-bold text-white">Live Chat</h4>
-          <img src="@/assets/images/projects/stirling_cooper/chat.png" alt="project screenshot"
+          <img src="@/assets/images/projects/stirling_cooper/chat.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
-          <img src="@/assets/images/projects/stirling_cooper/chat-reaction.png" alt="project screenshot"
+          <img src="@/assets/images/projects/stirling_cooper/chat-reaction.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
         </section>
         <section class="project-section" id="feature-purchase">
           <h4 class="font-bold text-white">Purchase</h4>
-          <img src="@/assets/images/projects/stirling_cooper/books.png" alt="project screenshot"
+          <img src="@/assets/images/projects/stirling_cooper/books.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
         </section>
         <section class="project-section" id="challenges">
@@ -147,7 +147,7 @@ onBeforeUnmount(() => {
             expansion,
             creating a dynamic and interactive learning experience for adults.
           </p>
-          <img src="@/assets/images/projects/stirling_cooper/setting.png" alt="project screenshot"
+          <img src="@/assets/images/projects/stirling_cooper/setting.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
         </section>
       </section>

@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import Capitalclub from "~/assets/images/projects/capitalclub/main.png";
-import Tabootv from "~/assets/images/projects/tabootv/main.png";
-import StirlingCooper from "assets/images/projects/stirling_cooper/main.png";
-import Andalus from "assets/images/projects/andalus/main.png";
-import Warroom from "assets/images/projects/warroom/main.png";
-import Ezelogs from "assets/images/projects/ezelogs/main.png";
+import Capitalclub from "~/assets/images/projects/capitalclub/main.webp";
+import Tabootv from "~/assets/images/projects/tabootv/main.webp";
+import StirlingCooper from "assets/images/projects/stirling_cooper/main.webp";
+import Andalus from "assets/images/projects/andalus/main.webp";
+import Warroom from "assets/images/projects/warroom/main.webp";
+import Ezelogs from "assets/images/projects/ezelogs/main.webp";
 </script>
 
 <template>

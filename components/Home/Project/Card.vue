@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import ExitPage from "~/components/Icons/ExitPage.vue";
-import Placeholder from "~/assets/images/projects/capitalclub/main.png"
+import Placeholder from "~/assets/images/projects/capitalclub/main.webp"
 
 withDefaults(
     defineProps<{

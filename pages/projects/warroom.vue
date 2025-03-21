@@ -36,7 +36,7 @@ onBeforeUnmount(() => {
 
 <template>
   <div class="page">
-    <img src="@/assets/images/projects/warroom/main.png" alt="Project Image" class="w-full rounded-xl"/>
+    <img src="@/assets/images/projects/warroom/main.webp" alt="Project Image" class="w-full rounded-xl"/>
     <h2 class="fs-large text-white font-bold mt-3">Warroom</h2>
     <p class="text-white/80">
       Warroom is open communication platform for quick and easy communication between team members and individual while
@@ -54,7 +54,7 @@ onBeforeUnmount(() => {
           members and individuals to exchange messages, share links, emojis, stickers, voice notes, and files
           effortlessly.
         </p>
-        <img src="@/assets/images/projects/warroom/home.png" alt="project screenshot" class="w-full rounded-xl px-5"/>
+        <img src="@/assets/images/projects/warroom/home.webp" alt="project screenshot" class="w-full rounded-xl px-5"/>
       </section>
       <section class="project-section" id="project-goals">
         <h3 class="project-heading heading-bl">Project Goals</h3>
@@ -81,37 +81,37 @@ onBeforeUnmount(() => {
 
         <section class="project-section" id="feature-reaction">
           <h4 class="font-bold text-white">Reaction</h4>
-          <img src="@/assets/images/projects/warroom/react.png" alt="project screenshot"
+          <img src="@/assets/images/projects/warroom/react.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
         </section>
         <section class="project-section" id="feature-sticker">
           <h4 class="font-bold text-white">Stickers</h4>
-          <img src="@/assets/images/projects/warroom/sticker.png" alt="project screenshot"
+          <img src="@/assets/images/projects/warroom/sticker.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
         </section>
         <section class="project-section" id="feature-reply">
           <h4 class="font-bold text-white">Reply</h4>
-          <img src="@/assets/images/projects/warroom/reply.png" alt="project screenshot"
+          <img src="@/assets/images/projects/warroom/reply.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
         </section>
         <section class="project-section" id="feature-links-with-preview">
           <h4 class="font-bold text-white">Sharing Links with Preview</h4>
-          <img src="@/assets/images/projects/warroom/link_preview.png" alt="project screenshot"
+          <img src="@/assets/images/projects/warroom/link_preview.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
         </section>
         <section class="project-section" id="feature-voice-notes">
           <h4 class="font-bold text-white">Voice Notes</h4>
-          <img src="@/assets/images/projects/warroom/voice.png" alt="project screenshot"
+          <img src="@/assets/images/projects/warroom/voice.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
         </section>
         <section class="project-section" id="feature-files-and-videos">
           <h4 class="font-bold text-white">Sharing Files & Videos</h4>
-          <img src="@/assets/images/projects/warroom/file_and_video.png" alt="project screenshot"
+          <img src="@/assets/images/projects/warroom/file_and_video.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
         </section>
         <section class="project-section" id="feature-admin-portal">
           <h4 class="font-bold text-white">Admin Portal</h4>
-          <img src="@/assets/images/projects/warroom/admin.png" alt="project screenshot"
+          <img src="@/assets/images/projects/warroom/admin.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
         </section>
       </section>

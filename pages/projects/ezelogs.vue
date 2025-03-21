@@ -38,7 +38,7 @@ onBeforeUnmount(() => {
 
 <template>
   <div class="page">
-    <img src="@/assets/images/projects/ezelogs/main.png" alt="Project Image" class="w-full rounded-xl"/>
+    <img src="@/assets/images/projects/ezelogs/main.webp" alt="Project Image" class="w-full rounded-xl"/>
     <h2 class="fs-large text-white font-bold mt-3">Ezelogs</h2>
     <p class="text-white/80">
       Ezelogs is a comprehensive project management software designed to enhance efficiency in construction projects.
@@ -58,7 +58,7 @@ onBeforeUnmount(() => {
           features like resource planning, safety and compliance reports, and effective communication management to
           streamline workflows and improve project outcomes.
         </p>
-        <img src="@/assets/images/projects/ezelogs/home.png" alt="project screenshot" class="w-full rounded-xl px-5"/>
+        <img src="@/assets/images/projects/ezelogs/home.webp" alt="project screenshot" class="w-full rounded-xl px-5"/>
       </section>
       <section class="project-section" id="project-goals">
         <h3 class="project-heading heading-bl">Project Goals</h3>
@@ -85,34 +85,34 @@ onBeforeUnmount(() => {
 
         <section class="project-section" id="feature-dashboard">
           <h4 class="font-bold text-white">Dashboard</h4>
-          <img src="@/assets/images/projects/ezelogs/dashboard.png" alt="project screenshot"
+          <img src="@/assets/images/projects/ezelogs/dashboard.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
         </section>
         <section class="project-section" id="feature-project-users">
           <h4 class="font-bold text-white">Project Users</h4>
-          <img src="@/assets/images/projects/ezelogs/project_users.png" alt="project screenshot"
+          <img src="@/assets/images/projects/ezelogs/project_users.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
         </section>
         <section class="project-section" id="feature-project-chat">
           <h4 class="font-bold text-white">Project Chat</h4>
-          <img src="@/assets/images/projects/ezelogs/project_chat.png" alt="project screenshot"
+          <img src="@/assets/images/projects/ezelogs/project_chat.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
         </section>
         <section class="project-section" id="feature-document-control">
           <h4 class="font-bold text-white">Document Control</h4>
-          <img src="@/assets/images/projects/ezelogs/document_control.png" alt="project screenshot"
+          <img src="@/assets/images/projects/ezelogs/document_control.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
         </section>
         <section class="project-section" id="feature-timesheet">
           <h4 class="font-bold text-white">Timesheet</h4>
-          <img src="@/assets/images/projects/ezelogs/time_sheet_report.png" alt="project screenshot"
+          <img src="@/assets/images/projects/ezelogs/time_sheet_report.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
-          <img src="@/assets/images/projects/ezelogs/time_sheet_list.png" alt="project screenshot"
+          <img src="@/assets/images/projects/ezelogs/time_sheet_list.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
         </section>
         <section class="project-section" id="feature-bid-management">
           <h4 class="font-bold text-white">Bid Management</h4>
-          <img src="@/assets/images/projects/ezelogs/bid_management.png" alt="project screenshot"
+          <img src="@/assets/images/projects/ezelogs/bid_management.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
         </section>
       </section>
@@ -131,7 +131,7 @@ onBeforeUnmount(() => {
           initiatives have been undertaken. A key focus is on delivering comprehensive training programs to facilitate
           user adoption and proficiency, thereby minimizing resistance to change.
         </p>
-        <img src="@/assets/images/projects/ezelogs/footer.png" alt="project screenshot" class="w-full rounded-xl px-5"/>
+        <img src="@/assets/images/projects/ezelogs/footer.webp" alt="project screenshot" class="w-full rounded-xl px-5"/>
       </section>
     </div>
 
