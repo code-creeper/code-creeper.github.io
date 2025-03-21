@@ -62,9 +62,7 @@ onBeforeUnmount(() => {
         <h3 class="project-heading heading-bl">Project Goals</h3>
         <p class="text-white/90">
           The primary goal of the Capital Club project was to develop a highly reactive, user-friendly, and professional
-          web application that fosters a global network of entrepreneurs. Capital Club now connects over 15,000 members
-          across 72 countries, offering access to exclusive courses, networking events, and a VIP marketplace with
-          discounted products and services.
+          web application that fosters a global network of entrepreneurs around 15,000 members.
         </p>
       </section>
       <section class="project-section" id="tech-stack">
@@ -107,28 +105,17 @@ onBeforeUnmount(() => {
         <h3 class="project-heading heading-bl">Challenges</h3>
         <p class="text-white/90">
           The project faced several significant challenges that required strategic solutions. Meeting an urgent deadline
-          necessitated meticulous planning and efficient execution to deliver the project on time. Frequent design
-          revisions demanded adaptability and close collaboration with the design team to ensure alignment with evolving
-          requirements. Managing large file uploads to AWS S3 introduced complexities in file chunking and integration,
-          requiring robust handling to maintain system performance. Ensuring cross-platform compatibility was essential
-          to provide a consistent user experience across various devices and browsers, involving comprehensive testing
-          and optimization. Implementing robust security measures was crucial to protect user data and maintain trust,
-          addressing potential vulnerabilities proactively.
+          and frequent design revisions demanded adaptability and close collaboration with the design team was little
+          bit challenging.
         </p>
       </section>
       <section class="project-section" id="initiatives">
         <h3 class="project-heading heading-bl">Initiatives</h3>
         <p class="text-white/90">
-          To overcome the challenges encountered during the project, the team implemented several strategic initiatives.
-          Adopting an agile methodology allowed for iterative development and rapid response to changing requirements,
-          enhancing flexibility and collaboration among team members. Implementing a continuous delivery pipeline
-          enabled automated testing and deployment, ensuring swift and reliable releases while maintaining high-quality
-          standards. Embracing a microservices architecture facilitated modular development, allowing individual
-          components to be developed, tested, and deployed independently, thereby improving scalability and
-          maintainability. Additionally, integrating DevOps practices fostered a culture of shared responsibility
-          between development and operations teams, streamlining processes and reducing deployment times. These combined
-          efforts were pivotal in delivering a robust, user-friendly, and professional web application that met both
-          user expectations and business objectives.
+          By adopting agile methodologies, implementing a continuous delivery pipeline, and embracing a microservices
+          architecture, we enhanced our team's flexibility, collaboration, and scalability. These strategies were
+          pivotal in delivering a robust, user-friendly web application that met both user expectations and business
+          objectives.
         </p>
         <img src="@/assets/images/projects/capitalclub/logo.png" alt="project screenshot"
              class="w-full rounded-xl px-5"/>

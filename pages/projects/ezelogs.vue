@@ -63,13 +63,9 @@ onBeforeUnmount(() => {
       <section class="project-section" id="project-goals">
         <h3 class="project-heading heading-bl">Project Goals</h3>
         <p class="text-white/90">
-          Ezelogs Construction Software aims to revolutionize the construction industry by providing a comprehensive,
-          user-friendly platform that streamlines project management processes. The primary goal is to enhance
-          efficiency and productivity across all phases of construction projects. Key objectives include offering
-          advanced tools for effective communication, resource planning, safety compliance, and performance monitoring.
-          By integrating features such as accounting and financial management, team collaboration, and real-time data
-          access across multiple platforms, Ezelogs seeks to empower construction professionals to manage projects more
-          effectively, reduce delays, and ensure successful project outcomes.
+          The primary goal was to enhance efficiency and productivity across all phases of construction projects. Key
+          objectives include offering advanced tools for effective communication, resource planning, safety compliance,
+          and performance monitoring.
         </p>
       </section>
       <section class="project-section" id="tech-stack">
@@ -123,15 +119,9 @@ onBeforeUnmount(() => {
       <section class="project-section" id="challenges">
         <h3 class="project-heading heading-bl">Challenges</h3>
         <p class="text-white/90">
-          Implementing Ezelogs Construction Software entails addressing several challenges to ensure its effective
-          integration into existing workflows. One primary challenge is the resistance to change commonly observed among
-          construction professionals accustomed to traditional project management methods. Overcoming this requires
-          comprehensive training and demonstrating the software's tangible benefits to encourage adoption. Another
-          significant challenge is ensuring seamless integration with existing systems and processes to prevent data
-          silos and maintain operational continuity. Additionally, managing the learning curve associated with new
-          technology necessitates ongoing support and resources to facilitate user proficiency. Addressing these
-          challenges is crucial for maximizing the software's potential to streamline project management and enhance
-          overall efficiency.
+          One of the primary challenge was the resistance to change commonly observed among construction professionals
+          accustomed to traditional project management methods. Overcoming this requires comprehensive training and
+          demonstrating the software's tangible benefits to encourage adoption.
         </p>
       </section>
       <section class="project-section" id="initiatives">
@@ -139,13 +129,7 @@ onBeforeUnmount(() => {
         <p class="text-white/90">
           To address the challenges inherent in implementing Ezelogs Construction Software, several strategic
           initiatives have been undertaken. A key focus is on delivering comprehensive training programs to facilitate
-          user adoption and proficiency, thereby minimizing resistance to change. The software is designed for seamless
-          integration with existing systems, ensuring operational continuity and preventing data silos. Recognizing the
-          importance of user support, Ezelogs offers ongoing assistance to help users navigate the learning curve
-          associated with new technology. Additionally, the platform emphasizes user-friendly interfaces and intuitive
-          design to enhance accessibility for construction professionals. These initiatives collectively aim to
-          streamline project management processes, improve efficiency, and promote the successful adoption of Ezelogs
-          within the construction industry.
+          user adoption and proficiency, thereby minimizing resistance to change.
         </p>
         <img src="@/assets/images/projects/ezelogs/footer.png" alt="project screenshot" class="w-full rounded-xl px-5"/>
       </section>

@@ -62,13 +62,9 @@ onBeforeUnmount(() => {
       <section class="project-section" id="project-goals">
         <h3 class="project-heading heading-bl">Project Goals</h3>
         <p class="text-white/90">
-          As a Full Stack PHP Laravel Developer, I contributed to the development of Taboo.tv, a video streaming
-          platform that offers raw and unfiltered content about travel and world cultures. My role encompassed designing
-          and implementing both the front-end and back-end components of the platform, ensuring a seamless user
-          experience and robust functionality. This involved integrating technologies such as React, Vue.js, JavaScript,
-          HTML, CSS, and Tailwind for the front-end, and leveraging Laravel for the back-end infrastructure.
-          Additionally, I utilized AWS services to enhance the platform's scalability and performance. My contributions
-          aimed to create an engaging and reliable platform for users to explore diverse cultural content.
+          I led the development of Taboo.tv, a platform offering unfiltered travel and cultural content, by integrating
+          React, Vue.js, JavaScript, HTML, CSS, and Tailwind on the front-end, and leveraging Laravel and AWS on the
+          back-end.
         </p>
       </section>
       <section class="project-section" id="tech-stack">
@@ -128,10 +124,9 @@ onBeforeUnmount(() => {
       <section class="project-section" id="initiatives">
         <h3 class="project-heading heading-bl">Initiatives</h3>
         <p class="text-white/90">
-          The team tackled project challenges by adopting key strategies. Using an agile approach allowed for continuous
-          development and quick adjustments to changing needs, improving teamwork and flexibility. A continuous delivery
-          pipeline ensured automated testing and deployment, leading to faster, more reliable releases without
-          compromising quality.
+          I led our team in adopting agile methodologies, which enhanced our collaboration and adaptability.
+          Implementing a continuous delivery pipeline allowed us to automate testing and deployment, resulting in
+          faster, more reliable releases without compromising quality.
         </p>
         <img src="@/assets/images/projects/tabootv/features.png" alt="project screenshot"
              class="w-full rounded-xl px-5"/>

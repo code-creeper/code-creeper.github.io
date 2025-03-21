@@ -61,11 +61,7 @@ onBeforeUnmount(() => {
         <p class="text-white/90">
           The goal of Warroom is to provide a seamless and efficient communication platform that enables both teams and
           individuals to collaborate effortlessly. It is designed to support real-time messaging with instant delivery
-          and synchronization across devices, ensuring smooth interactions. Warroom allows users to share various media
-          formats, including links, emojis, stickers, voice notes, and files, making conversations more engaging and
-          expressive. With a user-friendly interface, the platform prioritizes ease of use while maintaining a visually
-          appealing and intuitive design. Additionally, security and reliability are at the core of Warroom,
-          incorporating strong encryption and data protection measures to ensure user privacy and data integrity.
+          and synchronization across devices, ensuring smooth interactions.
         </p>
       </section>
       <section class="project-section" id="tech-stack">
@@ -123,12 +119,7 @@ onBeforeUnmount(() => {
         <h3 class="project-heading heading-bl">Challenges</h3>
         <p class="text-white/90">
           One of the primary challenges in developing Warroom is ensuring real-time, seamless communication without
-          latency issues, especially when handling large files, voice notes, and multimedia sharing. Maintaining a
-          balance between a feature-rich platform and a lightweight, responsive user experience is another critical
-          aspect. Security and data privacy also pose significant challenges, requiring robust encryption and compliance
-          with industry standards to protect user information. Additionally, ensuring cross-platform compatibility and
-          smooth synchronization across devices can be complex, demanding efficient backend infrastructure and
-          optimization.
+          latency issues, especially when handling large files, voice notes, and multimedia sharing.
         </p>
       </section>
       <section class="project-section" id="initiatives">
@@ -136,10 +127,7 @@ onBeforeUnmount(() => {
         <p class="text-white/90">
           To address these challenges, Warroom takes several key initiatives. The platform leverages advanced WebSocket
           technology for instant message delivery and real-time collaboration. Optimized media handling and compression
-          techniques are implemented to support high-speed file sharing without compromising quality. A user-centric
-          design approach ensures an intuitive and engaging interface, enhancing usability. Security is a top priority,
-          with end-to-end encryption and stringent data protection policies in place. Moreover, continuous performance
-          testing and iterative improvements help Warroom remain stable, reliable, and adaptable to evolving user needs.
+          techniques are implemented to support high-speed file sharing without compromising quality.
         </p>
         <img src="@/assets/images/projects/warroom/footer.jpg" alt="project screenshot" class="w-full rounded-xl px-5"/>
       </section>
