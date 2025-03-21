@@ -6,10 +6,14 @@
 
         <ul>
           <li>
-            <NuxtLink to="/">Home</NuxtLink>
+            <NuxtLink to="/">
+              Home
+            </NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/projects">Projects</NuxtLink>
+            <NuxtLink to="/projects">
+              Projects
+            </NuxtLink>
           </li>
         </ul>
       </nav>
@@ -46,6 +50,11 @@ nav > ul > li {
   font-weight: 600;
   color: var(--white-color);
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover{
+    background-color: rgba(46, 45, 45, 0.42);
+  }
 }
 
 footer {
