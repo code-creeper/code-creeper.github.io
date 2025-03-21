@@ -55,7 +55,7 @@ withDefaults(
 }
 
 .review {
-  font-family: "BIZ UDPMincho", serif;
+  font-family: "Poppins", serif;
   font-size: 1.875rem;
   line-height: 2.875rem;
   font-weight: 600;
