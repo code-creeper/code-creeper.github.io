@@ -7,7 +7,7 @@ useHead({
     // Open Graph (Facebook, LinkedIn)
     { property: "og:title", content: "Abdul Haseeb - Full-Stack Developer" },
     { property: "og:description", content: "Laravel, Vue.js, and DevOps. Crafting scalable, high-performance web applications." },
-    { property: "og:image", content: "/portfolio-preview.png" },
+    { property: "og:image", content: "/portfolio-preview.webp" },
     { property: "og:url", content: "https://zrinasoft.com" },
     { property: "og:type", content: "website" },
 
@@ -15,7 +15,7 @@ useHead({
     { name: "twitter:card", content: "summary_large_image" },
     { name: "twitter:title", content: "Abdul Haseeb - Full-Stack Developer" },
     { name: "twitter:description", content: "Passionate about Laravel, Vue.js, and creating seamless digital experiences." },
-    { name: "twitter:image", content: "/portfolio-preview.png" },
+    { name: "twitter:image", content: "/portfolio-preview.webp" },
 
     // Other important meta
     { name: "author", content: "Abdul Haseeb" },
