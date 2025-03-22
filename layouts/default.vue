@@ -45,14 +45,16 @@ nav {
 }
 
 nav > ul > li {
-  padding: 16px;
+  padding-inline: 16px;
+  padding-block: 6px;
   font-size: 12px;
   font-weight: 600;
   color: var(--white-color);
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  border-radius: 3px;
 
-  &:hover{
+  &:hover {
     background-color: rgba(46, 45, 45, 0.42);
   }
 }
@@ -78,11 +80,13 @@ nav > ul {
   }
 
   nav > ul > li {
-    padding: 16px;
+    padding-block: 6px;
+    padding-inline: 16px;
     font-size: 16px;
     font-weight: 600;
     color: var(--white-color);
     cursor: pointer;
+    border-radius: 3px;
   }
 
   footer {
