@@ -1,6 +1,6 @@
 <template>
   <div class="container glow">
-    <img src="~/assets/images/dp.jpeg" class="dp" alt="DP"/>
+    <img src="~/assets/images/dp.webp" class="dp" alt="DP"/>
     <img src="~/assets/images/dots.svg" class="dots" alt="Dots"/>
   </div>
 </template>
