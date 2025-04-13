@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     runtimeConfig: {
         public: {
             upwork: process.env.UPWORK,
+            upwork_profile_link: process.env.UPWORK_PROFILE_LINK,
         },
     }
 })

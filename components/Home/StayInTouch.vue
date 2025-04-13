@@ -9,7 +9,7 @@
 
     <LazySocialLinks :links-include="['linkedin', 'discord', 'resume']" v-if="!$config.public.upwork"/>
     <h3 v-else class="text-[var(--primary-color)] font-bold mt-4 glow">
-      <LazyNuxtLink target="_blank" href="https://www.upwork.com/freelancers/abdulh143?mp_source=share">Upwork
+      <LazyNuxtLink target="_blank" href="https://www.upwork.com/freelancers/abdulhaseeb007?mp_source=share">Upwork
       </LazyNuxtLink>
     </h3>
   </div>
