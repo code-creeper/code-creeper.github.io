@@ -14,12 +14,5 @@ export default defineNuxtConfig({
             upwork: process.env.UPWORK,
             upwork_profile_link: process.env.UPWORK_PROFILE_LINK,
         },
-    },
-    nitro: {
-        preset: 'aws-lambda',
-        serveStatic: true,
-        output: {
-            publicDir: '.output/server',
-        }
     }
 })
