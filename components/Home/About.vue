@@ -2,7 +2,7 @@
   <div class="page grid grid-cols-1 md:grid-cols-2 gap-x-2 gap-y-12">
     <div>
       <h3 class="font-bold text-[var(--white-color)]">⚡ About Me</h3>
-      <p class="mt-3">
+      <p class="mt-3 md:text-lg">
         Hey! I'm Abdul Haseeb, a full-stack engineer with over 5 years of experience in web development, having led
         numerous robust applications.
         <br>

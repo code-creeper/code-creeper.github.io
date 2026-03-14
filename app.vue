@@ -17,7 +17,7 @@ useHead({
     { name: "twitter:description", content: "Passionate about Laravel, Vue.js, and creating seamless digital experiences." },
     { name: "twitter:image", content: "/portfolio-preview.webp" },
 
-    // Other important meta
+    // Another important meta
     { name: "author", content: "Abdul Haseeb" },
     { name: "robots", content: "index, follow" },
   ],
