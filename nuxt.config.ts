@@ -16,6 +16,7 @@ export default defineNuxtConfig({
         public: {
             upwork: process.env.UPWORK,
             upwork_profile_link: process.env.UPWORK_PROFILE_LINK,
+            domain: process.env.NUXT_PUBLIC_DOMAIN || "zrinasoft.com",
         },
     }
 })
