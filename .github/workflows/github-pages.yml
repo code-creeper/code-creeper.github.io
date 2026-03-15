@@ -1,4 +1,4 @@
-name: Build Nuxt Site
+name: Build & Deploy Nuxt
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,8 +22,9 @@ jobs:
         env:
           NUXT_BASE_URL: /
 
-      - name: Upload generated site
-        uses: actions/upload-artifact@v4
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          name: nuxt-site
-          path: .output/public
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .output/public
+          publish_branch: gh-pages
