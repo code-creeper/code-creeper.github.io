@@ -5,6 +5,9 @@ export default defineNuxtConfig({
     modules: ['@nuxtjs/tailwindcss', '@nuxt/fonts', '@nuxt/image', 'nuxt-aos'],
     css: ['~/assets/css/main.css'],
     ssr: true,
+    app: {
+        baseURL: process.env.NUXT_BASE_URL || '/'
+    },
     aos: {
         duration: 900,
         once: true,
