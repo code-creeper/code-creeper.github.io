@@ -2,7 +2,7 @@ name: Deploy Nuxt to GitHub Pages
 
 on:
   workflow_run:
-    workflows: ["Build Nuxt Site"]
+    workflows: ["asdfBuild Nuxt Site"]
     types:
       - completed
 
