@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import {onBeforeUnmount, onMounted} from 'vue';
+import {reviews} from "~/data/reviews"
 
 const parallaxAnimation = () => {
-  const cards = document.querySelectorAll(".upwork-review-card");
+  const cards = document.querySelectorAll<HTMLDivElement>(".upwork-review-card");
 
   cards.forEach((el) => {
     const rect = el.getBoundingClientRect();
@@ -56,28 +57,9 @@ onBeforeUnmount(() => {
 
       <div class="flex flex-col gap-y-5 md:gap-y-6 mt-28">
         <LazyHomeUpworkReviewCard
-            review="Abdul delivered exceptional work on the Responsive Questionnaire Development project. He was professional, met all deadlines, and showed great skill in his field. His attention to detail and clear communication made the collaboration seamless. I highly recommend Abdul for any project and look forward to working with him again."
-            clientName="Emil Rustemovich"
-        />
-        <LazyHomeUpworkReviewCard
-            review="Abdul was amazing to work with. he took a complicated set up and made it work perfectly in Laravel and for that I very much appreciate his effort. He is very knowledgeable and very quick and accurate with his work so we wasted no time in getting this done."
-            clientName="Jeff Lewis"
-        />
-        <LazyHomeUpworkReviewCard
-            review="Abdul delivered exceptional work on the Responsive Questionnaire Development project. He was professional, met all deadlines, and showed great skill in his field. His attention to detail and clear communication made the collaboration seamless. I highly recommend Abdul for any project and look forward to working with him again."
-            clientName="Sam Ingwer"
-        />
-        <LazyHomeUpworkReviewCard
-            review="Abdul continues to impress me with his skill. He never lets me down and always produces fantastic code."
-            clientName="Jeff Lewis"
-        />
-        <LazyHomeUpworkReviewCard
-            review="Great programmer and great person. Supporting a lot working hard and professional.very very recommended."
-            clientName="Sam Ingwer"
-        />
-        <LazyHomeUpworkReviewCard
-            review="5 Star review"
-            clientName="Waerme Wimmer"
+            v-for="(review, index) in reviews"
+            :key="index"
+            :review="review"
         />
       </div>
     </div>

@@ -1,21 +1,16 @@
 <script setup lang="ts">
-withDefaults(
-    defineProps<{
-      review?: string;
-      clientName?: string;
-    }>(),
-    {
-      review: 'Client Review',
-      clientName: 'Client Name',
-    }
-)
+import type {Review} from "~/data/reviews";
+
+defineProps<{
+  review: Review
+}>()
 </script>
 
 <template>
   <NuxtLink class="upwork-review-card" target="_blank"
             href="https://www.upwork.com/freelancers/abdulhaseeb007?mp_source=share">
     <h4 class="review">
-      "{{ review }}"
+      "{{ review.feedbacks?.[0] }}"
     </h4>
 
     <div class="mt-8 md:mt-12 flex items-end justify-between">
@@ -23,7 +18,7 @@ withDefaults(
         <img class="size-[64px] md:size-[84px]" src="@/assets/images/upwork.png" alt="Upwork">
 
         <div>
-          <p class="client-name">{{ clientName }}</p>
+          <p class="client-name">{{ review.client_name }}</p>
           <div class="flex">
             <LazyIconsStar/>
             <LazyIconsStar/>
@@ -62,7 +57,7 @@ withDefaults(
 }
 
 .client-name {
-  font-size: 1.125rem;
+  font-size: 1.35rem;
   line-height: 1.75rem;
   font-weight: 700;
 }
