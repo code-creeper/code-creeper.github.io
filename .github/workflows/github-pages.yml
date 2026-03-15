@@ -1,4 +1,4 @@
-name: Deploy Nuxt to GitHub Pages
+name: Build Nuxt Site
 
 on:
   push:
@@ -9,9 +9,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    permissions:
-      contents: write
-
     steps:
       - uses: actions/checkout@v4
 
@@ -20,7 +17,7 @@ jobs:
           node-version: 20
           cache: pnpm
 
-      - name: Install pnpm
+      - name: Enable pnpm
         run: corepack enable
 
       - name: Install dependencies
@@ -31,9 +28,8 @@ jobs:
         env:
           NUXT_BASE_URL: /
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Upload generated site
+        uses: actions/upload-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .output/public
-          publish_branch: master
+          name: nuxt-site
+          path: .output/public
