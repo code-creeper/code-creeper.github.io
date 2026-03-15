@@ -25,7 +25,7 @@ jobs:
         run: pnpm generate
         env:
           NUXT_BASE_URL: /
-          NUXT_PUBLIC_DOMAINL: code-creeper.github.io
+          NUXT_PUBLIC_DOMAIN: code-creeper.github.io
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
