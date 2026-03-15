@@ -21,7 +21,7 @@
         🚀 Currently specializing DevOps
         <br>
         ⚡ Full Stack Developer at
-        <LazyNuxtLink target="_blank" href="https://www.upwork.com/freelancers/abdulhaseeb007?mp_source=share"
+        <LazyNuxtLink target="_blank" :href="$config.public.upwork_profile_link"
                   class="text-[var(--primary-color)] font-bold">Upwork
         </LazyNuxtLink>
       </p>

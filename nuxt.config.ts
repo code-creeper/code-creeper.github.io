@@ -15,7 +15,7 @@ export default defineNuxtConfig({
     runtimeConfig: {
         public: {
             upwork: process.env.UPWORK,
-            upwork_profile_link: process.env.UPWORK_PROFILE_LINK,
+            upwork_profile_link: process.env.UPWORK_PROFILE_LINK || "https://www.upwork.com/freelancers/~01c7919289f0d9ee3a?mp_source=share",
             domain: process.env.NUXT_PUBLIC_DOMAIN || "zrinasoft.com",
         },
     }

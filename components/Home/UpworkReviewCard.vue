@@ -8,7 +8,7 @@ defineProps<{
 
 <template>
   <NuxtLink class="upwork-review-card" target="_blank"
-            href="https://www.upwork.com/freelancers/abdulhaseeb007?mp_source=share">
+            :href="$config.public.upwork_profile_link">
     <h4 class="review">
       "{{ review.feedbacks?.[0] }}"
     </h4>
