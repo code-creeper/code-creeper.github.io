@@ -1,19 +1,42 @@
 <script setup lang="ts">
 import type {Review} from "~/data/reviews";
 
-defineProps<{
+const props = defineProps<{
   review: Review
 }>()
+
+const CHAR_LIMIT = 250;
+
+const showMore = ref(false);
+
+const comment = computed(() => {
+  return showMore.value
+      ? props.review.feedbacks?.[0]
+      : props.review.feedbacks?.[0]?.slice(0, CHAR_LIMIT) + '...';
+})
+
+const hasMore = props.review.feedbacks?.length > 1
+const moreCount = props.review.feedbacks?.length - 1
+
+const seeMoreToggle = (event : MouseEvent) => {
+  event.stopPropagation();
+  showMore.value = !showMore.value;
+}
+
 </script>
 
 <template>
   <NuxtLink class="upwork-review-card" target="_blank"
             :href="$config.public.upwork_profile_link">
     <h4 class="review">
-      "{{ review.feedbacks?.[0] }}"
+      "{{ comment }}" <span @click.stop.prevent="seeMoreToggle" class="text-[var(--primary-color)] text-lg">See {{ showMore ? "less" : "more" }}</span>
     </h4>
 
-    <div class="mt-8 md:mt-12 flex items-end justify-between">
+    <div class="mt-3" v-if="hasMore">
+      <p class="text-[var(--primary-color)] text-lg">Show {{moreCount}} more</p>
+    </div>
+
+    <div class="mt-6 md:mt-10 flex items-center justify-between">
       <div class="flex items-center gap-3">
         <img class="size-[64px] md:size-[84px]" src="@/assets/images/upwork.png" alt="Upwork">
 
