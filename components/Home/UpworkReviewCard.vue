@@ -8,9 +8,9 @@ const props = defineProps<{
 const CHAR_LIMIT = 250;
 
 const showMore = ref(false);
-
+const contentExceeded = Number(props.review.feedbacks?.[0]?.length) > (CHAR_LIMIT + 20);
 const comment = computed(() => {
-  return showMore.value
+  return showMore.value || !contentExceeded
       ? props.review.feedbacks?.[0]
       : props.review.feedbacks?.[0]?.slice(0, CHAR_LIMIT) + '...';
 })
@@ -29,7 +29,13 @@ const seeMoreToggle = (event : MouseEvent) => {
   <NuxtLink class="upwork-review-card" target="_blank"
             :href="$config.public.upwork_profile_link">
     <h4 class="review">
-      "{{ comment }}" <span @click.stop.prevent="seeMoreToggle" class="text-[var(--primary-color)] text-lg">See {{ showMore ? "less" : "more" }}</span>
+      <template v-if="contentExceeded && showMore">
+        <span v-html="comment"></span>
+      </template>
+      <template v-else>
+        "{{ comment }}"
+      </template>
+      <span v-if="contentExceeded" @click.stop.prevent="seeMoreToggle" class="text-[var(--primary-color)] text-lg text-nowrap">See {{ showMore ? "less" : "more" }}</span>
     </h4>
 
     <div class="mt-3" v-if="hasMore">
@@ -56,51 +62,3 @@ const seeMoreToggle = (event : MouseEvent) => {
     </div>
   </NuxtLink>
 </template>
-
-<style scoped>
-.upwork-review-card {
-  text-align: start;
-  padding: 60px 65px;
-  border-width: 1px;
-  border-color: rgb(83 83 83/1);
-  border-radius: 30px;
-  color: white;
-  transform: scale(0.8);
-  opacity: 0.8;
-  transition-timing-function: cubic-bezier(0, 0, .2, 1);
-  transition-duration: .2s;
-  transition-property: all;
-}
-
-.review {
-  font-family: "Poppins", serif;
-  font-size: 1.875rem;
-  line-height: 2.875rem;
-  font-weight: 600;
-}
-
-.client-name {
-  font-size: 1.35rem;
-  line-height: 1.75rem;
-  font-weight: 700;
-}
-
-@media screen and (max-width: 48rem) {
-  .upwork-review-card {
-    padding: 30px 35px;
-  }
-
-  .review {
-    font-family: "BIZ UDPMincho", serif;
-    font-size: 1.2rem;
-    line-height: 2rem;
-    font-weight: 500;
-  }
-
-  .client-name {
-    font-size: 1rem;
-    line-height: 1.75rem;
-    font-weight: 600;
-  }
-}
-</style>

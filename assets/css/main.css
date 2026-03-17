@@ -152,3 +152,49 @@ p.responsive {
 .table-of-content ul {
     @apply flex flex-col gap-1 ml-8;
 }
+
+.upwork-review-card {
+    text-align: start;
+    padding: 60px 65px;
+    border-width: 1px;
+    border-color: rgb(83 83 83/1);
+    border-radius: 30px;
+    color: white;
+    transform: scale(0.8);
+    opacity: 0.8;
+    transition-timing-function: cubic-bezier(0, 0, .2, 1);
+    transition-duration: .2s;
+    transition-property: all;
+}
+
+.review {
+    font-family: "Poppins", serif;
+    font-size: 1.875rem;
+    line-height: 2.875rem;
+    font-weight: 600;
+}
+
+.client-name {
+    font-size: 1.35rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 48rem) {
+    .upwork-review-card {
+        padding: 30px 35px;
+    }
+
+    .review {
+        font-family: "BIZ UDPMincho", serif;
+        font-size: 1.2rem;
+        line-height: 2rem;
+        font-weight: 500;
+    }
+
+    .client-name {
+        font-size: 1rem;
+        line-height: 1.75rem;
+        font-weight: 600;
+    }
+}
