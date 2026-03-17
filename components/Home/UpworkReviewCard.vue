@@ -8,12 +8,18 @@ const props = defineProps<{
 const CHAR_LIMIT = 250;
 
 const showMore = ref(false);
-const contentExceeded = Number(props.review.feedbacks?.[0]?.length) > (CHAR_LIMIT + 20);
+const rawComment = computed(() => props.review.feedbacks?.[0] || "");
+const contentExceeded = computed(() => rawComment.value.length > (CHAR_LIMIT + 20));
 const comment = computed(() => {
-  return showMore.value || !contentExceeded
-      ? props.review.feedbacks?.[0]
-      : props.review.feedbacks?.[0]?.slice(0, CHAR_LIMIT) + '...';
-})
+  if (showMore.value || !contentExceeded.value) {
+    return rawComment.value;
+  }
+  return rawComment.value.slice(0, CHAR_LIMIT) + "...";
+});
+
+const commentHtml = computed(() => {
+  return comment.value.replace(/\n/g, "<br>");
+});
 
 const hasMore = props.review.feedbacks?.length > 1
 const moreCount = props.review.feedbacks?.length - 1
@@ -30,7 +36,7 @@ const seeMoreToggle = (event : MouseEvent) => {
             :href="$config.public.upwork_profile_link">
     <h4 class="review">
       <template v-if="contentExceeded && showMore">
-        <span v-html="comment"></span>
+        <span v-html="commentHtml"></span>&nbsp
       </template>
       <template v-else>
         "{{ comment }}"
