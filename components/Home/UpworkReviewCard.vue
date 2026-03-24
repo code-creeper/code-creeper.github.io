@@ -8,17 +8,13 @@ const props = defineProps<{
 const CHAR_LIMIT = 250;
 
 const showMore = ref(false);
-const rawComment = computed(() => props.review.feedbacks?.[0] || "");
+const rawComment = computed(() => '"' + props.review.feedbacks?.[0] + '"' || "");
 const contentExceeded = computed(() => rawComment.value.length > (CHAR_LIMIT + 20));
 const comment = computed(() => {
   if (showMore.value || !contentExceeded.value) {
-    return rawComment.value;
+    return rawComment.value.replace(/\n/g, "<br/>");
   }
   return rawComment.value.slice(0, CHAR_LIMIT) + "...";
-});
-
-const commentHtml = computed(() => {
-  return comment.value.replace(/\n/g, "<br>");
 });
 
 const hasMore = props.review.feedbacks?.length > 1
@@ -35,13 +31,8 @@ const seeMoreToggle = (event : MouseEvent) => {
   <NuxtLink class="upwork-review-card" target="_blank"
             :href="$config.public.upwork_profile_link">
     <h4 class="review">
-      <template v-if="contentExceeded && showMore">
-        <span v-html="commentHtml"></span>&nbsp
-      </template>
-      <template v-else>
-        "{{ comment }}"
-      </template>
-      <span v-if="contentExceeded" @click.stop.prevent="seeMoreToggle" class="text-[var(--primary-color)] text-lg text-nowrap">See {{ showMore ? "less" : "more" }}</span>
+      <span v-html="comment"></span>
+      <span v-if="contentExceeded" @click.stop.prevent="seeMoreToggle" class="text-[var(--primary-color)] text-lg text-nowrap">&nbsp See {{ showMore ? "less" : "more" }}</span>
     </h4>
 
     <div class="mt-3" v-if="hasMore">
