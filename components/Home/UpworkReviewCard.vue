@@ -64,9 +64,9 @@ const seeMoreToggle = async (event : MouseEvent) => {
 </script>
 
 <template>
-  <NuxtLink class="upwork-review-card block" target="_blank"
-            :href="$config.public.upwork_profile_link">
-    <div ref="reviewTextRef" class="overflow-hidden will-change-[height]">
+  <div class="upwork-review-card block group">
+    <NuxtLink target="_blank" :href="$config.public.upwork_profile_link" class="absolute p-4 right-2 top-2 md:right-6 md:top-6 md:hidden group-hover:block"><LazyIconsExitPage/></NuxtLink>
+    <div ref="reviewTextRef" class="overflow-hidden will-change-[height] mt-2 md:mt-0">
       <h4 class="review">
         <span v-html="comment"></span>
         <span v-if="contentExceeded" @click.stop.prevent="seeMoreToggle" class="text-[var(--primary-color)] text-lg text-nowrap cursor-pointer">&nbsp See {{ showMore ? "less" : "more" }}</span>
@@ -95,5 +95,5 @@ const seeMoreToggle = async (event : MouseEvent) => {
 
       <img class="h-8 md:h-11 hidden sm:block" src="@/assets/images/upwork-logo.png" alt="Upwork">
     </div>
-  </NuxtLink>
+  </div>
 </template>

@@ -154,6 +154,7 @@ p.responsive {
 }
 
 .upwork-review-card {
+    position: relative;
     text-align: start;
     padding: 60px 65px;
     border-width: 1px;
