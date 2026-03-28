@@ -50,10 +50,13 @@ onBeforeUnmount(() => {
       <section class="project-section" id="overview">
         <h3 class="project-heading heading-bl">Overview</h3>
         <p class="text-white/90">
-          Capital Club is a program, established by OnMarket, that offers loyal and accredited members exclusive access
-          to private investments, early notifications of deals, and equity crowdfunding (ECF) private deal rooms,
-          including access to early-stage companies. It is mainly focused on entrepreneurs, investors, and business
-          owners to get benefit from its academy and lectures .
+          This project involved building a modern investment platform designed to present multiple asset opportunities
+          such as crypto, trading, and alternative investments in a clear and structured way.
+          <br/>
+          <br/>
+          The client approached us after experiencing delays and inconsistent progress with previous development
+          efforts, which significantly reduced the available timeline. The goal was to stabilize the project and deliver
+          a reliable, production-ready solution within a tight deadline.
         </p>
         <img src="@/assets/images/projects/capitalclub/academy.webp" alt="project screenshot"
              class="w-full rounded-xl px-5"/>
