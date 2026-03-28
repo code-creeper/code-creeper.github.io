@@ -199,3 +199,24 @@ p.responsive {
         font-weight: 600;
     }
 }
+
+/* Modal Transition Animation */
+.modal-enter-active,
+.modal-leave-active {
+    transition: opacity 0.3s ease;
+}
+
+.modal-enter-from,
+.modal-leave-to {
+    opacity: 0;
+}
+
+.modal-enter-from :deep(.upwork-review-card),
+.modal-leave-to :deep(.upwork-review-card) {
+    transform: scale(0.95) translateY(15px);
+}
+
+.modal-enter-active :deep(.upwork-review-card),
+.modal-leave-active :deep(.upwork-review-card) {
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}

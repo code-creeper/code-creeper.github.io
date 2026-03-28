@@ -5,6 +5,10 @@ const props = defineProps<{
   review: Review
 }>()
 
+const emit = defineEmits<{
+  (e: 'showModal', review: Review): void
+}>()
+
 const CHAR_LIMIT = 250;
 
 const showMore = ref(false);
@@ -73,8 +77,8 @@ const seeMoreToggle = async (event : MouseEvent) => {
       </h4>
     </div>
 
-    <div class="mt-3" v-if="hasMore">
-      <p class="text-[var(--primary-color)] text-lg">Show {{moreCount}} more</p>
+    <div class="mt-3" v-if="hasMore" @click.stop="emit('showModal', review)">
+      <p class="text-[var(--primary-color)] text-lg cursor-pointer inline-block hover:underline">Show {{moreCount}} more</p>
     </div>
 
     <div class="mt-6 md:mt-10 flex items-center justify-between">

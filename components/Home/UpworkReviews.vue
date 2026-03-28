@@ -1,6 +1,17 @@
 <script setup lang="ts">
-import {onBeforeUnmount, onMounted} from 'vue';
+import {onBeforeUnmount, onMounted, ref} from 'vue';
 import {reviews} from "~/data/reviews"
+import type {Review} from "~/data/reviews";
+
+const selectedReview = ref<Review | null>(null);
+
+const openReviewModal = (review: Review) => {
+  selectedReview.value = review;
+};
+
+const closeReviewModal = () => {
+  selectedReview.value = null;
+};
 
 const parallaxAnimation = () => {
   const cards = document.querySelectorAll<HTMLDivElement>(".upwork-review-card");
@@ -60,9 +71,18 @@ onBeforeUnmount(() => {
             v-for="(review, index) in reviews"
             :key="index"
             :review="review"
+            @showModal="openReviewModal"
         />
       </div>
     </div>
+
+    <Transition name="modal">
+      <HomeUpworkReviewModal
+          v-if="selectedReview"
+          :review="selectedReview"
+          @close="closeReviewModal"
+      />
+    </Transition>
   </div>
 </template>
 <style scoped>
