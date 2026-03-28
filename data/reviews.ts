@@ -11,7 +11,7 @@ export const reviews: Review[] = [{
 		"What I appreciate most is that he doesn’t just follow instructions, he thinks ahead and suggests better approaches when it makes sense. Communication is easy, he’s responsive and clear, and his code is solid and production-ready.\n" +
 		"\n" +
 		"I’ve hired many freelancers, but Abdul stands out as someone I can fully trust with critical parts of my projects.",
-		"5 Star review"
+		// "5 Star review"
 	]
 }, {
 	client_name: "Fadi",
@@ -20,7 +20,7 @@ export const reviews: Review[] = [{
 		"\n" +
 		"The only reason I’ve ended the contract is that we’ve currently run out of tasks for him. I would gladly work with him again in the future, if there's ever an opportunity.",
 		"Abdul is great to work with, he plans his approach clearly for every feature he's asked to develop and delivers the implementation fast.",
-		"5 Star review"
+		// "5 Star review"
 	]
 }, {
 	client_name: "James",
@@ -30,7 +30,7 @@ export const reviews: Review[] = [{
 		"Abdul has more depth and insight into our Laravel project than even the best AI model out there. We wouldn't be where we are without his help, knowledge and skill. I spent all day making a feature and he came back and pulled it off with like 3 lines of code (Laravel isn't my strong suit, but it sure is his!). We've had him work on very dynamic and complex features and he nails it with the nuance and consideration of all edge cases of a top level dev. \n" +
 		"\n" +
 		"If you need a php/Laravel expert, don't worry about choosing anyone else. Abdul is your pick. I hope you keep him busy!",
-		"5 Star review"
+		// "5 Star review"
 	]
 }, {
 	client_name: "Erik Z",
