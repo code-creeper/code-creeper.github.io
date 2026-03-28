@@ -48,8 +48,8 @@ onUnmounted(() => {
 
       <div class="h-full mt-4 overflow-y-auto">
         <template v-for="(feedback, index) in review.feedbacks" key="index">
-          <h4 class="review mt-6 md:mt-2" v-html="feedback.replace(/\n/g, '<br/>')"/>
-          <hr class="my-8 mr-4" v-if="index !== review.feedbacks.length - 1"/>
+          <h4 class="review mt-6 md:mt-2" v-html="'&ldquo;' + feedback.replace(/\n/g, '<br/>') + '&rdquo;'"/>
+          <hr class="my-8 mr-4 h-[1px]" v-if="index !== review.feedbacks.length - 1"/>
         </template>
       </div>
 
