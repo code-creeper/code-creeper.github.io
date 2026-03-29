@@ -1,39 +1,29 @@
 <script setup lang="ts">
-import User from "~/components/Icons/User.vue";
+import type { TocItem } from "~/components/Project/TableOfContents.vue";
 
-const observer = ref<IntersectionObserver | null>(null);
-const activeSections = ref<string[]>([]);
+const { activeSections } = useProjectObserver();
 
-const handleIntersect = (entries: IntersectionObserverEntry[]) => {
-  entries.forEach((entry) => {
-    const sectionId = entry.target.id;
-    if (entry.isIntersecting) {
-      if (!activeSections.value.includes(sectionId)) {
-        activeSections.value.push(sectionId);
-      }
-    } else {
-      activeSections.value = activeSections.value.filter(id => id !== sectionId);
-    }
-  });
-};
-
-onMounted(() => {
-  const options = {
-    rootMargin: "0px",
-    threshold: 0.1,
-  };
-  observer.value = new IntersectionObserver(handleIntersect, options);
-  const sections = document.querySelectorAll<HTMLElement>('section[id]');
-  sections.forEach((section) => {
-    observer.value?.observe(section);
-  });
-});
-
-onBeforeUnmount(() => {
-  if (observer.value) {
-    observer.value.disconnect();
-  }
-});
+const toc: TocItem[] = [
+  { id: "overview", label: "Overview" },
+  { id: "project-goals", label: "Project Goals" },
+  { id: "tech-stack", label: "Tech Stack" },
+  {
+    id: "features",
+    label: "Features",
+    children: [
+      { id: "feature-academy", label: "Academy" },
+      { id: "feature-streak", label: "Streak" },
+      { id: "feature-rank-and-achievement", label: "Rank & Achievement" },
+      { id: "feature-quiz", label: "Quiz" },
+      { id: "feature-livestream-and-community", label: "Livestream & Community" },
+      { id: "feature-leaderboard", label: "Leaderboard" },
+      { id: "feature-livechat", label: "Live Chat" },
+      { id: "feature-purchase", label: "Purchase" },
+    ],
+  },
+  { id: "challenges", label: "Challenges" },
+  { id: "initiatives", label: "Initiatives" },
+];
 </script>
 
 <template>
@@ -128,105 +118,32 @@ onBeforeUnmount(() => {
           <img src="@/assets/images/projects/stirling_cooper/books.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
         </section>
-        <section class="project-section" id="challenges">
-          <h3 class="project-heading heading-bl">Challenges</h3>
-          <p class="text-white/90">
-            Keeping the track record of streak, achievement and badges was a challenge, and showing them after lesson
-            completion was a bit tricky. Also, the live chat and live stream was a bit challenging to implement.
-          </p>
-        </section>
-        <section class="project-section" id="initiatives">
-          <h3 class="project-heading heading-bl">Initiatives</h3>
-          <p class="text-white/90">
-            Stirling Cooper's initiatives focus on expanding course offerings, gamifying learning with badges and
-            rewards,
-            and enhancing community interaction through forums and live webinars. The platform aims to improve
-            technology
-            with a mobile app and AI chat support while boosting engagement through achievement-based rewards and
-            subscription tiers. Monetization will include premium courses, corporate partnerships, and product
-            expansion,
-            creating a dynamic and interactive learning experience for adults.
-          </p>
-          <img src="@/assets/images/projects/stirling_cooper/setting.webp" alt="project screenshot"
-               class="w-full rounded-xl px-5"/>
-        </section>
+      </section>
+      <section class="project-section" id="challenges">
+        <h3 class="project-heading heading-bl">Challenges</h3>
+        <p class="text-white/90">
+          Keeping the track record of streak, achievement and badges was a challenge, and showing them after lesson
+          completion was a bit tricky. Also, the live chat and live stream was a bit challenging to implement.
+        </p>
+      </section>
+      <section class="project-section" id="initiatives">
+        <h3 class="project-heading heading-bl">Initiatives</h3>
+        <p class="text-white/90">
+          Stirling Cooper's initiatives focus on expanding course offerings, gamifying learning with badges and
+          rewards, and enhancing community interaction through forums and live webinars. The platform aims to improve
+          technology with a mobile app and AI chat support while boosting engagement through achievement-based rewards
+          and subscription tiers. Monetization will include premium courses, corporate partnerships, and product
+          expansion, creating a dynamic and interactive learning experience for adults.
+        </p>
+        <img src="@/assets/images/projects/stirling_cooper/setting.webp" alt="project screenshot"
+             class="w-full rounded-xl px-5"/>
       </section>
     </div>
 
     <div class="col-span-3 mt-5">
       <div class="sticky top-[120px] flex flex-col gap-2">
         <h4 class="text-white font-bold mb-2">Table of Contents</h4>
-        <ul class="table-of-content">
-          <li>
-            <a href="#overview" :class="{'text-white': activeSections.includes('overview')}">Overview</a></li>
-          <li>
-            <a href="#project-goals" :class="{'text-white': activeSections.includes('project-goals')}">Project Goals</a>
-          </li>
-          <li>
-            <a href="#tech-stack" :class="{'text-white': activeSections.includes('tech-stack')}">Tech Stack</a>
-          </li>
-          <li>
-            <a href="#features" :class="{'text-white': activeSections.includes('features')}">Features</a>
-          </li>
-          <li>
-            <ul>
-              <li>
-                <a href="#feature-academy"
-                   :class="{'text-white': activeSections.includes('feature-academy')}">
-                  Academy
-                </a>
-              </li>
-              <li>
-                <a href="#feature-streak"
-                   :class="{'text-white': activeSections.includes('feature-streak')}">
-                  Streak
-                </a>
-              </li>
-              <li>
-                <a href="#feature-rank-and-achievement"
-                   :class="{'text-white': activeSections.includes('feature-rank-and-achievement')}">
-                  Rank & Achievement
-                </a>
-              </li>
-              <li>
-                <a href="#feature-quiz"
-                   :class="{'text-white': activeSections.includes('feature-quiz')}">
-                  Quiz
-                </a>
-              </li>
-              <li>
-                <a href="#feature-livestream-and-community"
-                   :class="{'text-white': activeSections.includes('feature-livestream-and-community')}">
-                  Livestream & Community
-                </a>
-              </li>
-              <li>
-                <a href="#feature-leaderboard"
-                   :class="{'text-white': activeSections.includes('feature-leaderboard')}">
-                  Leaderboard
-                </a>
-              </li>
-              <li>
-                <a href="#feature-livechat"
-                   :class="{'text-white': activeSections.includes('feature-livechat')}">
-                  Livechat
-                </a>
-              </li>
-              <li>
-                <a href="#feature-purchase"
-                   :class="{'text-white': activeSections.includes('feature-purchase')}">
-                  Purchase
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#challenges" :class="{'text-white': activeSections.includes('challenges')}">Challenges</a>
-          </li>
-          <li>
-            <a href="#initiatives" :class="{'text-white': activeSections.includes('initiatives')}">Initiatives</a>
-          </li>
-        </ul>
+        <LazyProjectTableOfContents :items="toc" :active-sections="activeSections"/>
       </div>
     </div>
   </div>

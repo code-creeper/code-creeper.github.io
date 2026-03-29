@@ -1,37 +1,28 @@
 <script setup lang="ts">
-const observer = ref<IntersectionObserver | null>(null);
-const activeSections = ref<string[]>([]);
+import type { TocItem } from "~/components/Project/TableOfContents.vue";
 
-const handleIntersect = (entries: IntersectionObserverEntry[]) => {
-  entries.forEach((entry) => {
-    const sectionId = entry.target.id;
-    if (entry.isIntersecting) {
-      if (!activeSections.value.includes(sectionId)) {
-        activeSections.value.push(sectionId);
-      }
-    } else {
-      activeSections.value = activeSections.value.filter(id => id !== sectionId);
-    }
-  });
-};
+const { activeSections } = useProjectObserver();
 
-onMounted(() => {
-  const options = {
-    rootMargin: "0px",
-    threshold: 0.1,
-  };
-  observer.value = new IntersectionObserver(handleIntersect, options);
-  const sections = document.querySelectorAll<HTMLElement>('section[id]');
-  sections.forEach((section) => {
-    observer.value?.observe(section);
-  });
-});
-
-onBeforeUnmount(() => {
-  if (observer.value) {
-    observer.value.disconnect();
-  }
-});
+const toc: TocItem[] = [
+  { id: "overview", label: "Overview" },
+  { id: "project-goals", label: "Project Goals" },
+  { id: "tech-stack", label: "Tech Stack" },
+  {
+    id: "features",
+    label: "Features",
+    children: [
+      { id: "feature-reaction", label: "Reaction" },
+      { id: "feature-sticker", label: "Stickers" },
+      { id: "feature-reply", label: "Reply" },
+      { id: "feature-links-with-preview", label: "Sharing Links with Preview" },
+      { id: "feature-voice-notes", label: "Voice Notes" },
+      { id: "feature-files-and-videos", label: "Sharing Files & Videos" },
+      { id: "feature-admin-portal", label: "Admin Portal" },
+    ],
+  },
+  { id: "challenges", label: "Challenges" },
+  { id: "initiatives", label: "Initiatives" },
+];
 </script>
 
 <template>
@@ -136,71 +127,7 @@ onBeforeUnmount(() => {
     <div class="col-span-3 mt-5">
       <div class="sticky top-[120px] flex flex-col gap-2">
         <h4 class="text-white font-bold mb-2">Table of Contents</h4>
-        <ul class="table-of-content">
-          <li>
-            <a href="#overview" :class="{'text-white': activeSections.includes('overview')}">Overview</a></li>
-          <li>
-            <a href="#project-goals" :class="{'text-white': activeSections.includes('project-goals')}">Project Goals</a>
-          </li>
-          <li>
-            <a href="#tech-stack" :class="{'text-white': activeSections.includes('tech-stack')}">Tech Stack</a>
-          </li>
-          <li>
-            <a href="#features" :class="{'text-white': activeSections.includes('features')}">Features</a>
-          </li>
-          <li>
-            <ul>
-              <li>
-                <a href="#feature-reaction"
-                   :class="{'text-white': activeSections.includes('feature-reaction')}">
-                  Reaction
-                </a>
-              </li>
-              <li>
-                <a href="#feature-sticker"
-                   :class="{'text-white': activeSections.includes('feature-sticker')}">
-                  Stickers
-                </a>
-              </li>
-              <li>
-                <a href="#feature-reply"
-                   :class="{'text-white': activeSections.includes('feature-reply')}">
-                  Reply
-                </a>
-              </li>
-              <li>
-                <a href="#feature-links-with-preview"
-                   :class="{'text-white': activeSections.includes('feature-links-with-preview')}">
-                  Sharing Links with Preview
-                </a>
-              </li>
-              <li>
-                <a href="#feature-voice-notes"
-                   :class="{'text-white': activeSections.includes('feature-voice-notes')}">
-                  Voice Notes
-                </a>
-              </li>
-              <li>
-                <a href="#feature-files-and-videos"
-                   :class="{'text-white': activeSections.includes('feature-files-and-videos')}">
-                  Sharing Files & Videos
-                </a>
-              </li>
-              <li>
-                <a href="#feature-admin-portal"
-                   :class="{'text-white': activeSections.includes('feature-admin-portal')}">
-                  Admin Portal
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#challenges" :class="{'text-white': activeSections.includes('challenges')}">Challenges</a>
-          </li>
-          <li>
-            <a href="#initiatives" :class="{'text-white': activeSections.includes('initiatives')}">Initiatives</a>
-          </li>
-        </ul>
+        <LazyProjectTableOfContents :items="toc" :active-sections="activeSections"/>
       </div>
     </div>
   </div>

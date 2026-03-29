@@ -1,39 +1,29 @@
 <script setup lang="ts">
-import User from "~/components/Icons/User.vue";
+import type { TocItem } from "~/components/Project/TableOfContents.vue";
 
-const observer = ref<IntersectionObserver | null>(null);
-const activeSections = ref<string[]>([]);
+const { activeSections } = useProjectObserver();
 
-const handleIntersect = (entries: IntersectionObserverEntry[]) => {
-  entries.forEach((entry) => {
-    const sectionId = entry.target.id;
-    if (entry.isIntersecting) {
-      if (!activeSections.value.includes(sectionId)) {
-        activeSections.value.push(sectionId);
-      }
-    } else {
-      activeSections.value = activeSections.value.filter(id => id !== sectionId);
-    }
-  });
-};
-
-onMounted(() => {
-  const options = {
-    rootMargin: "0px",
-    threshold: 0.1,
-  };
-  observer.value = new IntersectionObserver(handleIntersect, options);
-  const sections = document.querySelectorAll<HTMLElement>('section[id]');
-  sections.forEach((section) => {
-    observer.value?.observe(section);
-  });
-});
-
-onBeforeUnmount(() => {
-  if (observer.value) {
-    observer.value.disconnect();
-  }
-});
+const toc: TocItem[] = [
+  { id: "overview", label: "Overview" },
+  { id: "project-goals", label: "Project Goals" },
+  { id: "tech-stack", label: "Tech Stack" },
+  {
+    id: "features",
+    label: "Features",
+    children: [
+      { id: "feature-classroom", label: "Classroom" },
+      { id: "feature-community", label: "Community" },
+      { id: "feature-chatbot", label: "Chatbot" },
+      { id: "feature-livechat", label: "Livechat" },
+      { id: "feature-calendar", label: "Calendar" },
+      { id: "feature-leaderboard", label: "Leaderboard" },
+      { id: "feature-profile-management", label: "Profile Management" },
+      { id: "feature-admin-portal", label: "Admin Portal" },
+    ],
+  },
+  { id: "challenges", label: "Challenges" },
+  { id: "initiatives", label: "Initiatives" },
+];
 </script>
 
 <template>
@@ -74,7 +64,7 @@ onBeforeUnmount(() => {
       <section class="project-section" id="tech-stack">
         <h3 class="project-heading heading-bl">Tech Stack</h3>
         <p class="text-white/90">To achieve this, the following technologies were used:</p>
-        <ul>
+        <ul class="tech-stack">
           <li><span class="font-bold">jQuery:</span>Developed a dynamic and interactive user interface.</li>
           <li><span class="font-bold">Bootstrap:</span>Applied style for responsive design.</li>
           <li><span class="font-bold">Postgres:</span>Utilized a reliable relational database system.</li>
@@ -157,77 +147,7 @@ onBeforeUnmount(() => {
     <div class="col-span-3 mt-5">
       <div class="sticky top-[120px] flex flex-col gap-2">
         <h4 class="text-white font-bold mb-2">Table of Contents</h4>
-        <ul class="table-of-content">
-          <li>
-            <a href="#overview" :class="{'text-white': activeSections.includes('overview')}">Overview</a></li>
-          <li>
-            <a href="#project-goals" :class="{'text-white': activeSections.includes('project-goals')}">Project Goals</a>
-          </li>
-          <li>
-            <a href="#tech-stack" :class="{'text-white': activeSections.includes('tech-stack')}">Tech Stack</a>
-          </li>
-          <li>
-            <a href="#features" :class="{'text-white': activeSections.includes('features')}">Features</a>
-          </li>
-          <li>
-            <ul>
-              <li>
-                <a href="#feature-classroom"
-                   :class="{'text-white': activeSections.includes('feature-classroom')}">
-                  Classroom
-                </a>
-              </li>
-              <li>
-                <a href="#feature-community"
-                   :class="{'text-white': activeSections.includes('feature-community')}">
-                  Community
-                </a>
-              </li>
-              <li>
-                <a href="#feature-chatbot"
-                   :class="{'text-white': activeSections.includes('feature-chatbot')}">
-                  Chatbot
-                </a>
-              </li>
-              <li>
-                <a href="#feature-livechat"
-                   :class="{'text-white': activeSections.includes('feature-livechat')}">
-                  Livechat
-                </a>
-              </li>
-              <li>
-                <a href="#feature-calendar"
-                   :class="{'text-white': activeSections.includes('feature-calendar')}">
-                  Calendar
-                </a>
-              </li>
-              <li>
-                <a href="#feature-leaderboard"
-                   :class="{'text-white': activeSections.includes('feature-leaderboard')}">
-                  Leaderboard
-                </a>
-              </li>
-              <li>
-                <a href="#feature-profile-management"
-                   :class="{'text-white': activeSections.includes('feature-profile-management')}">
-                  Profile Management
-                </a>
-              </li>
-              <li>
-                <a href="#feature-admin-portal"
-                   :class="{'text-white': activeSections.includes('feature-admin-portal')}">
-                  Admin Portal
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#challenges" :class="{'text-white': activeSections.includes('challenges')}">Challenges</a>
-          </li>
-          <li>
-            <a href="#initiatives" :class="{'text-white': activeSections.includes('initiatives')}">Initiatives</a>
-          </li>
-        </ul>
+        <LazyProjectTableOfContents :items="toc" :active-sections="activeSections"/>
       </div>
     </div>
   </div>

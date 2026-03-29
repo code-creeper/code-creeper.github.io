@@ -1,39 +1,27 @@
 <script setup lang="ts">
-import User from "~/components/Icons/User.vue";
+import type { TocItem } from "~/components/Project/TableOfContents.vue";
 
-const observer = ref<IntersectionObserver | null>(null);
-const activeSections = ref<string[]>([]);
+const { activeSections } = useProjectObserver();
 
-const handleIntersect = (entries: IntersectionObserverEntry[]) => {
-  entries.forEach((entry) => {
-    const sectionId = entry.target.id;
-    if (entry.isIntersecting) {
-      if (!activeSections.value.includes(sectionId)) {
-        activeSections.value.push(sectionId);
-      }
-    } else {
-      activeSections.value = activeSections.value.filter(id => id !== sectionId);
-    }
-  });
-};
-
-onMounted(() => {
-  const options = {
-    rootMargin: "0px",
-    threshold: 0.1,
-  };
-  observer.value = new IntersectionObserver(handleIntersect, options);
-  const sections = document.querySelectorAll<HTMLElement>('section[id]');
-  sections.forEach((section) => {
-    observer.value?.observe(section);
-  });
-});
-
-onBeforeUnmount(() => {
-  if (observer.value) {
-    observer.value.disconnect();
-  }
-});
+const toc: TocItem[] = [
+  { id: "overview", label: "Overview" },
+  { id: "project-goals", label: "Project Goals" },
+  { id: "tech-stack", label: "Tech Stack" },
+  {
+    id: "features",
+    label: "Features",
+    children: [
+      { id: "feature-dashboard", label: "Dashboard" },
+      { id: "feature-project-users", label: "Project Users" },
+      { id: "feature-project-chat", label: "Project Chat" },
+      { id: "feature-document-control", label: "Document Control" },
+      { id: "feature-timesheet", label: "Timesheet" },
+      { id: "feature-bid-management", label: "Bid Management" },
+    ],
+  },
+  { id: "challenges", label: "Challenges" },
+  { id: "initiatives", label: "Initiatives" },
+];
 </script>
 
 <template>
@@ -138,65 +126,7 @@ onBeforeUnmount(() => {
     <div class="col-span-3 mt-5">
       <div class="sticky top-[120px] flex flex-col gap-2">
         <h4 class="text-white font-bold mb-2">Table of Contents</h4>
-        <ul class="table-of-content">
-          <li>
-            <a href="#overview" :class="{'text-white': activeSections.includes('overview')}">Overview</a></li>
-          <li>
-            <a href="#project-goals" :class="{'text-white': activeSections.includes('project-goals')}">Project Goals</a>
-          </li>
-          <li>
-            <a href="#tech-stack" :class="{'text-white': activeSections.includes('tech-stack')}">Tech Stack</a>
-          </li>
-          <li>
-            <a href="#features" :class="{'text-white': activeSections.includes('features')}">Features</a>
-          </li>
-          <li>
-            <ul>
-              <li>
-                <a href="#feature-dashboard"
-                   :class="{'text-white': activeSections.includes('feature-dashboard')}">
-                  Dashboard
-                </a>
-              </li>
-              <li>
-                <a href="#feature-project-users"
-                   :class="{'text-white': activeSections.includes('feature-project-users')}">
-                  Project Users
-                </a>
-              </li>
-              <li>
-                <a href="#feature-project-chat"
-                   :class="{'text-white': activeSections.includes('feature-project-chat')}">
-                  Project Chat
-                </a>
-              </li>
-              <li>
-                <a href="#feature-document-control"
-                   :class="{'text-white': activeSections.includes('feature-document-control')}">
-                  Document Control
-                </a>
-              </li>
-              <li>
-                <a href="#feature-timesheet"
-                   :class="{'text-white': activeSections.includes('feature-timesheet')}">
-                  Timesheet
-                </a>
-              </li>
-              <li>
-                <a href="#feature-bid-management"
-                   :class="{'text-white': activeSections.includes('feature-bid-management')}">
-                  Bid Management
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#challenges" :class="{'text-white': activeSections.includes('challenges')}">Challenges</a>
-          </li>
-          <li>
-            <a href="#initiatives" :class="{'text-white': activeSections.includes('initiatives')}">Initiatives</a>
-          </li>
-        </ul>
+        <LazyProjectTableOfContents :items="toc" :active-sections="activeSections"/>
       </div>
     </div>
   </div>

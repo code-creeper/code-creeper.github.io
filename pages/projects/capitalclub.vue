@@ -1,37 +1,25 @@
 <script setup lang="ts">
-const observer = ref<IntersectionObserver | null>(null);
-const activeSections = ref<string[]>([]);
+import type { TocItem } from "~/components/Project/TableOfContents.vue";
 
-const handleIntersect = (entries: IntersectionObserverEntry[]) => {
-  entries.forEach((entry) => {
-    const sectionId = entry.target.id;
-    if (entry.isIntersecting) {
-      if (!activeSections.value.includes(sectionId)) {
-        activeSections.value.push(sectionId);
-      }
-    } else {
-      activeSections.value = activeSections.value.filter(id => id !== sectionId);
-    }
-  });
-};
+const { activeSections } = useProjectObserver();
 
-onMounted(() => {
-  const options = {
-    rootMargin: "0px",
-    threshold: 0.1,
-  };
-  observer.value = new IntersectionObserver(handleIntersect, options);
-  const sections = document.querySelectorAll<HTMLElement>('section[id]');
-  sections.forEach((section) => {
-    observer.value?.observe(section);
-  });
-});
-
-onBeforeUnmount(() => {
-  if (observer.value) {
-    observer.value.disconnect();
-  }
-});
+const toc: TocItem[] = [
+  { id: "overview", label: "Overview" },
+  { id: "project-goals", label: "Project Goals" },
+  { id: "tech-stack", label: "Tech Stack" },
+  {
+    id: "features",
+    label: "Features",
+    children: [
+      { id: "feature-notes-with-lesson", label: "Notes with Lesson" },
+      { id: "feature-favourite-lesson-and-notes", label: "Favourite Lesson & Notes" },
+      { id: "feature-profile-management", label: "Profile Management" },
+      { id: "feature-discord-integration", label: "Discord Integration" },
+    ],
+  },
+  { id: "challenges", label: "Challenges" },
+  { id: "initiatives", label: "Initiatives" },
+];
 </script>
 
 <template>
@@ -128,53 +116,7 @@ onBeforeUnmount(() => {
     <div class="col-span-3 mt-5">
       <div class="sticky top-[120px] flex flex-col gap-2">
         <h4 class="text-white font-bold mb-2">Table of Contents</h4>
-        <ul class="table-of-content">
-          <li>
-            <a href="#overview" :class="{'text-white': activeSections.includes('overview')}">Overview</a></li>
-          <li>
-            <a href="#project-goals" :class="{'text-white': activeSections.includes('project-goals')}">Project Goals</a>
-          </li>
-          <li>
-            <a href="#tech-stack" :class="{'text-white': activeSections.includes('tech-stack')}">Tech Stack</a>
-          </li>
-          <li>
-            <a href="#features" :class="{'text-white': activeSections.includes('features')}">Features</a>
-          </li>
-          <li>
-            <ul>
-              <li>
-                <a href="#feature-notes-with-lesson"
-                   :class="{'text-white': activeSections.includes('feature-notes-with-lesson')}">
-                  Notes with Lesson
-                </a>
-              </li>
-              <li>
-                <a href="#feature-favourite-lesson-and-notes"
-                   :class="{'text-white': activeSections.includes('feature-favourite-lesson-and-notes')}">
-                  Favourite Lesson & Notes
-                </a>
-              </li>
-              <li>
-                <a href="#feature-profile-management"
-                   :class="{'text-white': activeSections.includes('feature-profile-management')}">
-                  Profile Management
-                </a>
-              </li>
-              <li>
-                <a href="#feature-discord-integration"
-                   :class="{'text-white': activeSections.includes('feature-discord-integration')}">
-                  Discord Integration
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#challenges" :class="{'text-white': activeSections.includes('challenges')}">Challenges</a>
-          </li>
-          <li>
-            <a href="#initiatives" :class="{'text-white': activeSections.includes('initiatives')}">Initiatives</a>
-          </li>
-        </ul>
+        <LazyProjectTableOfContents :items="toc" :active-sections="activeSections"/>
       </div>
     </div>
   </div>
