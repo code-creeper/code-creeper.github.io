@@ -24,6 +24,7 @@ jobs:
       - name: Generate static site
         run: pnpm generate
         env:
+          NUXT_PUBLIC_UPWORK: true
           NUXT_BASE_URL: /
           NUXT_PUBLIC_DOMAIN: code-creeper.github.io
 
