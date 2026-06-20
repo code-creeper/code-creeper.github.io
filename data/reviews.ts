@@ -23,7 +23,7 @@ export const reviews: Review[] = [{
 		// "5 Star review"
 	]
 }, {
-	client_name: "James",
+	client_name: "James Andreson",
 	feedbacks: [
 		"I have nothing but exceptional praise for the work Abdul has provided to our project. He has been prompt to reply to messages and quick to implement needed changes. His insight to our project is beyond what we expected. We continue to work with him and would not hesitate to hire him for future projects.",
 		"Abdul continues to be a trustworthy member of our development process. He seems to always have an insightful opinion on optimization and an eagerness to implement new features. While other developers have lacked the initiative we need, he has always understood the underlying goals and suggested improvements to reach these achievements. I only wish there were more like him with the same intuition in the other programming languages we require.",
@@ -33,15 +33,15 @@ export const reviews: Review[] = [{
 		// "5 Star review"
 	]
 }, {
-	client_name: "Erik Z",
+	client_name: "Erik Vasas",
 	feedbacks: [
 		"It was a pleasure working with Abdul! He was professional, reliable, and delivered high-quality work on time. His communication was clear throughout the project, and he handled feedback with a great attitude. I highly recommend him and would definitely work with him again in the future."
 	]
 }, {
 	client_name: "Emil Rustemovich",
-		feedbacks: [
-			"Abdul delivered exceptional work on the Responsive Questionnaire Development project. He was professional, met all deadlines, and showed great skill in his field. His attention to detail and clear communication made the collaboration seamless. I highly recommend Abdul for any project and look forward to working with him again.",
-		]
+	feedbacks: [
+		"Abdul delivered exceptional work on the Responsive Questionnaire Development project. He was professional, met all deadlines, and showed great skill in his field. His attention to detail and clear communication made the collaboration seamless. I highly recommend Abdul for any project and look forward to working with him again.",
+	]
 }, {
 	client_name: "Jeff Lewis",
 	feedbacks: [
@@ -52,10 +52,10 @@ export const reviews: Review[] = [{
 	client_name: "Sam Ingwer",
 	feedbacks: [
 		"Great programmer and great person. Supporting a lot working hard and professional.very very recommended."
-		]
+	]
 }, {
 	client_name: "Waerme Wimmer",
 	feedbacks: [
 		"5 Star review."
-		]
+	]
 }];
