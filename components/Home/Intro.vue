@@ -11,18 +11,23 @@
 
     <div class="mt-8 md:mt-10 transition-all duration-300 ease-in-out">
       <h3 class="font-semibold responsive max-w-[890px]">
-        <span style="color: var(--white-color)">Software Engineer.</span>
-        A self-taught developer with an interest in AI 🤖.
+        <span style="color: var(--white-color)">Senior Full-Stack Engineer</span>
+        <span class="text-[var(--primary-color)]"> | Laravel, SaaS &amp; Scalable Web Apps</span>
       </h3>
     </div>
 
     <div class="mt-8 md:mt-10 transition-all duration-300 ease-in-out">
+      <p class="responsive max-w-[890px]">
+        I build robust backend systems and polished UIs, Laravel at the core, and I
+        adapt fast to whatever your stack needs.
+      </p>
+    </div>
+
+    <div class="mt-6 md:mt-8 transition-all duration-300 ease-in-out">
       <p class="responsive">
-        🚀 Currently specializing DevOps
-        <br>
         ⚡ Full Stack Developer at
         <LazyNuxtLink target="_blank" :href="$config.public.upwork_profile_link"
-                  class="text-[var(--primary-color)] font-bold">Upwork
+                  class="text-[var(--primary-color)] font-bold upwork-link">Upwork
         </LazyNuxtLink>
       </p>
     </div>
@@ -32,6 +37,27 @@
 </template>
 
 <style scoped>
+
+.upwork-link {
+  position: relative;
+  text-decoration: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.upwork-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -8px;
+  height: 8px;
+  background: no-repeat center / 100% 100%
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 10' preserveAspectRatio='none'%3E%3Cpath d='M1 4 Q50 12 99 3' fill='none' stroke='%232ed06e' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+
+.upwork-link:hover {
+  opacity: 0.75;
+}
 
 .dots {
   width: 70px;
