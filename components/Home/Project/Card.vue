@@ -30,7 +30,7 @@ withDefaults(
 
       <hr class="w-full border-white/30">
 
-      <p class="text-[1rem]">{{description}} </p>
+      <p>{{description}} </p>
     </div>
   </NuxtLink>
 </template>

@@ -2,7 +2,7 @@
   <div class="page grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-x-2 gap-y-12">
     <div>
       <h3 class="font-bold text-[var(--white-color)]">⚡ About Me</h3>
-      <p class="mt-3 md:text-xl">
+      <p class="mt-3">
         I'm Abdul Haseeb. For the last 6+ years I've built the unglamorous backend machinery that real products run on:
         multi-tenant <span class="text-[var(--primary-color)]">SaaS</span>, <span
           class="text-[var(--primary-color)]">Stripe</span> subscription billing, real-time messaging, APIs built to

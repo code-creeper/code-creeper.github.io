@@ -1,5 +1,5 @@
 <template>
-  <div class="space-y-28">
+  <div class="space-y-20 md:space-y-28">
     <LazyHomeIntro/>
     <LazyHomeAbout/>
     <LazyHomeProjects data-aos="fade-up"/>
