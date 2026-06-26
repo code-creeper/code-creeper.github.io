@@ -1,10 +1,10 @@
 <template>
   <div class="page text-center flex flex-col items-center">
-    <h2 class="font-bold text-[var(--white-color)]">Stay In Touch.</h2>
+    <h2 class="font-bold text-[var(--white-color)]">Let's Build Something.</h2>
     <p class="mt-5">
-      I'm currently specializing in <span class="text-[var(--primary-color)]">DevOps</span>.
+      Got a product to ship or a gnarly backend problem to untangle? That's exactly my kind of thing.
       <br>
-      Feel free to get in touch and talk more about your projects.
+      Drop me a line and let's talk.
     </p>
 
     <LazySocialLinks :links-include="['linkedin', 'discord', 'resume']" v-if="!$config.public.upwork"/>

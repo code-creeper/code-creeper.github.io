@@ -63,8 +63,7 @@ onBeforeUnmount(() => {
   <div class="radialBackground">
     <div class="page text-center">
       <h2 class="heading">My clients simply love <span class="text-[var(--primary-color)]">what I do</span></h2>
-      <h4 class="line max-w-4xl mx-auto">Proud to serve as the innovation partner for industry leaders who
-        have experienced my expertise and excellence firsthand.</h4>
+      <h4 class="line max-w-4xl mx-auto">Founders and teams I've worked with keep coming back. Here's what some of them have to say about it.</h4>
 
       <div class="flex flex-col gap-y-5 md:gap-y-6 mt-28">
         <LazyHomeUpworkReviewCard

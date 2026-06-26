@@ -21,7 +21,10 @@
     <slot/>
     <footer>
       <p>
-        Designed and Developed by <span class="text-[var(--primary-color)]">Abdul Haseeb</span>.
+        Designed and Developed by
+        <LazyNuxtLink target="_blank" href="https://www.upwork.com/freelancers/abdulhaseeb007?mp_source=share">
+          <span class="text-[var(--primary-color)]">Abdul Haseeb</span>
+        </LazyNuxtLink>.
         <br>
         Built with <span class="text-[var(--primary-color)]">Nuxt.js.</span> Hosted on <span
           class="text-[var(--primary-color)]">AWS EC2</span> with <span
