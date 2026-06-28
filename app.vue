@@ -7,21 +7,21 @@ if (process.dev && !config.public.domain) {
 }
 
 useHead({
-  title: "Abdul Haseeb - Full-Stack Developer | Laravel & Vue.js Expert",
+  title: "Abdul Haseeb - Senior Full-Stack Engineer | Laravel, SaaS & Scalable Web Apps",
   meta: [
-    { name: "description", content: "I'm Abdul Haseeb, a full-stack developer specializing in Laravel, Vue.js, DevOps and modern web technologies. Let's build something amazing together!" },
+    { name: "description", content: "I'm Abdul Haseeb, a senior full-stack engineer with 6+ years building multi-tenant SaaS, Stripe billing, real-time systems and scalable APIs. Laravel at the core, plus Vue/Nuxt, React, Python, Docker and AWS. Let's build something amazing together!" },
 
     // Open Graph (Facebook, LinkedIn)
-    { property: "og:title", content: "Abdul Haseeb - Full-Stack Developer" },
-    { property: "og:description", content: "Laravel, Vue.js, and DevOps. Crafting scalable, high-performance web applications." },
+    { property: "og:title", content: "Abdul Haseeb - Senior Full-Stack Engineer" },
+    { property: "og:description", content: "6+ years building multi-tenant SaaS, billing systems and scalable APIs. Laravel at the core, end to end from schema to ship." },
     { property: "og:image", content: "/portfolio-preview.png" },
     { property: "og:url", content: `https://${domain}` },
     { property: "og:type", content: "website" },
 
     // Twitter Card
     { name: "twitter:card", content: "summary_large_image" },
-    { name: "twitter:title", content: "Abdul Haseeb - Full-Stack Developer" },
-    { name: "twitter:description", content: "Passionate about Laravel, Vue.js, and creating seamless digital experiences." },
+    { name: "twitter:title", content: "Abdul Haseeb - Senior Full-Stack Engineer" },
+    { name: "twitter:description", content: "Senior full-stack engineer specializing in Laravel, SaaS and scalable web apps, owning products from schema to ship." },
     { name: "twitter:image", content: "/portfolio-preview.png" },
 
     // Another important meta
@@ -44,12 +44,12 @@ useHead({
           "https://www.linkedin.com/in/codecreeper/",
           "mailto:abdulhaseebkhan407@gmail.com"
         ],
-        "jobTitle": "Full-Stack Developer",
+        "jobTitle": "Senior Full-Stack Engineer",
         "worksFor": {
           "@type": "Organization",
           "name": "Freelance / Open to Work"
         },
-        "knowsAbout": ["Laravel", "Vue.js", "React.js", "Typescript", "Inertia.js", "Tailwind CSS", "Docker", "AWS"],
+        "knowsAbout": ["Laravel", "PHP", "SaaS", "Vue.js", "Nuxt.js", "React.js", "Typescript", "Inertia.js", "Tailwind CSS", "Python", "FastAPI", "Django", "Docker", "AWS", "Linux"],
       }),
     },
   ],

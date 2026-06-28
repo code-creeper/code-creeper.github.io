@@ -2,6 +2,11 @@
 
 All notable changes to this app will be documented in this file.
 
+## 2026-06-28
+
+### Changed
+- **SEO (app.vue)**: Aligned all metadata with the updated "Senior Full-Stack Engineer" positioning — page title, description, Open Graph and Twitter card titles/descriptions, plus the JSON-LD `jobTitle` and an expanded `knowsAbout` skill list (Laravel, PHP, SaaS, Vue/Nuxt, React, Python/FastAPI/Django, Docker, AWS, Linux).
+
 ## 2026-06-26
 
 ### Changed
