@@ -34,7 +34,7 @@ Only update content from answers when the live link is unavailable — when the 
 
 Work section by section:
 
-- **Hero intro + Overview** — state what the product actually is. This is where miscategorization usually hides (e.g. a page calling an education/community platform an "investment platform"). Fix it. Keep any true narrative about the engagement (tight deadline, stalled prior work, etc.).
+- **Hero intro + Overview** — always actively review and improve these, not just when they're wrong. This is where miscategorization usually hides (e.g. a page calling an education/community platform an "investment platform") — fix it. But even when the copy is factually accurate, still enhance it: remove duplication (the hero line is often copied verbatim as the Overview's first sentence — differentiate them), make it concrete by naming the real modules/features you saw in the screenshots and live site instead of generic marketing phrasing, and soften or cut any unverifiable specifics. Keep any true narrative about the engagement (tight deadline, stalled prior work, etc.). Do not skip these two just because they "look fine."
 - **Project Goals** — tie to confirmed facts (real member counts, countries, scale) where available.
 - **Tech Stack** — treat as the developer's own knowledge; keep unless the user corrects it. Do not disprove or rewrite the stack from screenshots. Only fix grammar/spacing.
 - **Features** — go image by image. For each feature `<section>`, look at its screenshot and write a 2-4 sentence description of what that screen actually shows and does. Update the `<h4>` heading, the matching `toc` label, and the `alt` text to match. Replace any `[Placeholder ...]` text.
