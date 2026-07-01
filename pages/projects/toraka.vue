@@ -68,6 +68,7 @@ const toc: TocItem[] = [
         <p class="text-white/90">To achieve this, the following technologies were used:</p>
         <ul class="tech-stack">
           <li><span class="font-bold">Java (Micronaut):</span>Powered a fast, lightweight backend API.</li>
+          <li><span class="font-bold">Keycloak:</span>Handled authentication and identity management.</li>
           <li><span class="font-bold">React:</span>Built a dynamic, app-like user interface.</li>
           <li><span class="font-bold">TanStack Router:</span>Handled type-safe client-side routing.</li>
           <li><span class="font-bold">TanStack Query:</span>Managed server state, data fetching, and caching.</li>
