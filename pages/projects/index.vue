@@ -5,6 +5,7 @@ import StirlingCooper from "assets/images/projects/stirling_cooper/main.webp";
 import Andalus from "assets/images/projects/andalus/main.webp";
 import Warroom from "assets/images/projects/warroom/main.webp";
 import Ezelogs from "assets/images/projects/ezelogs/main.webp";
+import Toraka from "assets/images/projects/toraka/main.webp";
 </script>
 
 <template>
@@ -18,6 +19,12 @@ import Ezelogs from "assets/images/projects/ezelogs/main.webp";
     <hr class="w-full border border-white/20 my-10"/>
 
     <div class="grid md:grid-cols-2 gap-6">
+      <HomeProjectCard
+          :image="Toraka"
+          title="Toraka"
+          description="A manga, manhwa, and webtoon tracker and reader that unifies thousands of series from many sources — discover titles, follow chapters, bookmark, review, and track your reading."
+          to="/projects/toraka"
+      />
       <HomeProjectCard
           :image="Capitalclub"
           title="Capitalclub"
