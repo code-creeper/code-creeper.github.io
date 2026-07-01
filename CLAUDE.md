@@ -22,7 +22,7 @@ This is a single-developer personal portfolio site for Abdul Haseeb, built with 
 - **`app.vue`** — root; holds all SEO/`useHead` metadata (Open Graph, Twitter cards, JSON-LD Person schema). The site domain is read from `config.public.domain` and woven into canonical/OG URLs, so SEO is domain-aware.
 - **`layouts/default.vue`** — global nav + footer wrapping every page.
 - **`pages/index.vue`** — home, composed of `Home/*` section components (`Intro`, `About`, `Projects`, `UpworkReviews`, `StayInTouch`).
-- **`pages/projects/`** — `index.vue` is the project gallery; each `<project>.vue` (andalus, capitalclub, ezelogs, stirling_cooper, tabootv, warroom) is a standalone case-study page. New project pages follow the andalus.vue pattern: `<section id="...">` blocks paired with a `TableOfContents` driven by `useProjectObserver`.
+- **`pages/projects/`** — `index.vue` is the project gallery; each `<project>.vue` (andalus, capitalclub, ezelogs, stirling_cooper, tabootv, warroom) is a standalone case-study page. **Before adding or editing any project page, read `pages/projects/PATTERN.md` first** — it documents the shared structure (section order, scroll-spy TOC, styling, starter template, and registering the gallery card). New pages follow the andalus.vue pattern.
 
 ### Key conventions
 
