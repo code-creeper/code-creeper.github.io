@@ -21,37 +21,37 @@ import Ezelogs from "assets/images/projects/ezelogs/main.webp";
       <HomeProjectCard
           :image="Capitalclub"
           title="Capitalclub"
-          description="Capital Club is a private ecosystem and Academy, It offers members access to exclusive courses, networking events, and a VIP marketplace with discounted products and services."
+          description="An invite-only platform for entrepreneurs pairing an on-demand Academy of expert-led video courses with a private global network and gated access to an exclusive Discord community."
           to="/projects/capitalclub"
       />
       <HomeProjectCard
           :image="Tabootv"
           title="Tabootv"
-          description="Taboo.TV is a private, content-driven platform created by a YouTuber to entertain their community while offering greater control and flexibility compared to YouTube."
+          description="A creator-driven video streaming platform for raw, unfiltered travel and culture — Shorts, videos, and series with a social layer of comments, reactions, community, and live chat."
           to="/projects/tabootv"
       />
       <HomeProjectCard
           :image="Ezelogs"
           title="Ezelogs"
-          description="Ezelogs is a comprehensive project management software designed to enhance efficiency in construction projects."
+          description="A construction management platform uniting field logs, documents, timesheets, project chat, and bid management to keep teams efficient from preconstruction through closeout."
           to="/projects/ezelogs"
       />
       <HomeProjectCard
           :image="Andalus"
           title="Andalus"
-          description="Andalus Institute is an online platform dedicated to teaching Arabic, offering structured learning with real-time support, live speaking sessions, and a supportive community."
+          description="A gamified online academy for learning Arabic — structured video courses, live speaking sessions, a community, and points, badges, and streaks that keep learners motivated."
           to="/projects/andalus"
       />
       <HomeProjectCard
           :image="Warroom"
           title="Warroom"
-          description="Warroom is open communication platform for quick and easy communication between team members and individual while sharing links, emojis, stikers, voice notes and files."
+          description="A private, uncensored community messaging platform built for Andrew Tate — group and private chat with reactions, voice notes, and file sharing, plus full admin control over members."
           to="/projects/warroom"
       />
       <HomeProjectCard
           :image="StirlingCooper"
           title="Stirling Cooper"
-          description="Striling Cooper is a high-end brand that offers a wide range of products and tutorials on bedroom performance."
+          description="A gamified adult e-learning academy — expert-led video courses on intimacy and relationships, with quizzes, streaks, ranks, leaderboards, livestreams, and a community."
           to="/projects/stirling_cooper"
       />
     </div>
