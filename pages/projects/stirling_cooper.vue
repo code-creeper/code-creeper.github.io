@@ -93,7 +93,7 @@ const toc: TocItem[] = [
                class="w-full rounded-xl px-5"/>
           <img src="@/assets/images/projects/stirling_cooper/success-quiz.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
-          <img src="@/assets/images/projects/stirling_cooper/success-quiz.webp" alt="project screenshot"
+          <img src="@/assets/images/projects/stirling_cooper/fail-quiz.webp" alt="project screenshot"
                class="w-full rounded-xl px-5"/>
         </section>
         <section class="project-section" id="feature-livestream-and-community">
