@@ -31,7 +31,8 @@ const toc: TocItem[] = [
     <img src="@/assets/images/projects/stirling_cooper/main.webp" alt="Project Image" class="w-full rounded-xl"/>
     <h2 class="fs-large text-white font-bold mt-3">Stirling Cooper</h2>
     <p class="text-white/80">
-      Striling Cooper is a high-end brand that offers a wide range of products and tutorials on bedroom performance.
+      Stirling Cooper Academy is a gamified online learning platform for adults — an expert-led academy on intimacy,
+      confidence, and relationships, delivered through structured video courses, quizzes, streaks, and a community.
     </p>
     <hr class="w-full border border-white/30 my-5"/>
   </div>
@@ -41,12 +42,12 @@ const toc: TocItem[] = [
       <section class="project-section" id="overview">
         <h3 class="project-heading heading-bl">Overview</h3>
         <p class="text-white/90">
-          Stirling Cooper is an educational platform designed for adults, offering a range of products and books
-          tailored to their needs. The platform provides a comprehensive learning experience with features such as an
-          academy, live streaming, live chat, community engagement, a leaderboard, and a referral system. Additionally,
-          it enhances user engagement through a badge system based on progress, lesson streaks, quizzes, and a
-          structured lesson unlocking mechanism. Users can also earn experience points by achieving milestones, such as
-          completing lessons.
+          Stirling Cooper Academy is a members-only e-learning platform for adults, offering expert-led video courses on
+          intimacy, sexual performance, and relationships. It's built as a complete learning experience: structured
+          courses whose lessons unlock as members progress, quizzes that gate advancement, and take-home tasks to apply
+          what they've learned. Gamification runs throughout — experience points, daily streaks, ranks and badges, and a
+          weekly leaderboard — while a community layer adds topic-based chat channels, scheduled livestream Q&As with the
+          host, a referral system, and a store for books and related products.
         </p>
         <img src="@/assets/images/projects/stirling_cooper/payment.webp" alt="project screenshot"
              class="w-full rounded-xl px-5"/>
@@ -54,9 +55,9 @@ const toc: TocItem[] = [
       <section class="project-section" id="project-goals">
         <h3 class="project-heading heading-bl">Project Goals</h3>
         <p class="text-white/90">
-          I created ths application stand alone without any team, I design both frontend and backed which was adventure
-          for me, I efficiently manage the business login and the standard of code along with other responsibilities to
-          keep it open for ups calling.
+          I built this application single-handedly, designing and developing both the frontend and the backend — an
+          ambitious and rewarding challenge. I owned the business logic, code quality, and architecture end to end,
+          keeping the codebase clean and well-structured so the platform stays easy to scale as it grows.
         </p>
       </section>
       <section class="project-section" id="tech-stack">
@@ -74,66 +75,104 @@ const toc: TocItem[] = [
 
         <section class="project-section" id="feature-academy">
           <h4 class="font-bold text-white">Academy</h4>
-          <img src="@/assets/images/projects/stirling_cooper/lesson.webp" alt="project screenshot"
+          <img src="@/assets/images/projects/stirling_cooper/lesson.webp"
+               alt="Video lesson player with locked upcoming lessons, take-home task, and notes"
                class="w-full rounded-xl px-5"/>
+          <p class="text-white/90">The academy is the core of the platform — a video course player where members work
+            through structured courses and lessons. Later lessons stay locked until earlier ones are complete, and each
+            lesson pairs the video with take-home tasks, a personal notes field, a "mark as complete" action, and course
+            ratings, so progress always feels deliberate and earned.</p>
         </section>
         <section class="project-section" id="feature-streak">
           <h4 class="font-bold text-white">Streak</h4>
-          <img src="@/assets/images/projects/stirling_cooper/streak.webp" alt="project screenshot"
+          <img src="@/assets/images/projects/stirling_cooper/streak.webp"
+               alt="Day-streak pop-up warning the streak resets without a daily lesson"
                class="w-full rounded-xl px-5"/>
+          <p class="text-white/90">To build a daily habit, the platform tracks a learning streak. A member's streak grows
+            for every day they watch a lesson and resets if they skip a day — a simple, motivating nudge to keep coming
+            back, celebrated with a streak pop-up.</p>
         </section>
         <section class="project-section" id="feature-rank-and-achievement">
           <h4 class="font-bold text-white">Rank & Achievement</h4>
-          <img src="@/assets/images/projects/stirling_cooper/rank.webp" alt="project screenshot"
+          <img src="@/assets/images/projects/stirling_cooper/rank.webp"
+               alt="'New rank achieved' pop-up announcing a newly earned badge"
                class="w-full rounded-xl px-5"/>
+          <p class="text-white/90">Progress is recognised with ranks and badges. As members hit milestones they climb
+            through ranks and unlock new badges, surfaced with a celebratory "new rank achieved" moment that reinforces
+            momentum.</p>
         </section>
         <section class="project-section" id="feature-quiz">
           <h4 class="font-bold text-white">Quiz</h4>
-          <img src="@/assets/images/projects/stirling_cooper/quiz.webp" alt="project screenshot"
+          <img src="@/assets/images/projects/stirling_cooper/quiz.webp"
+               alt="Multiple-choice course quiz with a submit button"
                class="w-full rounded-xl px-5"/>
-          <img src="@/assets/images/projects/stirling_cooper/success-quiz.webp" alt="project screenshot"
+          <img src="@/assets/images/projects/stirling_cooper/success-quiz.webp"
+               alt="Quiz passed screen showing a 5/5 perfect score"
                class="w-full rounded-xl px-5"/>
-          <img src="@/assets/images/projects/stirling_cooper/fail-quiz.webp" alt="project screenshot"
+          <img src="@/assets/images/projects/stirling_cooper/fail-quiz.webp"
+               alt="Quiz failed screen with retake option, requiring 100% to progress"
                class="w-full rounded-xl px-5"/>
+          <p class="text-white/90">Each course includes multiple-choice quizzes that gate progression: members must score
+            100% to move on, and a failed attempt can simply be retaken. Clear success and failure screens tell members
+            exactly where they stand, ensuring they've genuinely absorbed the material before advancing.</p>
         </section>
         <section class="project-section" id="feature-livestream-and-community">
           <h4 class="font-bold text-white">LiveStream & Community</h4>
-          <img src="@/assets/images/projects/stirling_cooper/community.webp" alt="project screenshot"
+          <img src="@/assets/images/projects/stirling_cooper/community.webp"
+               alt="Community hub with upcoming and past livestreams, topic chats, and referral card"
                class="w-full rounded-xl px-5"/>
+          <p class="text-white/90">A community hub combines scheduled livestreams with an active members' space. Members
+            can see when the next livestream Q&A is starting, revisit past streams with the questions they covered, browse
+            topic-based chat channels, and earn a free month by referring friends who subscribe.</p>
         </section>
         <section class="project-section" id="feature-leaderboard">
           <h4 class="font-bold text-white">Leaderboard</h4>
-          <img src="@/assets/images/projects/stirling_cooper/leaderboard.webp" alt="project screenshot"
+          <img src="@/assets/images/projects/stirling_cooper/leaderboard.webp"
+               alt="Weekly XP contest leaderboard with a Hall of Fame tab"
                class="w-full rounded-xl px-5"/>
+          <p class="text-white/90">A weekly leaderboard ranks members by the experience points they earn, resetting each
+            week to keep the competition fresh, with a Hall of Fame for all-time standouts. It turns steady study into a
+            bit of friendly rivalry.</p>
         </section>
         <section class="project-section" id="feature-livechat">
           <h4 class="font-bold text-white">Live Chat</h4>
-          <img src="@/assets/images/projects/stirling_cooper/chat.webp" alt="project screenshot"
+          <img src="@/assets/images/projects/stirling_cooper/chat.webp"
+               alt="Community chat channel with shared images and a message composer"
                class="w-full rounded-xl px-5"/>
-          <img src="@/assets/images/projects/stirling_cooper/chat-reaction.webp" alt="project screenshot"
+          <img src="@/assets/images/projects/stirling_cooper/chat-reaction.webp"
+               alt="Emoji reaction picker open over a chat message"
                class="w-full rounded-xl px-5"/>
+          <p class="text-white/90">Topic-based community chat lets members talk in real time across channels such as
+            Health, Mental Fortitude, Sexual Mastery, and Dating &amp; Relationships. They can share images, react to
+            messages with emoji, and keep the conversation going between lessons and livestreams.</p>
         </section>
         <section class="project-section" id="feature-purchase">
           <h4 class="font-bold text-white">Purchase</h4>
-          <img src="@/assets/images/projects/stirling_cooper/books.webp" alt="project screenshot"
+          <img src="@/assets/images/projects/stirling_cooper/books.webp"
+               alt="In-app store showing purchased books and recommended products"
                class="w-full rounded-xl px-5"/>
+          <p class="text-white/90">Beyond the courses, members can buy supporting books and products from an in-app store.
+            The Purchases area shows what they already own alongside recommended products, giving the academy an
+            additional, self-contained revenue stream.</p>
         </section>
       </section>
       <section class="project-section" id="challenges">
         <h3 class="project-heading heading-bl">Challenges</h3>
         <p class="text-white/90">
-          Keeping the track record of streak, achievement and badges was a challenge, and showing them after lesson
-          completion was a bit tricky. Also, the live chat and live stream was a bit challenging to implement.
+          Getting the gamification right was a challenge — reliably tracking streaks, experience points, ranks, and
+          badges, and surfacing them at the right moment after a lesson without disrupting the flow. Building the
+          real-time layer for live chat and livestreams added further complexity, as did wiring quizzes into course
+          progression so lessons unlock only once a member has passed.
         </p>
       </section>
       <section class="project-section" id="initiatives">
         <h3 class="project-heading heading-bl">Initiatives</h3>
         <p class="text-white/90">
-          Stirling Cooper's initiatives focus on expanding course offerings, gamifying learning with badges and
-          rewards, and enhancing community interaction through forums and live webinars. The platform aims to improve
-          technology with a mobile app and AI chat support while boosting engagement through achievement-based rewards
-          and subscription tiers. Monetization will include premium courses, corporate partnerships, and product
-          expansion, creating a dynamic and interactive learning experience for adults.
+          To keep members engaged and progressing, the platform leans heavily on gamification: experience points, daily
+          streaks, ranks, badges, and a weekly leaderboard all reward consistency, while quiz-gated lessons ensure
+          mastery before advancing. Real-time livestreams and community chat build a sense of belonging, and a referral
+          program turns existing members into a growth channel — together making for a dynamic, interactive learning
+          experience for adults.
         </p>
         <img src="@/assets/images/projects/stirling_cooper/setting.webp" alt="project screenshot"
              class="w-full rounded-xl px-5"/>
