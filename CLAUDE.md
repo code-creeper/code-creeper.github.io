@@ -13,7 +13,9 @@ Package manager is **pnpm** (see `packageManager` in `package.json`). Dev server
 - `pnpm generate` — produce a static site in `.output/public` (this is the production build used for deployment, not `build`)
 - `pnpm build` / `pnpm preview` — SSR server build + local preview
 
-There is no test suite, linter, or formatter configured.
+- `pnpm test` — run the Vitest unit tests once (`test:watch` for watch mode)
+
+Testing is deliberately minimal: Vitest + jsdom cover only genuine logic (e.g. `utils/lightbox.ts`), not presentational markup/copy. There is no linter or formatter configured.
 
 ## Architecture
 

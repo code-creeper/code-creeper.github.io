@@ -101,6 +101,7 @@ nav > ul {
 </style>
 <script setup lang="ts">
 import { computed, onMounted, onUnmounted, ref } from 'vue';
+import { resolveLightboxTarget } from '~/utils/lightbox';
 
 const route = useRoute();
 
@@ -111,16 +112,15 @@ const isProjectPage = computed(
 
 const lightbox = ref<{ show: (src: string, alt?: string) => void } | null>(null);
 
-// One delegated listener: any rounded project screenshot (hero + section images) opens the lightbox.
-// Skipped at/below the `md` breakpoint (768px) — there images already span the device width, so a
-// full-width modal adds nothing.
+// One delegated listener: any rounded project screenshot (hero + section images) opens the
+// lightbox. The open/skip decision lives in resolveLightboxTarget (unit-tested).
 function onDocumentClick(e: MouseEvent) {
-  if (!isProjectPage.value) return;
-  if (window.innerWidth <= 768) return;
-  const target = e.target as HTMLElement | null;
-  const img = target?.closest?.('img.rounded-xl') as HTMLImageElement | null;
-  if (!img) return;
-  lightbox.value?.show(img.currentSrc || img.src, img.alt);
+  const target = resolveLightboxTarget(e.target as Element | null, {
+    viewportWidth: window.innerWidth,
+    isProjectPage: isProjectPage.value,
+  });
+  if (!target) return;
+  lightbox.value?.show(target.src, target.alt);
 }
 
 onMounted(() => document.addEventListener('click', onDocumentClick));
