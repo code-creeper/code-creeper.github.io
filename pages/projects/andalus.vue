@@ -50,7 +50,7 @@ const toc: TocItem[] = [
           leaderboards, streak challenges, and an in-app qirat currency that reward consistent study and turn language
           learning into a habit.
         </p>
-        <img src="@/assets/images/projects/andalus/login.webp" alt="project screenshot" class="w-full rounded-xl px-5"/>
+        <img src="@/assets/images/projects/andalus/login.webp" alt="project screenshot" class="w-full rounded-xl"/>
       </section>
       <section class="project-section" id="project-goals">
         <h3 class="project-heading heading-bl">Project Goals</h3>
@@ -81,13 +81,13 @@ const toc: TocItem[] = [
           <h4 class="font-bold text-white">Classroom</h4>
           <img src="@/assets/images/projects/andalus/classroom.webp"
                alt="Classroom home with the main course and locked progressive courses"
-               class="w-full rounded-xl px-5"/>
+               class="w-full rounded-xl"/>
           <img src="@/assets/images/projects/andalus/class_preview.webp"
                alt="Course preview with intro video, student count, and lesson/assessment stats"
-               class="w-full rounded-xl px-5"/>
+               class="w-full rounded-xl"/>
           <img src="@/assets/images/projects/andalus/class_lesson.webp"
                alt="Lesson player with a module outline, video, and progress tracking"
-               class="w-full rounded-xl px-5"/>
+               class="w-full rounded-xl"/>
           <p class="text-white/90">The classroom is the heart of the platform, organising Arabic study into a structured
             main course plus progressive courses that unlock as learners advance. Every course has a preview page with an
             intro video, lesson and assessment counts, and enrolment stats, while the lesson player pairs video lessons
@@ -98,7 +98,7 @@ const toc: TocItem[] = [
           <h4 class="font-bold text-white">Community</h4>
           <img src="@/assets/images/projects/andalus/community.webp"
                alt="Community feed with a rich-text post editor and a gamified weekly-strategy panel"
-               class="w-full rounded-xl px-5"/>
+               class="w-full rounded-xl"/>
           <p class="text-white/90">A social community feed lets students post with a full rich-text editor, attach
             files, and organise discussion by category. A weekly-strategy panel gamifies participation with goals like
             completing a lesson, attending speaking sessions, and interacting with posts — rewarding consistent streaks
@@ -108,7 +108,7 @@ const toc: TocItem[] = [
           <h4 class="font-bold text-white">Chatbot</h4>
           <img src="@/assets/images/projects/andalus/chatbot.webp"
                alt="Andalusi Ai Bot support chat widget open over the community page"
-               class="w-full rounded-xl px-5"/>
+               class="w-full rounded-xl"/>
           <p class="text-white/90">An in-app AI assistant — the Andalusi Ai Bot — is available across the platform to
             greet students and help them get unstuck. It opens as a support widget, collects a little context, and
             routes learners to answers or the help centre without leaving the page.</p>
@@ -117,7 +117,7 @@ const toc: TocItem[] = [
           <h4 class="font-bold text-white">Livechat</h4>
           <img src="@/assets/images/projects/andalus/livechat.webp"
                alt="Group live chat with channels like General Chat, Announcements, and Support"
-               class="w-full rounded-xl px-5"/>
+               class="w-full rounded-xl"/>
           <p class="text-white/90">Beyond one-off support, the platform hosts real-time group chat organised into
             channels — General Chat, Announcements, Support, and custom groups. Students and staff exchange messages in a
             familiar chat interface, giving the community a live, always-on space to talk.</p>
@@ -126,7 +126,7 @@ const toc: TocItem[] = [
           <h4 class="font-bold text-white">Calendar</h4>
           <img src="@/assets/images/projects/andalus/calender.webp"
                alt="Live sessions calendar in month view with today's and upcoming events"
-               class="w-full rounded-xl px-5"/>
+               class="w-full rounded-xl"/>
           <p class="text-white/90">A live-sessions calendar lays out the schedule of speaking sessions and events in a
             month view, with today's and upcoming events highlighted alongside. Learners can review what's coming up and
             add sessions straight to their Google Calendar so they never miss one.</p>
@@ -135,7 +135,7 @@ const toc: TocItem[] = [
           <h4 class="font-bold text-white">Leaderboard</h4>
           <img src="@/assets/images/projects/andalus/leaderboard.webp"
                alt="Leaderboard ranking members by points, with badges and program progress"
-               class="w-full rounded-xl px-5"/>
+               class="w-full rounded-xl"/>
           <p class="text-white/90">The leaderboard turns learning into friendly competition, ranking members by the
             points they earn across the program. Each profile shows rank, points, and progress toward the Arabic program,
             along with earned badges grouped by main-course, progressive-course, and real-life-event achievements.</p>
@@ -144,7 +144,7 @@ const toc: TocItem[] = [
           <h4 class="font-bold text-white">Profile Management</h4>
           <img src="@/assets/images/projects/andalus/profile.webp"
                alt="Account settings with Profile, Account, Introduction, Notifications, and Billing tabs"
-               class="w-full rounded-xl px-5"/>
+               class="w-full rounded-xl"/>
           <p class="text-white/90">A settings area lets students manage their own account across Profile, Account,
             Introduction, Notifications, and Billing tabs. From the Profile tab they can update their picture, name,
             gender, bio, and location, keeping their public presence and preferences up to date.</p>
@@ -153,10 +153,10 @@ const toc: TocItem[] = [
           <h4 class="font-bold text-white">Admin Portal</h4>
           <img src="@/assets/images/projects/andalus/admin_dashboard.webp"
                alt="Admin dashboard with assessments, earnings, subscriptions, and qirat economy stats"
-               class="w-full rounded-xl px-5"/>
+               class="w-full rounded-xl"/>
           <img src="@/assets/images/projects/andalus/admin_students.webp"
                alt="Admin students table with status, subscription, points, and Stripe import"
-               class="w-full rounded-xl px-5"/>
+               class="w-full rounded-xl"/>
           <p class="text-white/90">A dedicated admin portal gives the team full control over the platform. The dashboard
             surfaces pending assessments, earnings, new students, and the qirat virtual-currency economy, plus monthly,
             yearly, and special subscription metrics. Deeper sections manage students and instructors, courses and
@@ -182,7 +182,7 @@ const toc: TocItem[] = [
           leaderboards, and a qirat reward currency — was built to sustain motivation and cater to different paces,
           keeping each learner engaged through to program completion.
         </p>
-        <img src="@/assets/images/projects/andalus/footer.webp" alt="project screenshot" class="w-full rounded-xl px-5"/>
+        <img src="@/assets/images/projects/andalus/footer.webp" alt="project screenshot" class="w-full rounded-xl"/>
       </section>
     </div>
 

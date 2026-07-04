@@ -51,7 +51,7 @@ const toc: TocItem[] = [
           host, a referral system, and a store for books and related products.
         </p>
         <img src="@/assets/images/projects/stirling_cooper/payment.webp" alt="project screenshot"
-          class="w-full rounded-xl px-5" />
+          class="w-full rounded-xl" />
       </section>
       <section class="project-section" id="project-goals">
         <h3 class="project-heading heading-bl">Project Goals</h3>
@@ -78,7 +78,7 @@ const toc: TocItem[] = [
           <h4 class="font-bold text-white">Academy</h4>
           <img src="@/assets/images/projects/stirling_cooper/lesson.webp"
             alt="Video lesson player with locked upcoming lessons, take-home task, and notes"
-            class="w-full rounded-xl px-5" />
+            class="w-full rounded-xl" />
           <p class="text-white/90">The academy is the core of the platform — a video course player where members work
             through structured courses and lessons. Later lessons stay locked until earlier ones are complete, and each
             lesson pairs the video with take-home tasks, a personal notes field, a "mark as complete" action, and course
@@ -87,7 +87,7 @@ const toc: TocItem[] = [
         <section class="project-section" id="feature-streak">
           <h4 class="font-bold text-white">Streak</h4>
           <img src="@/assets/images/projects/stirling_cooper/streak.webp"
-            alt="Day-streak pop-up warning the streak resets without a daily lesson" class="w-full rounded-xl px-5" />
+            alt="Day-streak pop-up warning the streak resets without a daily lesson" class="w-full rounded-xl" />
           <p class="text-white/90">To build a daily habit, the platform tracks a learning streak. A member's streak
             grows
             for every day they watch a lesson and resets if they skip a day — a simple, motivating nudge to keep coming
@@ -96,7 +96,7 @@ const toc: TocItem[] = [
         <section class="project-section" id="feature-rank-and-achievement">
           <h4 class="font-bold text-white">Rank & Achievement</h4>
           <img src="@/assets/images/projects/stirling_cooper/rank.webp"
-            alt="'New rank achieved' pop-up announcing a newly earned badge" class="w-full rounded-xl px-5" />
+            alt="'New rank achieved' pop-up announcing a newly earned badge" class="w-full rounded-xl" />
           <p class="text-white/90">Progress is recognised with ranks and badges. As members hit milestones they climb
             through ranks and unlock new badges, surfaced with a celebratory "new rank achieved" moment that reinforces
             momentum.</p>
@@ -104,11 +104,11 @@ const toc: TocItem[] = [
         <section class="project-section" id="feature-quiz">
           <h4 class="font-bold text-white">Quiz</h4>
           <img src="@/assets/images/projects/stirling_cooper/quiz.webp"
-            alt="Multiple-choice course quiz with a submit button" class="w-full rounded-xl px-5" />
+            alt="Multiple-choice course quiz with a submit button" class="w-full rounded-xl" />
           <img src="@/assets/images/projects/stirling_cooper/success-quiz.webp"
-            alt="Quiz passed screen showing a 5/5 perfect score" class="w-full rounded-xl px-5" />
+            alt="Quiz passed screen showing a 5/5 perfect score" class="w-full rounded-xl" />
           <img src="@/assets/images/projects/stirling_cooper/fail-quiz.webp"
-            alt="Quiz failed screen with retake option, requiring 100% to progress" class="w-full rounded-xl px-5" />
+            alt="Quiz failed screen with retake option, requiring 100% to progress" class="w-full rounded-xl" />
           <p class="text-white/90">Each course includes multiple-choice quizzes that gate progression: members must
             score
             100% to move on, and a failed attempt can simply be retaken. Clear success and failure screens tell members
@@ -118,7 +118,7 @@ const toc: TocItem[] = [
           <h4 class="font-bold text-white">LiveStream & Community</h4>
           <img src="@/assets/images/projects/stirling_cooper/community.webp"
             alt="Community hub with upcoming and past livestreams, topic chats, and referral card"
-            class="w-full rounded-xl px-5" />
+            class="w-full rounded-xl" />
           <p class="text-white/90">A community hub combines scheduled livestreams with an active members' space. Members
             can see when the next livestream Q&A is starting, revisit past streams with the questions they covered,
             browse
@@ -127,7 +127,7 @@ const toc: TocItem[] = [
         <section class="project-section" id="feature-leaderboard">
           <h4 class="font-bold text-white">Leaderboard</h4>
           <img src="@/assets/images/projects/stirling_cooper/leaderboard.webp"
-            alt="Weekly XP contest leaderboard with a Hall of Fame tab" class="w-full rounded-xl px-5" />
+            alt="Weekly XP contest leaderboard with a Hall of Fame tab" class="w-full rounded-xl" />
           <p class="text-white/90">A weekly leaderboard ranks members by the experience points they earn, resetting each
             week to keep the competition fresh, with a Hall of Fame for all-time standouts. It turns steady study into a
             bit of friendly rivalry.</p>
@@ -135,9 +135,9 @@ const toc: TocItem[] = [
         <section class="project-section" id="feature-livechat">
           <h4 class="font-bold text-white">Live Chat</h4>
           <img src="@/assets/images/projects/stirling_cooper/chat.webp"
-            alt="Community chat channel with shared images and a message composer" class="w-full rounded-xl px-5" />
+            alt="Community chat channel with shared images and a message composer" class="w-full rounded-xl" />
           <img src="@/assets/images/projects/stirling_cooper/chat-reaction.webp"
-            alt="Emoji reaction picker open over a chat message" class="w-full rounded-xl px-5" />
+            alt="Emoji reaction picker open over a chat message" class="w-full rounded-xl" />
           <p class="text-white/90">Topic-based community chat lets members talk in real time across channels such as
             Health, Mental Fortitude, Sexual Mastery, and Dating &amp; Relationships. They can share images, react to
             messages with emoji, and keep the conversation going between lessons and livestreams.</p>
@@ -145,7 +145,7 @@ const toc: TocItem[] = [
         <section class="project-section" id="feature-purchase">
           <h4 class="font-bold text-white">Purchase</h4>
           <img src="@/assets/images/projects/stirling_cooper/books.webp"
-            alt="In-app store showing purchased books and recommended products" class="w-full rounded-xl px-5" />
+            alt="In-app store showing purchased books and recommended products" class="w-full rounded-xl" />
           <p class="text-white/90">Beyond the courses, members can buy supporting books and products from an in-app
             store.
             The Purchases area shows what they already own alongside recommended products, giving the academy an
@@ -171,7 +171,7 @@ const toc: TocItem[] = [
           experience for adults.
         </p>
         <img src="@/assets/images/projects/stirling_cooper/setting.webp" alt="project screenshot"
-          class="w-full rounded-xl px-5" />
+          class="w-full rounded-xl" />
       </section>
     </div>
 

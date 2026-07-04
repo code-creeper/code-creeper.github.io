@@ -29,7 +29,7 @@ Auto-imported (no manual imports): `useProjectObserver`, `<LazyProjectTableOfCon
 
 Use shared classes, never hardcode colors (use `var(--primary-color)` etc.):
 `.page`, `.project-section`, `.project-heading heading-bl`, `.tech-stack`, `.fs-large`.
-Body copy `text-white/90` (hero intro `text-white/80`). Images: hero `w-full rounded-xl`, in-section `w-full rounded-xl px-5`. Add a scoped `<style>` only for page-specific bits.
+Body copy `text-white/90` (hero intro `text-white/80`). Images: `w-full rounded-xl` (hero and in-section alike) — no horizontal padding, so the click-to-zoom hover ring hugs the image edges. Add a scoped `<style>` only for page-specific bits.
 
 ## Template
 
@@ -82,7 +82,7 @@ const toc: TocItem[] = [
         <section class="project-section" id="feature-one">
           <h4 class="font-bold text-white">Feature One</h4>
           <img src="@/assets/images/projects/SLUG/feature-one.webp" alt="what this screen shows"
-            class="w-full rounded-xl px-5" />
+            class="w-full rounded-xl" />
           <p class="text-white/90">2–4 sentences on what this screen does.</p>
         </section>
       </section>

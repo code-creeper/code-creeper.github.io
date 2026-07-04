@@ -52,7 +52,7 @@ const toc: TocItem[] = [
           profile tying it all together.
         </p>
         <img src="@/assets/images/projects/toraka/login.webp" alt="Toraka sign-in screen with email and Google login"
-          class="w-full rounded-xl px-5" />
+          class="w-full rounded-xl" />
       </section>
       <section class="project-section" id="project-goals">
         <h3 class="project-heading heading-bl">Project Goals</h3>
@@ -81,13 +81,13 @@ const toc: TocItem[] = [
         <section class="project-section" id="feature-discover">
           <h4 class="font-bold text-white">Discover & Browse</h4>
           <img src="@/assets/images/projects/toraka/browse.webp"
-            alt="Browse page searching 3,000+ series with filter controls" class="w-full rounded-xl px-5" />
+            alt="Browse page searching 3,000+ series with filter controls" class="w-full rounded-xl" />
           <img src="@/assets/images/projects/toraka/top_series.webp"
-            alt="Top Series ranking of the most popular series this month" class="w-full rounded-xl px-5" />
+            alt="Top Series ranking of the most popular series this month" class="w-full rounded-xl" />
           <img src="@/assets/images/projects/toraka/recently_updated.webp"
-            alt="Recently updated feed of the latest chapter releases" class="w-full rounded-xl px-5" />
+            alt="Recently updated feed of the latest chapter releases" class="w-full rounded-xl" />
           <img src="@/assets/images/projects/toraka/search_anywhere.webp"
-            alt="Global command-palette search modal for finding any series" class="w-full rounded-xl px-5" />
+            alt="Global command-palette search modal for finding any series" class="w-full rounded-xl" />
           <p class="text-white/90">Discovery sits at the heart of Toraka. The home page surfaces trending and top series
             alongside a live "recently updated" feed, while a full Browse view lets readers search 3,000+ titles and
             filter by status, source, genre, author, artist, type, and more. A global command-palette search (⌘K) makes
@@ -97,9 +97,9 @@ const toc: TocItem[] = [
         <section class="project-section" id="feature-series">
           <h4 class="font-bold text-white">Series & Chapters</h4>
           <img src="@/assets/images/projects/toraka/series_page.webp"
-            alt="Series detail page with synopsis, genres, score, and official sources" class="w-full rounded-xl px-5" />
+            alt="Series detail page with synopsis, genres, score, and official sources" class="w-full rounded-xl" />
           <img src="@/assets/images/projects/toraka/series_chapters.webp"
-            alt="Chapters tab listing every chapter with its source and release time" class="w-full rounded-xl px-5" />
+            alt="Chapters tab listing every chapter with its source and release time" class="w-full rounded-xl" />
           <p class="text-white/90">Each series has a rich detail page: cover art, alternative titles, synopsis, genres,
             score, status, popularity rank, and the official sources it's drawn from. A Chapters tab lists every chapter
             with its scanlation source and release time, sortable newest- or oldest-first, so readers can pick up exactly
@@ -109,9 +109,9 @@ const toc: TocItem[] = [
         <section class="project-section" id="feature-reviews">
           <h4 class="font-bold text-white">Reviews</h4>
           <img src="@/assets/images/projects/toraka/series_reviews.webp"
-            alt="Reviews tab with recommend votes and an add-review button" class="w-full rounded-xl px-5" />
+            alt="Reviews tab with recommend votes and an add-review button" class="w-full rounded-xl" />
           <img src="@/assets/images/projects/toraka/add_review.webp"
-            alt="Write-a-review modal with recommend / don't-recommend and a text field" class="w-full rounded-xl px-5" />
+            alt="Write-a-review modal with recommend / don't-recommend and a text field" class="w-full rounded-xl" />
           <p class="text-white/90">Readers can share their take on any series with a simple recommend / don't-recommend
             review and a short write-up. Reviews appear on the series page with helpful votes and replies, and a quick
             modal lets anyone add their own in a few clicks.</p>
@@ -120,12 +120,12 @@ const toc: TocItem[] = [
         <section class="project-section" id="feature-bookmarks">
           <h4 class="font-bold text-white">Bookmarks & Tracking</h4>
           <img src="@/assets/images/projects/toraka/bookmarks_grid_view.webp"
-            alt="Bookmarks library in grid view showing current and latest chapters" class="w-full rounded-xl px-5" />
+            alt="Bookmarks library in grid view showing current and latest chapters" class="w-full rounded-xl" />
           <img src="@/assets/images/projects/toraka/bookmarks_list_view.webp"
-            alt="Bookmarks library in list view with reading-status badges" class="w-full rounded-xl px-5" />
+            alt="Bookmarks library in list view with reading-status badges" class="w-full rounded-xl" />
           <img src="@/assets/images/projects/toraka/udpate_bookmark.webp"
             alt="Update reading progress modal with chapter, source, status, tags, and rating"
-            class="w-full rounded-xl px-5" />
+            class="w-full rounded-xl" />
           <p class="text-white/90">Bookmarks turn Toraka into a personal reading tracker. Members build a library they can
             view as a grid or a list, filter and sort by status, source, tags, and type, and see current-versus-latest
             chapter at a glance. An update modal captures everything about a title — current chapter, source, reading
@@ -136,7 +136,7 @@ const toc: TocItem[] = [
           <h4 class="font-bold text-white">Reading History</h4>
           <img src="@/assets/images/projects/toraka/reading_history.webp"
             alt="Reading history grouped by day showing chapter jumps, sources, and timestamps"
-            class="w-full rounded-xl px-5" />
+            class="w-full rounded-xl" />
           <p class="text-white/90">A detailed history logs every chapter a reader opens, grouped by day and showing the
             chapter jump, source, and timestamp. It makes it easy to retrace steps across dozens of ongoing series and
             pick back up without losing the thread.</p>
@@ -145,7 +145,7 @@ const toc: TocItem[] = [
         <section class="project-section" id="feature-notifications">
           <h4 class="font-bold text-white">Notifications</h4>
           <img src="@/assets/images/projects/toraka/notifications.webp"
-            alt="Notifications panel with new-chapter alerts and unread/all tabs" class="w-full rounded-xl px-5" />
+            alt="Notifications panel with new-chapter alerts and unread/all tabs" class="w-full rounded-xl" />
           <p class="text-white/90">When a followed series releases a new chapter, Toraka notifies the reader. A
             notifications panel separates unread from all alerts, links straight to the new chapter, and supports marking
             chapters as read or clearing everything at once.</p>
@@ -154,9 +154,9 @@ const toc: TocItem[] = [
         <section class="project-section" id="feature-profile">
           <h4 class="font-bold text-white">Profile & Settings</h4>
           <img src="@/assets/images/projects/toraka/profile_view.webp"
-            alt="Public profile with bio, reading stats, and an activity feed" class="w-full rounded-xl px-5" />
+            alt="Public profile with bio, reading stats, and an activity feed" class="w-full rounded-xl" />
           <img src="@/assets/images/projects/toraka/profile_settings.webp"
-            alt="Account settings with profile info, social links, and import/export" class="w-full rounded-xl px-5" />
+            alt="Account settings with profile info, social links, and import/export" class="w-full rounded-xl" />
           <p class="text-white/90">Each member has a public profile with a bio, follower counts, reading stats, and an
             activity feed, plus tabs for their reviews and bookmarks. Settings cover profile visibility, account details,
             and social links, and — usefully for a tracker — importing bookmarks from Comick, MAL, or Kenmei and
@@ -180,7 +180,7 @@ const toc: TocItem[] = [
           the aggregated catalogue efficiently. Global search, grid and list library views, cross-source progress
           tracking, and import/export from other trackers make Toraka a genuinely central home for a reader's collection.
         </p>
-        <img src="@/assets/images/projects/toraka/footer.webp" alt="project screenshot" class="w-full rounded-xl px-5" />
+        <img src="@/assets/images/projects/toraka/footer.webp" alt="project screenshot" class="w-full rounded-xl" />
       </section>
     </div>
 

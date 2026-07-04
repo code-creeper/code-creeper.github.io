@@ -50,7 +50,7 @@ const toc: TocItem[] = [
           a reliable, production-ready platform within a tight deadline.
         </p>
         <img src="@/assets/images/projects/capitalclub/academy.webp" alt="project screenshot"
-          class="w-full rounded-xl px-5" />
+          class="w-full rounded-xl" />
       </section>
       <section class="project-section" id="project-goals">
         <h3 class="project-heading heading-bl">Project Goals</h3>
@@ -78,7 +78,7 @@ const toc: TocItem[] = [
         <section class="project-section" id="feature-notes-with-lesson">
           <h4 class="font-bold text-white">Lesson Notes</h4>
           <img src="@/assets/images/projects/capitalclub/lesson-notes.webp" alt="Lesson player with a side notes panel"
-            class="w-full rounded-xl px-5" />
+            class="w-full rounded-xl" />
           <p class="text-white/90">A dedicated notes panel sits alongside the video player, letting members capture key
             takeaways without leaving the lesson. Notes save automatically as you type and stay tied to each individual
             lesson, so members can pick up exactly where they left off. The player also surfaces module progress,
@@ -87,7 +87,7 @@ const toc: TocItem[] = [
         <section class="project-section" id="feature-favourite-lesson-and-notes">
           <h4 class="font-bold text-white">Favourites &amp; Saved Notes</h4>
           <img src="@/assets/images/projects/capitalclub/favourite.webp"
-            alt="Dashboard showing favourited courses and saved notes grouped by course" class="w-full rounded-xl px-5" />
+            alt="Dashboard showing favourited courses and saved notes grouped by course" class="w-full rounded-xl" />
           <p class="text-white/90">A personal library brings everything a member has bookmarked into one place.
             Favourited courses are pinned for quick access, while saved notes are grouped by course so members can jump
             straight back to the material that matters most to them.</p>
@@ -95,7 +95,7 @@ const toc: TocItem[] = [
         <section class="project-section" id="feature-profile-management">
           <h4 class="font-bold text-white">Profile Management</h4>
           <img src="@/assets/images/projects/capitalclub/profile.webp"
-            alt="Member profile settings with Profile, Billing, and Account tabs" class="w-full rounded-xl px-5" />
+            alt="Member profile settings with Profile, Billing, and Account tabs" class="w-full rounded-xl" />
           <p class="text-white/90">Members manage their account from a single settings hub split into Profile, Billing,
             and Account tabs. From here they can update personal information such as name, email, phone, and country,
             review their membership and billing details, and reach support — all wrapped in the same clean, on-brand
@@ -104,7 +104,7 @@ const toc: TocItem[] = [
         <section class="project-section" id="feature-discord-integration">
           <h4 class="font-bold text-white">Discord Integration</h4>
           <img src="@/assets/images/projects/capitalclub/discord.webp"
-            alt="Member-gated screen to join the Capital Club Discord community" class="w-full rounded-xl px-5" />
+            alt="Member-gated screen to join the Capital Club Discord community" class="w-full rounded-xl" />
           <p class="text-white/90">The platform links directly to the community's private Discord, available only to
             active Capital Club members. Connecting an account authenticates the member and assigns the appropriate
             role, giving them access to the right channels the moment they join.</p>
@@ -128,7 +128,7 @@ const toc: TocItem[] = [
           expectations and the client's business objectives.
         </p>
         <img src="@/assets/images/projects/capitalclub/logo.webp" alt="project screenshot"
-          class="w-full rounded-xl px-5" />
+          class="w-full rounded-xl" />
       </section>
     </div>
 

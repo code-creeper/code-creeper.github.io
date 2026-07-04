@@ -47,7 +47,7 @@ const toc: TocItem[] = [
           chat. Access is subscription-based, and the catalogue is built around creators whose series document journeys
           across South America and beyond.
         </p>
-        <img src="@/assets/images/projects/tabootv/home.webp" alt="project screenshot" class="w-full rounded-xl px-5"/>
+        <img src="@/assets/images/projects/tabootv/home.webp" alt="project screenshot" class="w-full rounded-xl"/>
       </section>
       <section class="project-section" id="project-goals">
         <h3 class="project-heading heading-bl">Project Goals</h3>
@@ -76,7 +76,7 @@ const toc: TocItem[] = [
           <h4 class="font-bold text-white">Series</h4>
           <img src="@/assets/images/projects/tabootv/series.webp"
                alt="Series page with a featured trailer, episode count, and numbered episode cards"
-               class="w-full rounded-xl px-5"/>
+               class="w-full rounded-xl"/>
           <p class="text-white/90">Content is organised into multi-episode series, each with a featured trailer, an
             episode count, and a synopsis. Members can start a series and move through its parts in order — for example
             a four-part journey across South America — with episode cards previewing every instalment.</p>
@@ -86,7 +86,7 @@ const toc: TocItem[] = [
           <h4 class="font-bold text-white">Shorts</h4>
           <img src="@/assets/images/projects/tabootv/shorts.webp"
                alt="Vertical short-form video feed with mute, reaction, and comment controls"
-               class="w-full rounded-xl px-5"/>
+               class="w-full rounded-xl"/>
           <p class="text-white/90">A vertical, swipeable feed of short-form videos in the style of TikTok or Reels.
             Viewers scroll between clips with on-screen controls for mute, reactions, and comments, making it easy to
             sample bite-sized content between longer watches.</p>
@@ -96,7 +96,7 @@ const toc: TocItem[] = [
           <h4 class="font-bold text-white">Comment, Reply & Reactions</h4>
           <img src="@/assets/images/projects/tabootv/comments.webp"
                alt="Video watch page with a fire reaction count and a threaded comments section"
-               class="w-full rounded-xl px-5"/>
+               class="w-full rounded-xl"/>
           <p class="text-white/90">Every video carries a full engagement layer beneath it. Members can react with a fire
             button, leave comments, reply to one another in threads, and like or dislike individual replies — turning
             each video into a conversation rather than a one-way broadcast.</p>
@@ -106,7 +106,7 @@ const toc: TocItem[] = [
           <h4 class="font-bold text-white">Community</h4>
           <img src="@/assets/images/projects/tabootv/community.webp"
                alt="Community news feed with a creator post, image, reactions, and comments"
-               class="w-full rounded-xl px-5"/>
+               class="w-full rounded-xl"/>
           <p class="text-white/90">A dedicated Community feed lets creators post text-and-image updates straight to
             their audience, who can react and comment in return. A separate Creators view and members-only posts give
             the platform a social home that lives beyond the video catalogue.</p>
@@ -116,7 +116,7 @@ const toc: TocItem[] = [
           <h4 class="font-bold text-white">Live Chat</h4>
           <img src="@/assets/images/projects/tabootv/live-chat.webp"
                alt="Live chat panel open alongside the home page with timestamped messages"
-               class="w-full rounded-xl px-5"/>
+               class="w-full rounded-xl"/>
           <p class="text-white/90">A real-time Live Chat panel runs alongside the site, letting members talk to each
             other live with instant message delivery, timestamps, and emoji. It adds a sense of shared, in-the-moment
             presence to the viewing experience.</p>
@@ -139,7 +139,7 @@ const toc: TocItem[] = [
           faster, more reliable releases without compromising quality.
         </p>
         <img src="@/assets/images/projects/tabootv/features.webp" alt="project screenshot"
-             class="w-full rounded-xl px-5"/>
+             class="w-full rounded-xl"/>
       </section>
     </div>
 

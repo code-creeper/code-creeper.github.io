@@ -48,7 +48,7 @@ const toc: TocItem[] = [
           keeps the field and the office in sync with real-time data from any location, alongside resource planning and
           safety-and-compliance reporting.
         </p>
-        <img src="@/assets/images/projects/ezelogs/home.webp" alt="project screenshot" class="w-full rounded-xl px-5"/>
+        <img src="@/assets/images/projects/ezelogs/home.webp" alt="project screenshot" class="w-full rounded-xl"/>
       </section>
       <section class="project-section" id="project-goals">
         <h3 class="project-heading heading-bl">Project Goals</h3>
@@ -77,7 +77,7 @@ const toc: TocItem[] = [
           <h4 class="font-bold text-white">Dashboard</h4>
           <img src="@/assets/images/projects/ezelogs/dashboard.webp"
                alt="User dashboard showing project cards with dates and status badges"
-               class="w-full rounded-xl px-5"/>
+               class="w-full rounded-xl"/>
           <p class="text-white/90">The user dashboard is the entry point, presenting every project as a card with its
             start and end dates and a live status badge — Started, In Progress, or Completed. Users pick the project they
             want to work on and drop straight into its workspace, keeping multiple concurrent jobs organised at a
@@ -87,7 +87,7 @@ const toc: TocItem[] = [
           <h4 class="font-bold text-white">Project Users</h4>
           <img src="@/assets/images/projects/ezelogs/project_users.webp"
                alt="Project users management table with roles, trades, and invite status"
-               class="w-full rounded-xl px-5"/>
+               class="w-full rounded-xl"/>
           <p class="text-white/90">Each project has its own role-based user management. Team members — subcontractors,
             project managers, agencies, and customers — are invited or assigned to a project along with their company,
             contact details, role, and trade. Statuses such as Invited and Assigned track where each person is in the
@@ -97,7 +97,7 @@ const toc: TocItem[] = [
           <h4 class="font-bold text-white">Project Chat</h4>
           <img src="@/assets/images/projects/ezelogs/project_chat.webp"
                alt="In-app project chat with a contacts list, group creation, and file attachments"
-               class="w-full rounded-xl px-5"/>
+               class="w-full rounded-xl"/>
           <p class="text-white/90">Built-in messaging keeps project communication in one place. Members can chat
             one-to-one with people invited to the project, create group conversations, search contacts, and share files
             and attachments — removing the need to jump out to email or a separate messenger.</p>
@@ -106,7 +106,7 @@ const toc: TocItem[] = [
           <h4 class="font-bold text-white">Document Control</h4>
           <img src="@/assets/images/projects/ezelogs/document_control.webp"
                alt="Contract document manager with folders, file sizes, and modified dates"
-               class="w-full rounded-xl px-5"/>
+               class="w-full rounded-xl"/>
           <p class="text-white/90">A document management module organises all project files into folders — admin,
             preconstruction, contract management, and more. Users can import documents, create folders, track file size
             and last-modified dates, and star important items, giving every project a single source of truth for its
@@ -116,10 +116,10 @@ const toc: TocItem[] = [
           <h4 class="font-bold text-white">Timesheet</h4>
           <img src="@/assets/images/projects/ezelogs/time_sheet_report.webp"
                alt="Timesheet report with date, trade, and employee filters plus PDF export"
-               class="w-full rounded-xl px-5"/>
+               class="w-full rounded-xl"/>
           <img src="@/assets/images/projects/ezelogs/time_sheet_list.webp"
                alt="Timesheet list with regular, overtime, and double-time hours and labor cost"
-               class="w-full rounded-xl px-5"/>
+               class="w-full rounded-xl"/>
           <p class="text-white/90">The timesheet module records labour hours down to regular, overtime, and double-time,
             automatically calculating labour cost and cumulative project hours per worker and trade. Entries can be
             filtered by date range, trade, subcontractor, or employee, then compiled into a branded report that's
@@ -129,7 +129,7 @@ const toc: TocItem[] = [
           <h4 class="font-bold text-white">Bid Management</h4>
           <img src="@/assets/images/projects/ezelogs/bid_management.webp"
                alt="Bid management dashboard with cost estimate breakdowns, charts, bid packages, and RFIs"
-               class="w-full rounded-xl px-5"/>
+               class="w-full rounded-xl"/>
           <p class="text-white/90">The bid management dashboard turns cost estimation into a visual, structured process.
             It breaks a bid down by category — labour, material, equipment, subcontractor, and markups — and by trade,
             illustrating the split with charts, while tracking bid packages, received proposals, and RFIs alongside a
@@ -151,7 +151,7 @@ const toc: TocItem[] = [
           initiatives have been undertaken. A key focus is on delivering comprehensive training programs to facilitate
           user adoption and proficiency, thereby minimizing resistance to change.
         </p>
-        <img src="@/assets/images/projects/ezelogs/footer.webp" alt="project screenshot" class="w-full rounded-xl px-5"/>
+        <img src="@/assets/images/projects/ezelogs/footer.webp" alt="project screenshot" class="w-full rounded-xl"/>
       </section>
     </div>
 

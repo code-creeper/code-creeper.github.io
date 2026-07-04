@@ -19,6 +19,7 @@
       </nav>
     </div>
     <slot/>
+    <ProjectLightbox v-if="isProjectPage" ref="lightbox"/>
     <footer>
       <p>
         Designed and Developed by
@@ -99,4 +100,26 @@ nav > ul {
 }
 </style>
 <script setup lang="ts">
+import { computed, onMounted, onUnmounted, ref } from 'vue';
+
+const route = useRoute();
+
+// Active only on a project case-study page (/projects/<slug>), not the gallery (/projects).
+const isProjectPage = computed(
+  () => route.path.startsWith('/projects/') && route.path !== '/projects/'
+);
+
+const lightbox = ref<{ show: (src: string, alt?: string) => void } | null>(null);
+
+// One delegated listener: any rounded project screenshot (hero + section images) opens the lightbox.
+function onDocumentClick(e: MouseEvent) {
+  if (!isProjectPage.value) return;
+  const target = e.target as HTMLElement | null;
+  const img = target?.closest?.('img.rounded-xl') as HTMLImageElement | null;
+  if (!img) return;
+  lightbox.value?.show(img.currentSrc || img.src, img.alt);
+}
+
+onMounted(() => document.addEventListener('click', onDocumentClick));
+onUnmounted(() => document.removeEventListener('click', onDocumentClick));
 </script>

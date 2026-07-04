@@ -49,7 +49,7 @@ const toc: TocItem[] = [
           keep conversations feeling live. Admins retain complete control, creating groups and inviting, removing, or
           banning members as needed.
         </p>
-        <img src="@/assets/images/projects/warroom/home.webp" alt="project screenshot" class="w-full rounded-xl px-5"/>
+        <img src="@/assets/images/projects/warroom/home.webp" alt="project screenshot" class="w-full rounded-xl"/>
       </section>
       <section class="project-section" id="project-goals">
         <h3 class="project-heading heading-bl">Project Goals</h3>
@@ -79,7 +79,7 @@ const toc: TocItem[] = [
           <h4 class="font-bold text-white">Reaction</h4>
           <img src="@/assets/images/projects/warroom/react.webp"
                alt="Emoji reaction bar over a chat message with reactions shown beneath messages"
-               class="w-full rounded-xl px-5"/>
+               class="w-full rounded-xl"/>
           <p class="text-white/90">Members can react to any message with emoji, tapping a quick reaction bar to add a
             thumbs-up, heart, laugh, and more. Reactions sit neatly beneath the message, giving people a lightweight way
             to respond without cluttering the conversation.</p>
@@ -88,7 +88,7 @@ const toc: TocItem[] = [
           <h4 class="font-bold text-white">Stickers</h4>
           <img src="@/assets/images/projects/warroom/sticker.webp"
                alt="Sticker picker with custom stickers and emoji, with a sticker sent in chat"
-               class="w-full rounded-xl px-5"/>
+               class="w-full rounded-xl"/>
           <p class="text-white/90">A built-in sticker pack — including custom, on-brand designs — lets members express
             themselves beyond plain text. Stickers and emoji are picked from the same tray in the composer and render
             large in the chat for extra emphasis.</p>
@@ -97,7 +97,7 @@ const toc: TocItem[] = [
           <h4 class="font-bold text-white">Reply</h4>
           <img src="@/assets/images/projects/warroom/reply.webp"
                alt="A chat message quoting an earlier message as a threaded reply"
-               class="w-full rounded-xl px-5"/>
+               class="w-full rounded-xl"/>
           <p class="text-white/90">Any message can be quoted and replied to directly, so threads stay easy to follow even
             in a busy group. The original message is shown above the reply, making it clear exactly what someone is
             responding to.</p>
@@ -106,7 +106,7 @@ const toc: TocItem[] = [
           <h4 class="font-bold text-white">Sharing Links with Preview</h4>
           <img src="@/assets/images/projects/warroom/link_preview.webp"
                alt="Shared URLs rendered as rich preview cards with title, description, and image"
-               class="w-full rounded-xl px-5"/>
+               class="w-full rounded-xl"/>
           <p class="text-white/90">When a member shares a URL, Warroom automatically fetches a rich preview — the page
             title, description, and image — and renders it as a tidy card. Links become scannable at a glance instead of
             raw text.</p>
@@ -115,7 +115,7 @@ const toc: TocItem[] = [
           <h4 class="font-bold text-white">Voice Notes</h4>
           <img src="@/assets/images/projects/warroom/voice.webp"
                alt="Inline voice-note players with playback and volume controls in the chat"
-               class="w-full rounded-xl px-5"/>
+               class="w-full rounded-xl"/>
           <p class="text-white/90">Members can record and send voice notes straight from the composer, and play them back
             inline with scrubbing and volume controls. It's a fast, natural way to communicate when typing isn't
             convenient.</p>
@@ -124,7 +124,7 @@ const toc: TocItem[] = [
           <h4 class="font-bold text-white">Sharing Files & Videos</h4>
           <img src="@/assets/images/projects/warroom/file_and_video.webp"
                alt="Downloadable file chips and an inline video player in the chat"
-               class="w-full rounded-xl px-5"/>
+               class="w-full rounded-xl"/>
           <p class="text-white/90">Beyond text, members can share files and videos of all kinds. Documents appear as
             downloadable chips, while videos play inline with full playback controls and a fullscreen option — all backed
             by AWS S3 storage.</p>
@@ -133,7 +133,7 @@ const toc: TocItem[] = [
           <h4 class="font-bold text-white">Admin Portal</h4>
           <img src="@/assets/images/projects/warroom/admin.webp"
                alt="Admin analytics dashboard with active-user charts and member demographics"
-               class="w-full rounded-xl px-5"/>
+               class="w-full rounded-xl"/>
           <p class="text-white/90">A separate admin portal gives the client full command of the community. Alongside user
             management and group management — creating groups and inviting, removing, or banning members — it surfaces
             analytics such as daily and monthly active users, top-performing groups, and a breakdown of where members are
@@ -156,7 +156,7 @@ const toc: TocItem[] = [
           technology for instant message delivery and real-time collaboration. Optimized media handling and compression
           techniques are implemented to support high-speed file sharing without compromising quality.
         </p>
-        <img src="@/assets/images/projects/warroom/footer.jpg" alt="project screenshot" class="w-full rounded-xl px-5"/>
+        <img src="@/assets/images/projects/warroom/footer.jpg" alt="project screenshot" class="w-full rounded-xl"/>
       </section>
     </div>
 
