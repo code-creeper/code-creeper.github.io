@@ -112,8 +112,11 @@ const isProjectPage = computed(
 const lightbox = ref<{ show: (src: string, alt?: string) => void } | null>(null);
 
 // One delegated listener: any rounded project screenshot (hero + section images) opens the lightbox.
+// Skipped at/below the `md` breakpoint (768px) — there images already span the device width, so a
+// full-width modal adds nothing.
 function onDocumentClick(e: MouseEvent) {
   if (!isProjectPage.value) return;
+  if (window.innerWidth <= 768) return;
   const target = e.target as HTMLElement | null;
   const img = target?.closest?.('img.rounded-xl') as HTMLImageElement | null;
   if (!img) return;

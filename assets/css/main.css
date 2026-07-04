@@ -138,15 +138,18 @@ p.responsive {
     @apply space-y-4 scroll-mt-[200px];
 }
 
-/* Clickable screenshots — signal that images open in the lightbox */
-img.rounded-xl {
-    cursor: zoom-in;
-    transition: box-shadow 0.3s ease, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-}
+/* Clickable screenshots — signal that images open in the lightbox.
+   Only above `md`: at/below 768px the lightbox is disabled (image already fills the width). */
+@media (min-width: 769px) {
+    img.rounded-xl {
+        cursor: zoom-in;
+        transition: box-shadow 0.3s ease, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
 
-img.rounded-xl:hover {
-    box-shadow: 0 0 0 2px rgba(46, 208, 110, 0.55);
-    transform: scale(1.01);
+    img.rounded-xl:hover {
+        box-shadow: 0 0 0 2px rgba(46, 208, 110, 0.55);
+        transform: scale(1.01);
+    }
 }
 
 .tech-stack > li {
